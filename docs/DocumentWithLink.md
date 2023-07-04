@@ -1,4 +1,4 @@
-# SiteImproveApiClient::DocumentWithLink
+# SiteImproveAPIClient::DocumentWithLink
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::DocumentWithLink.new(
+instance = SiteImproveAPIClient::DocumentWithLink.new(
   id: null,
   url: null,
   found_on_pages: null,

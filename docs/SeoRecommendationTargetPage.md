@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SeoRecommendationTargetPage
+# SiteImproveAPIClient::SeoRecommendationTargetPage
 
 ## Properties
 
@@ -20,9 +20,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SeoRecommendationTargetPage.new(
+instance = SiteImproveAPIClient::SeoRecommendationTargetPage.new(
   id: null,
   title: null,
   url: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::Trend
+# SiteImproveAPIClient::Trend
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::Trend.new(
+instance = SiteImproveAPIClient::Trend.new(
   comparison: null,
   current: null,
   delta: null

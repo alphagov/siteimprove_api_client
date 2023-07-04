@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ReferringPageForPage
+# SiteImproveAPIClient::ReferringPageForPage
 
 ## Properties
 
@@ -18,9 +18,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ReferringPageForPage.new(
+instance = SiteImproveAPIClient::ReferringPageForPage.new(
   id: null,
   title: null,
   url: null,

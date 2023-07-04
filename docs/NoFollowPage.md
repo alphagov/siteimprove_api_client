@@ -1,4 +1,4 @@
-# SiteImproveApiClient::NoFollowPage
+# SiteImproveAPIClient::NoFollowPage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::NoFollowPage.new(
+instance = SiteImproveAPIClient::NoFollowPage.new(
   id: null,
   title: null,
   url: null,

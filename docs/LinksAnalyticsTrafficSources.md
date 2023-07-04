@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksAnalyticsTrafficSources
+# SiteImproveAPIClient::LinksAnalyticsTrafficSources
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksAnalyticsTrafficSources.new(
+instance = SiteImproveAPIClient::LinksAnalyticsTrafficSources.new(
   direct_traffic_entry_pages: null,
   external_referring_domains: null,
   external_referring_pages: null,

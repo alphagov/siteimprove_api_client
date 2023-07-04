@@ -1,4 +1,4 @@
-# SiteImproveApiClient::CompressionUsed
+# SiteImproveAPIClient::CompressionUsed
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::CompressionUsed.new(
+instance = SiteImproveAPIClient::CompressionUsed.new(
   complexity: null,
   compression_used: null,
   issue_name: null,

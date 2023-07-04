@@ -1,4 +1,4 @@
-# SiteImproveApiClient::OpenGraphTagsPage
+# SiteImproveAPIClient::OpenGraphTagsPage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::OpenGraphTagsPage.new(
+instance = SiteImproveAPIClient::OpenGraphTagsPage.new(
   id: null,
   title: null,
   url: null,

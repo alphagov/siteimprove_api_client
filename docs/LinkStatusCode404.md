@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinkStatusCode404
+# SiteImproveAPIClient::LinkStatusCode404
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinkStatusCode404.new(
+instance = SiteImproveAPIClient::LinkStatusCode404.new(
   id: null,
   url: null,
   days_since_found: null,

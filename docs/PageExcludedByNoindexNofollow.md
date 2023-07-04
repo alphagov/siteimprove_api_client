@@ -1,4 +1,4 @@
-# SiteImproveApiClient::PageExcludedByNoindexNofollow
+# SiteImproveAPIClient::PageExcludedByNoindexNofollow
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::PageExcludedByNoindexNofollow.new(
+instance = SiteImproveAPIClient::PageExcludedByNoindexNofollow.new(
   id: null,
   title: null,
   url: null,

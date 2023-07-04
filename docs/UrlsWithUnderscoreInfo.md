@@ -1,4 +1,4 @@
-# SiteImproveApiClient::UrlsWithUnderscoreInfo
+# SiteImproveAPIClient::UrlsWithUnderscoreInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::UrlsWithUnderscoreInfo.new(
+instance = SiteImproveAPIClient::UrlsWithUnderscoreInfo.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

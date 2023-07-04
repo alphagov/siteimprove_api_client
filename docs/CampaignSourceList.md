@@ -1,4 +1,4 @@
-# SiteImproveApiClient::CampaignSourceList
+# SiteImproveAPIClient::CampaignSourceList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::CampaignSourceList.new(
+instance = SiteImproveAPIClient::CampaignSourceList.new(
   items: null,
   total_items: null,
   total_pages: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::PageDeletionMetaAdwordsRelationsCrossProduct
+# SiteImproveAPIClient::PageDeletionMetaAdwordsRelationsCrossProduct
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::PageDeletionMetaAdwordsRelationsCrossProduct.new(
+instance = SiteImproveAPIClient::PageDeletionMetaAdwordsRelationsCrossProduct.new(
   ad_groups: null,
   ads: null,
   campaigns: null,

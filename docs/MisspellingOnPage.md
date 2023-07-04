@@ -1,4 +1,4 @@
-# SiteImproveApiClient::MisspellingOnPage
+# SiteImproveAPIClient::MisspellingOnPage
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::MisspellingOnPage.new(
+instance = SiteImproveAPIClient::MisspellingOnPage.new(
   id: null,
   suggestions: null,
   word: null

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SslEnabledPageList
+# SiteImproveAPIClient::SslEnabledPageList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SslEnabledPageList.new(
+instance = SiteImproveAPIClient::SslEnabledPageList.new(
   items: null,
   total_items: null,
   total_pages: null,

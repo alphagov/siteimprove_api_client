@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SeoScoreDetails
+# SiteImproveAPIClient::SeoScoreDetails
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SeoScoreDetails.new(
+instance = SiteImproveAPIClient::SeoScoreDetails.new(
   content_score: null,
   mobile_score: null,
   seo_score: null,

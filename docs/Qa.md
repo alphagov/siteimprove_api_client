@@ -1,4 +1,4 @@
-# SiteImproveApiClient::Qa
+# SiteImproveAPIClient::Qa
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::Qa.new(
+instance = SiteImproveAPIClient::Qa.new(
   content: null,
   freshness: null,
   security: null,

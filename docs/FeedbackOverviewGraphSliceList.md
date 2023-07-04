@@ -1,4 +1,4 @@
-# SiteImproveApiClient::FeedbackOverviewGraphSliceList
+# SiteImproveAPIClient::FeedbackOverviewGraphSliceList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::FeedbackOverviewGraphSliceList.new(
+instance = SiteImproveAPIClient::FeedbackOverviewGraphSliceList.new(
   items: null,
   total_items: null,
   total_pages: null,

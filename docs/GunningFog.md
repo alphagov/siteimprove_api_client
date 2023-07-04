@@ -1,4 +1,4 @@
-# SiteImproveApiClient::GunningFog
+# SiteImproveAPIClient::GunningFog
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::GunningFog.new(
+instance = SiteImproveAPIClient::GunningFog.new(
   complex_words_gunning_fog: null,
   complex_words_gunning_fog_unique: null,
   long_sentences_gunning_fog_unique: null,

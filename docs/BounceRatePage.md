@@ -1,4 +1,4 @@
-# SiteImproveApiClient::BounceRatePage
+# SiteImproveAPIClient::BounceRatePage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::BounceRatePage.new(
+instance = SiteImproveAPIClient::BounceRatePage.new(
   id: null,
   title: null,
   url: null,

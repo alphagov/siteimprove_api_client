@@ -1,4 +1,4 @@
-# SiteImproveApiClient::GeneralApi
+# SiteImproveAPIClient::GeneralApi
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -32,21 +32,21 @@ Returns \"OK\" if the supplied account credentials gives access to the API endpo
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 
 begin
   # Test your access to the API service
   result = api_instance.ping_account_get
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->ping_account_get: #{e}"
 end
 ```
@@ -64,7 +64,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PingAccount>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->ping_account_get_with_http_info: #{e}"
 end
 ```
@@ -99,21 +99,21 @@ Returns \"OK\" if the server is alive.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 
 begin
   # Test the connectivity to the API service
   result = api_instance.ping_api_get
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->ping_api_get: #{e}"
 end
 ```
@@ -131,7 +131,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PingApi>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->ping_api_get_with_http_info: #{e}"
 end
 ```
@@ -166,21 +166,21 @@ Entry point to traverse the API endpoints.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 
 begin
   # API Root
   result = api_instance.root_get
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->root_get: #{e}"
 end
 ```
@@ -198,7 +198,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Account>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->root_get_with_http_info: #{e}"
 end
 ```
@@ -233,21 +233,21 @@ Get information about the content-check functionality. This is useful for checki
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 
 begin
   # Get content-check settings
   result = api_instance.settings_content_checking_get
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->settings_content_checking_get: #{e}"
 end
 ```
@@ -265,7 +265,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentCheckSettings>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->settings_content_checking_get_with_http_info: #{e}"
 end
 ```
@@ -300,21 +300,21 @@ This will enable content-checking for the account. No content-checking can be pe
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 
 begin
   # Enable content-check for this account
   result = api_instance.settings_content_checking_post
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->settings_content_checking_post: #{e}"
 end
 ```
@@ -332,7 +332,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ProductsPolicyArchivedPoliciesPolicyIdUnarchivePost200Response>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->settings_content_checking_post_with_http_info: #{e}"
 end
 ```
@@ -367,21 +367,21 @@ Overview of top-level settings endpoints.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 
 begin
   # Get settings
   result = api_instance.settings_get
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->settings_get: #{e}"
 end
 ```
@@ -399,7 +399,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <AccountSettings>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->settings_get_with_http_info: #{e}"
 end
 ```
@@ -434,15 +434,15 @@ Get a list of feedback surveys for this account.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
   page_size: 56, # Integer | Number of items/records per page in paged output.
@@ -453,7 +453,7 @@ begin
   # Get surveys
   result = api_instance.settings_surveys_get(opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->settings_surveys_get: #{e}"
 end
 ```
@@ -471,7 +471,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <FeedbackSurveyList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->settings_surveys_get_with_http_info: #{e}"
 end
 ```
@@ -510,15 +510,15 @@ Get a list of users for this account.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
   page_size: 56, # Integer | Number of items/records per page in paged output.
@@ -529,7 +529,7 @@ begin
   # Get users
   result = api_instance.settings_users_get(opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->settings_users_get: #{e}"
 end
 ```
@@ -547,7 +547,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UserList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->settings_users_get_with_http_info: #{e}"
 end
 ```
@@ -586,15 +586,15 @@ Get a list of sites for this account.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 opts = {
   group_id: 789, # Integer | Id for specific group.
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -605,7 +605,7 @@ begin
   # Get sites
   result = api_instance.sites_get(opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->sites_get: #{e}"
 end
 ```
@@ -623,7 +623,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SiteList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->sites_get_with_http_info: #{e}"
 end
 ```
@@ -662,15 +662,15 @@ Creates a site with the specified argument values
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 name = 'name_example' # String | Site name
 url = 'url_example' # String | Url of the site
 
@@ -678,7 +678,7 @@ begin
   # Creates a site
   result = api_instance.sites_post(name, url)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->sites_post: #{e}"
 end
 ```
@@ -696,7 +696,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SiteCreateResult>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->sites_post_with_http_info: #{e}"
 end
 ```
@@ -734,15 +734,15 @@ Get history endpoints for Dci, Seo, Accessibility and Qa-Score
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -754,7 +754,7 @@ begin
   # Get history.
   result = api_instance.sites_site_id_dci_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->sites_site_id_dci_history_get: #{e}"
 end
 ```
@@ -772,7 +772,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DciOverallScoreHistoryItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->sites_site_id_dci_history_get_with_http_info: #{e}"
 end
 ```
@@ -812,15 +812,15 @@ Get all DCI scores associated with this site.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -831,7 +831,7 @@ begin
   # Get DCI scores
   result = api_instance.sites_site_id_dci_overview_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->sites_site_id_dci_overview_get: #{e}"
 end
 ```
@@ -849,7 +849,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DciOverallScore>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->sites_site_id_dci_overview_get_with_http_info: #{e}"
 end
 ```
@@ -888,15 +888,15 @@ List of all the possible top-end endpoints, grouped by products and sections.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -906,7 +906,7 @@ begin
   # Get list of top level endpoints for site
   result = api_instance.sites_site_id_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->sites_site_id_get: #{e}"
 end
 ```
@@ -924,7 +924,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Site2>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->sites_site_id_get_with_http_info: #{e}"
 end
 ```
@@ -962,21 +962,21 @@ Get the utilizations for this account.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GeneralApi.new
+api_instance = SiteImproveAPIClient::GeneralApi.new
 
 begin
   # Get the utilizations of the account
   result = api_instance.utilization_get
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->utilization_get: #{e}"
 end
 ```
@@ -994,7 +994,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <AccountUtilization>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GeneralApi->utilization_get_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ContentOptimizationKeyword
+# SiteImproveAPIClient::ContentOptimizationKeyword
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ContentOptimizationKeyword.new(
+instance = SiteImproveAPIClient::ContentOptimizationKeyword.new(
   id: null,
   title: null,
   checking_now: null,

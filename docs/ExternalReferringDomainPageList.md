@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ExternalReferringDomainPageList
+# SiteImproveAPIClient::ExternalReferringDomainPageList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ExternalReferringDomainPageList.new(
+instance = SiteImproveAPIClient::ExternalReferringDomainPageList.new(
   items: null,
   total_items: null,
   total_pages: null,

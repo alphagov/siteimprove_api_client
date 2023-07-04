@@ -1,4 +1,4 @@
-# SiteImproveApiClient::Region
+# SiteImproveAPIClient::Region
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::Region.new(
+instance = SiteImproveAPIClient::Region.new(
   id: null,
   bounce_rate: null,
   is_unknown: null,

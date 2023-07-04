@@ -1,4 +1,4 @@
-# SiteImproveApiClient::CompetitorAnalysisVisibilityScoreTrend
+# SiteImproveAPIClient::CompetitorAnalysisVisibilityScoreTrend
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::CompetitorAnalysisVisibilityScoreTrend.new(
+instance = SiteImproveAPIClient::CompetitorAnalysisVisibilityScoreTrend.new(
   name: null,
   search_engine_visibility: null
 )

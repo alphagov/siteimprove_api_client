@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ExitPageList
+# SiteImproveAPIClient::ExitPageList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ExitPageList.new(
+instance = SiteImproveAPIClient::ExitPageList.new(
   items: null,
   total_items: null,
   total_pages: null,

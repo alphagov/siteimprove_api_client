@@ -1,4 +1,4 @@
-# SiteImproveApiClient::MetaDescriptionValueList
+# SiteImproveAPIClient::MetaDescriptionValueList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::MetaDescriptionValueList.new(
+instance = SiteImproveAPIClient::MetaDescriptionValueList.new(
   items: null,
   total_items: null,
   total_pages: null,

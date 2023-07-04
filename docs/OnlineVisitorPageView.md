@@ -1,4 +1,4 @@
-# SiteImproveApiClient::OnlineVisitorPageView
+# SiteImproveAPIClient::OnlineVisitorPageView
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::OnlineVisitorPageView.new(
+instance = SiteImproveAPIClient::OnlineVisitorPageView.new(
   id: null,
   title: null,
   url: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ContentOptimizationTargetUrlKeywordIssue
+# SiteImproveAPIClient::ContentOptimizationTargetUrlKeywordIssue
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ContentOptimizationTargetUrlKeywordIssue.new(
+instance = SiteImproveAPIClient::ContentOptimizationTargetUrlKeywordIssue.new(
   database: null,
   expected_in_element: null,
   issue_type: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::PageNotIncludedInXmlSitemap
+# SiteImproveAPIClient::PageNotIncludedInXmlSitemap
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::PageNotIncludedInXmlSitemap.new(
+instance = SiteImproveAPIClient::PageNotIncludedInXmlSitemap.new(
   id: null,
   title: null,
   url: null,

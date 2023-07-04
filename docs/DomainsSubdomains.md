@@ -1,4 +1,4 @@
-# SiteImproveApiClient::DomainsSubdomains
+# SiteImproveAPIClient::DomainsSubdomains
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::DomainsSubdomains.new(
+instance = SiteImproveAPIClient::DomainsSubdomains.new(
   id: null,
   redirect_domain_name: null,
   redirect_id: null,

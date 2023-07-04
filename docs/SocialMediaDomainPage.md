@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SocialMediaDomainPage
+# SiteImproveAPIClient::SocialMediaDomainPage
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SocialMediaDomainPage.new(
+instance = SiteImproveAPIClient::SocialMediaDomainPage.new(
   id: null,
   title: null,
   url: null,

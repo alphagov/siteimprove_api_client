@@ -1,4 +1,4 @@
-# SiteImproveApiClient::FilteredEventPage
+# SiteImproveAPIClient::FilteredEventPage
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::FilteredEventPage.new(
+instance = SiteImproveAPIClient::FilteredEventPage.new(
   id: null,
   title: null,
   url: null,

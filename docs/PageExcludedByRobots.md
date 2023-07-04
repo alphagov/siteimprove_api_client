@@ -1,4 +1,4 @@
-# SiteImproveApiClient::PageExcludedByRobots
+# SiteImproveAPIClient::PageExcludedByRobots
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::PageExcludedByRobots.new(
+instance = SiteImproveAPIClient::PageExcludedByRobots.new(
   id: null,
   title: null,
   url: null,

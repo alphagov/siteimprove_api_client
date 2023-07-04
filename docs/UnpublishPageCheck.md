@@ -1,4 +1,4 @@
-# SiteImproveApiClient::UnpublishPageCheck
+# SiteImproveAPIClient::UnpublishPageCheck
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::UnpublishPageCheck.new(
+instance = SiteImproveAPIClient::UnpublishPageCheck.new(
   title: null,
   url: null,
   relations: null,

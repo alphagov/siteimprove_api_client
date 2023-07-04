@@ -1,4 +1,4 @@
-# SiteImproveApiClient::H1MultipleInfo
+# SiteImproveAPIClient::H1MultipleInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::H1MultipleInfo.new(
+instance = SiteImproveAPIClient::H1MultipleInfo.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::DuplicateH1HeadingDetails
+# SiteImproveAPIClient::DuplicateH1HeadingDetails
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::DuplicateH1HeadingDetails.new(
+instance = SiteImproveAPIClient::DuplicateH1HeadingDetails.new(
   id: null,
   title: null,
   url: null,

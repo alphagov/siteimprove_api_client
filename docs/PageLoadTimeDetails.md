@@ -1,4 +1,4 @@
-# SiteImproveApiClient::PageLoadTimeDetails
+# SiteImproveAPIClient::PageLoadTimeDetails
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::PageLoadTimeDetails.new(
+instance = SiteImproveAPIClient::PageLoadTimeDetails.new(
   id: null,
   title: null,
   url: null,

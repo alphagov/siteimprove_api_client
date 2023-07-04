@@ -1,4 +1,4 @@
-# SiteImproveApiClient::AccessibilityHistoryIssueInstances
+# SiteImproveAPIClient::AccessibilityHistoryIssueInstances
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::AccessibilityHistoryIssueInstances.new(
+instance = SiteImproveAPIClient::AccessibilityHistoryIssueInstances.new(
   ignored_on_pages: null,
   instances_of_this_issue: null,
   number_of_pages: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::CampaignsSummaryGraphItemList
+# SiteImproveAPIClient::CampaignsSummaryGraphItemList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::CampaignsSummaryGraphItemList.new(
+instance = SiteImproveAPIClient::CampaignsSummaryGraphItemList.new(
   items: null,
   total_items: null,
   total_pages: null,

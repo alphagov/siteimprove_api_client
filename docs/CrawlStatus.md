@@ -1,4 +1,4 @@
-# SiteImproveApiClient::CrawlStatus
+# SiteImproveAPIClient::CrawlStatus
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::CrawlStatus.new(
+instance = SiteImproveAPIClient::CrawlStatus.new(
   is_crawl_enabled: null,
   is_crawl_running: null,
   last_crawl: null,

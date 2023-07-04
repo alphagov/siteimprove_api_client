@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksSeov2Keywords
+# SiteImproveAPIClient::LinksSeov2Keywords
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksSeov2Keywords.new(
+instance = SiteImproveAPIClient::LinksSeov2Keywords.new(
   all: null,
   content_optimization_keywords: null
 )

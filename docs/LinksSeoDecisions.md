@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksSeoDecisions
+# SiteImproveAPIClient::LinksSeoDecisions
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksSeoDecisions.new(
+instance = SiteImproveAPIClient::LinksSeoDecisions.new(
   ignored_issues: null,
   ignored_pages: null
 )

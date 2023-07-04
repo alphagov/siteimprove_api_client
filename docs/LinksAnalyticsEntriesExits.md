@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksAnalyticsEntriesExits
+# SiteImproveAPIClient::LinksAnalyticsEntriesExits
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksAnalyticsEntriesExits.new(
+instance = SiteImproveAPIClient::LinksAnalyticsEntriesExits.new(
   bounce_rates: null,
   entry_exit_rates: null
 )

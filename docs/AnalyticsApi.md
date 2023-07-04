@@ -1,4 +1,4 @@
-# SiteImproveApiClient::AnalyticsApi
+# SiteImproveAPIClient::AnalyticsApi
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -149,15 +149,15 @@ Get all account-specific shortened URLs
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -168,7 +168,7 @@ begin
   # Get all account-specific shortened URLs
   result = api_instance.analytics_url_shortener_shortened_urls_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->analytics_url_shortener_shortened_urls_get: #{e}"
 end
 ```
@@ -186,7 +186,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ShortenedUrlList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->analytics_url_shortener_shortened_urls_get_with_http_info: #{e}"
 end
 ```
@@ -225,15 +225,15 @@ Get the available segments. Segments can be used to segment the data shown by ap
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
   page_size: 56, # Integer | Number of items/records per page in paged output.
@@ -244,7 +244,7 @@ begin
   # Get available segments
   result = api_instance.settings_analytics_segments_get(opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->settings_analytics_segments_get: #{e}"
 end
 ```
@@ -262,7 +262,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <AnalyticsFilterDetailsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->settings_analytics_segments_get_with_http_info: #{e}"
 end
 ```
@@ -301,15 +301,15 @@ Get the visit depth. Depth relates to the number of page views for each visit. V
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -322,7 +322,7 @@ begin
   # Get visit depth from behavior
   result = api_instance.sites_site_id_analytics_behavior_visit_depth_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visit_depth_get: #{e}"
 end
 ```
@@ -340,7 +340,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitDepthList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visit_depth_get_with_http_info: #{e}"
 end
 ```
@@ -381,15 +381,15 @@ A series of historical data points showing the average amount of page views.  Wh
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -402,7 +402,7 @@ begin
   # Get historical data of visit depth from behavior
   result = api_instance.sites_site_id_analytics_behavior_visit_depth_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visit_depth_history_get: #{e}"
 end
 ```
@@ -420,7 +420,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitDepthGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visit_depth_history_get_with_http_info: #{e}"
 end
 ```
@@ -461,15 +461,15 @@ Get the length of a visit. Length relates to the duration (in minutes) of each v
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -483,7 +483,7 @@ begin
   # Get visit length from behavior
   result = api_instance.sites_site_id_analytics_behavior_visit_length_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visit_length_get: #{e}"
 end
 ```
@@ -501,7 +501,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitLengthList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visit_length_get_with_http_info: #{e}"
 end
 ```
@@ -543,15 +543,15 @@ A series of historical data points showing the average visit length. Length rela
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -565,7 +565,7 @@ begin
   # Get historical data of visit length from behavior
   result = api_instance.sites_site_id_analytics_behavior_visit_length_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visit_length_history_get: #{e}"
 end
 ```
@@ -583,7 +583,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitLengthGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visit_length_history_get_with_http_info: #{e}"
 end
 ```
@@ -625,15 +625,15 @@ Get the distribution of visits and page views over hours of the day.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -648,7 +648,7 @@ begin
   # Get visits by hour of the day from behavior
   result = api_instance.sites_site_id_analytics_behavior_visits_by_hour_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visits_by_hour_get: #{e}"
 end
 ```
@@ -666,7 +666,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitHourList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visits_by_hour_get_with_http_info: #{e}"
 end
 ```
@@ -709,15 +709,15 @@ Get the distribution of visits and page views over day of the month.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -732,7 +732,7 @@ begin
   # Get visits by day of the month from behavior
   result = api_instance.sites_site_id_analytics_behavior_visits_by_monthday_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visits_by_monthday_get: #{e}"
 end
 ```
@@ -750,7 +750,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitMonthDayList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visits_by_monthday_get_with_http_info: #{e}"
 end
 ```
@@ -793,15 +793,15 @@ Get the distribution of visits and page views over weekday.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -816,7 +816,7 @@ begin
   # Get visits by weekday from behavior
   result = api_instance.sites_site_id_analytics_behavior_visits_by_weekday_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visits_by_weekday_get: #{e}"
 end
 ```
@@ -834,7 +834,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitWeekDayList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_behavior_visits_by_weekday_get_with_http_info: #{e}"
 end
 ```
@@ -877,15 +877,15 @@ A series of historical data points showing the amount of visits for the specific
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 name_id = 789 # Integer | Id for specific campaign name
 source_id = 789 # Integer | Id for specific campaign source
@@ -903,7 +903,7 @@ begin
   # Get historical data for the specific campaign combination
   result = api_instance.sites_site_id_analytics_campaigns_combinations_name_id_source_id_medium_id_history_get(site_id, name_id, source_id, medium_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_combinations_name_id_source_id_medium_id_history_get: #{e}"
 end
 ```
@@ -921,7 +921,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignSummaryVisitsPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_combinations_name_id_source_id_medium_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -967,15 +967,15 @@ Lists all the pages visited by the specific combination of campaign name, source
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 name_id = 789 # Integer | Id for specific campaign name
 source_id = 789 # Integer | Id for specific campaign source
@@ -993,7 +993,7 @@ begin
   # Get the pages visited by the specific campaign combination
   result = api_instance.sites_site_id_analytics_campaigns_combinations_name_id_source_id_medium_id_pages_get(site_id, name_id, source_id, medium_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_combinations_name_id_source_id_medium_id_pages_get: #{e}"
 end
 ```
@@ -1011,7 +1011,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignSummaryPagesList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_combinations_name_id_source_id_medium_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1057,15 +1057,15 @@ Content variations in the campaigns used to reach the website. The value in the 
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -1080,7 +1080,7 @@ begin
   # Get contents from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_contents_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_contents_get: #{e}"
 end
 ```
@@ -1098,7 +1098,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignContentList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_contents_get_with_http_info: #{e}"
 end
 ```
@@ -1141,15 +1141,15 @@ Shows the `name`, `source` and `medium` used in connection with the specified `c
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 parameter_value_id = 789 # Integer | Id for specific parameter value.
@@ -1165,7 +1165,7 @@ begin
   # Get content details from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_contents_parameter_name_id_parameter_value_id_details_get(site_id, parameter_name_id, parameter_value_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_contents_parameter_name_id_parameter_value_id_details_get: #{e}"
 end
 ```
@@ -1183,7 +1183,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignContentDetailsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_contents_parameter_name_id_parameter_value_id_details_get_with_http_info: #{e}"
 end
 ```
@@ -1227,15 +1227,15 @@ A series of historical data points showing the amount of visits for a specific `
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 parameter_value_id = 789 # Integer | Id for specific parameter value.
@@ -1252,7 +1252,7 @@ begin
   # Get historical data for specific content from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_contents_parameter_name_id_parameter_value_id_history_get(site_id, parameter_name_id, parameter_value_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_contents_parameter_name_id_parameter_value_id_history_get: #{e}"
 end
 ```
@@ -1270,7 +1270,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_contents_parameter_name_id_parameter_value_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -1315,15 +1315,15 @@ Shows the pages where the specified `content` has been used.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 parameter_value_id = 789 # Integer | Id for specific parameter value.
@@ -1339,7 +1339,7 @@ begin
   # Get pages related to specific content from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_contents_parameter_name_id_parameter_value_id_pages_get(site_id, parameter_name_id, parameter_value_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_contents_parameter_name_id_parameter_value_id_pages_get: #{e}"
 end
 ```
@@ -1357,7 +1357,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignPagesList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_contents_parameter_name_id_parameter_value_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1401,15 +1401,15 @@ Medium of the campaigns used to reach the website. The value in the parameter `u
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -1424,7 +1424,7 @@ begin
   # Get mediums from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_mediums_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_mediums_get: #{e}"
 end
 ```
@@ -1442,7 +1442,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignMediumList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_mediums_get_with_http_info: #{e}"
 end
 ```
@@ -1485,15 +1485,15 @@ Shows the `name` and `source` used in connection with the specified `medium`.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 parameter_value_id = 789 # Integer | Id for specific parameter value.
@@ -1509,7 +1509,7 @@ begin
   # Get medium details from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_mediums_parameter_name_id_parameter_value_id_details_get(site_id, parameter_name_id, parameter_value_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_mediums_parameter_name_id_parameter_value_id_details_get: #{e}"
 end
 ```
@@ -1527,7 +1527,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignMediumDetailsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_mediums_parameter_name_id_parameter_value_id_details_get_with_http_info: #{e}"
 end
 ```
@@ -1571,15 +1571,15 @@ Content variations in the campaigns used to reach the website. The value in the 
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -1594,7 +1594,7 @@ begin
   # Get names from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_names_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_names_get: #{e}"
 end
 ```
@@ -1612,7 +1612,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignNameList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_names_get_with_http_info: #{e}"
 end
 ```
@@ -1655,15 +1655,15 @@ Shows the `medium` and `source` used in connection with the specified `name`.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 parameter_value_id = 789 # Integer | Id for specific parameter value.
@@ -1679,7 +1679,7 @@ begin
   # Get name details from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_names_parameter_name_id_parameter_value_id_details_get(site_id, parameter_name_id, parameter_value_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_names_parameter_name_id_parameter_value_id_details_get: #{e}"
 end
 ```
@@ -1697,7 +1697,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignNameDetailsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_names_parameter_name_id_parameter_value_id_details_get_with_http_info: #{e}"
 end
 ```
@@ -1741,15 +1741,15 @@ Get pages which have been reached as part of a campaign.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -1765,7 +1765,7 @@ begin
   # Get pages from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_pages_get: #{e}"
 end
 ```
@@ -1783,7 +1783,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithCampaignsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1827,15 +1827,15 @@ Shows the `name`, `source` and `medium` used in connection with the specified pa
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -1849,7 +1849,7 @@ begin
   # Get details for specific page from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_pages_page_id_details_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_pages_page_id_details_get: #{e}"
 end
 ```
@@ -1867,7 +1867,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithCampaignsVisitsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_pages_page_id_details_get_with_http_info: #{e}"
 end
 ```
@@ -1909,15 +1909,15 @@ A series of historical data points showing the amount of visits for a specific `
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -1931,7 +1931,7 @@ begin
   # Get historical data for a specific page in campaigns
   result = api_instance.sites_site_id_analytics_campaigns_pages_page_id_history_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_pages_page_id_history_get: #{e}"
 end
 ```
@@ -1949,7 +1949,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithCampaignsVisitsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_pages_page_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -1991,15 +1991,15 @@ Source of the campaigns used to reach the website. The value in the parameter `u
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -2014,7 +2014,7 @@ begin
   # Get sources from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_sources_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_sources_get: #{e}"
 end
 ```
@@ -2032,7 +2032,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignSourceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_sources_get_with_http_info: #{e}"
 end
 ```
@@ -2075,15 +2075,15 @@ Shows the `name` and `medium` used in connection with the specified `source`.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 parameter_value_id = 789 # Integer | Id for specific parameter value.
@@ -2099,7 +2099,7 @@ begin
   # Get source details from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_sources_parameter_name_id_parameter_value_id_details_get(site_id, parameter_name_id, parameter_value_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_sources_parameter_name_id_parameter_value_id_details_get: #{e}"
 end
 ```
@@ -2117,7 +2117,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignSourceDetailsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_sources_parameter_name_id_parameter_value_id_details_get_with_http_info: #{e}"
 end
 ```
@@ -2161,15 +2161,15 @@ Lists the campaigns used to reach the website.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -2185,7 +2185,7 @@ begin
   # Get summary of campaigns
   result = api_instance.sites_site_id_analytics_campaigns_summary_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_summary_get: #{e}"
 end
 ```
@@ -2203,7 +2203,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignSummaryList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_summary_get_with_http_info: #{e}"
 end
 ```
@@ -2247,15 +2247,15 @@ A series of historical data points showing the amount of visits for all campaign
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -2271,7 +2271,7 @@ begin
   # Get historical data of all campaigns
   result = api_instance.sites_site_id_analytics_campaigns_summary_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_summary_history_get: #{e}"
 end
 ```
@@ -2289,7 +2289,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignsSummaryGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_summary_history_get_with_http_info: #{e}"
 end
 ```
@@ -2333,15 +2333,15 @@ The terms of the campaigns used to reach the website. The value in the parameter
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -2356,7 +2356,7 @@ begin
   # Get terms from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_terms_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_terms_get: #{e}"
 end
 ```
@@ -2374,7 +2374,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignTermsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_terms_get_with_http_info: #{e}"
 end
 ```
@@ -2417,15 +2417,15 @@ Shows the `name`, `source` and `medium` used in connection with the specified `t
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 parameter_value_id = 789 # Integer | Id for specific parameter value.
@@ -2441,7 +2441,7 @@ begin
   # Get term details from campaigns
   result = api_instance.sites_site_id_analytics_campaigns_terms_parameter_name_id_parameter_value_id_details_get(site_id, parameter_name_id, parameter_value_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_terms_parameter_name_id_parameter_value_id_details_get: #{e}"
 end
 ```
@@ -2459,7 +2459,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CampaignTermsDetailsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_campaigns_terms_parameter_name_id_parameter_value_id_details_get_with_http_info: #{e}"
 end
 ```
@@ -2503,15 +2503,15 @@ Get all pages identified on your site.  Note that if your site only has group ac
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -2527,7 +2527,7 @@ begin
   # Get all pages from content
   result = api_instance.sites_site_id_analytics_content_all_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_all_pages_get: #{e}"
 end
 ```
@@ -2545,7 +2545,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_all_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2589,15 +2589,15 @@ An entry page is the first page a visitor sees when they enter the website.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -2613,7 +2613,7 @@ begin
   # Get entry pages from content
   result = api_instance.sites_site_id_analytics_content_entry_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_entry_pages_get: #{e}"
 end
 ```
@@ -2631,7 +2631,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EntryPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_entry_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2675,15 +2675,15 @@ An exit page is the last page a visitor sees before they leave the website.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -2699,7 +2699,7 @@ begin
   # Get exit pages from content
   result = api_instance.sites_site_id_analytics_content_exit_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_exit_pages_get: #{e}"
 end
 ```
@@ -2717,7 +2717,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ExitPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_exit_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2761,15 +2761,15 @@ Get the least popular pages among the top 1000 pages with the most page views.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -2785,7 +2785,7 @@ begin
   # Get least popular pages from content
   result = api_instance.sites_site_id_analytics_content_least_popular_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_least_popular_pages_get: #{e}"
 end
 ```
@@ -2803,7 +2803,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UnpopularPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_least_popular_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2847,15 +2847,15 @@ Get the most popular pages among the top 1000 pages with the most page views.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -2871,7 +2871,7 @@ begin
   # Get most popular pages from content
   result = api_instance.sites_site_id_analytics_content_most_popular_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_most_popular_pages_get: #{e}"
 end
 ```
@@ -2889,7 +2889,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PopularPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_most_popular_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2933,15 +2933,15 @@ Get the average number of clicks (pages visited) to get to a certain page.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -2957,7 +2957,7 @@ begin
   # Get navigation depth from content
   result = api_instance.sites_site_id_analytics_content_navigation_depth_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_navigation_depth_get: #{e}"
 end
 ```
@@ -2975,7 +2975,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <NavigationDepthList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_navigation_depth_get_with_http_info: #{e}"
 end
 ```
@@ -3019,15 +3019,15 @@ Get links to external domains, that have been used to leave your site.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -3044,7 +3044,7 @@ begin
   # Get outbound links from content
   result = api_instance.sites_site_id_analytics_content_outbound_links_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_outbound_links_get: #{e}"
 end
 ```
@@ -3062,7 +3062,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OutboundLinksList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_outbound_links_get_with_http_info: #{e}"
 end
 ```
@@ -3107,15 +3107,15 @@ A series of historical data points showing the amount of visits for a specific o
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 outbound_link_id = 789 # Integer | Id for specific outbound link/URL.
 opts = {
@@ -3131,7 +3131,7 @@ begin
   # Get historical data for specific outbound link from content
   result = api_instance.sites_site_id_analytics_content_outbound_links_outbound_link_id_history_get(site_id, outbound_link_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_outbound_links_outbound_link_id_history_get: #{e}"
 end
 ```
@@ -3149,7 +3149,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OutboundLinksGraphSliceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_outbound_links_outbound_link_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -3193,15 +3193,15 @@ Get the pages where the specified outbound link has been used
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 outbound_link_id = 789 # Integer | Id for specific outbound link/URL.
 opts = {
@@ -3217,7 +3217,7 @@ begin
   # Get pages for specific outbound link from content
   result = api_instance.sites_site_id_analytics_content_outbound_links_outbound_link_id_pages_get(site_id, outbound_link_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_outbound_links_outbound_link_id_pages_get: #{e}"
 end
 ```
@@ -3235,7 +3235,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OutboundLinksPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_outbound_links_outbound_link_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -3279,15 +3279,15 @@ Get the average amount of time (in seconds) it takes a page to load.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -3303,7 +3303,7 @@ begin
   # Get page load time from content
   result = api_instance.sites_site_id_analytics_content_page_load_time_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_page_load_time_get: #{e}"
 end
 ```
@@ -3321,7 +3321,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageLoadTimeDetailsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_page_load_time_get_with_http_info: #{e}"
 end
 ```
@@ -3365,15 +3365,15 @@ Get the pages that have had no visits in the selected time period.  Only pages t
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -3389,7 +3389,7 @@ begin
   # Get pages without visits from content
   result = api_instance.sites_site_id_analytics_content_pages_without_visits_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_pages_without_visits_get: #{e}"
 end
 ```
@@ -3407,7 +3407,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithNoVisitsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_pages_without_visits_get_with_http_info: #{e}"
 end
 ```
@@ -3451,15 +3451,15 @@ Visits and page view statistics for all parameters that have been setup.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -3475,7 +3475,7 @@ begin
   # Get parameters from content
   result = api_instance.sites_site_id_analytics_content_parameters_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_get: #{e}"
 end
 ```
@@ -3493,7 +3493,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ParameterNameList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_get_with_http_info: #{e}"
 end
 ```
@@ -3537,15 +3537,15 @@ A series of historical data points showing the amount of visits for a specific p
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 opts = {
@@ -3561,7 +3561,7 @@ begin
   # Get historical data for specific parameter from content
   result = api_instance.sites_site_id_analytics_content_parameters_parameter_name_id_history_get(site_id, parameter_name_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_parameter_name_id_history_get: #{e}"
 end
 ```
@@ -3579,7 +3579,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ParameterNameValueVisitsGraphSliceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_parameter_name_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -3623,15 +3623,15 @@ Get the pages where the specified parameter have been collected.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 opts = {
@@ -3648,7 +3648,7 @@ begin
   # Get pages for specific parameter from content
   result = api_instance.sites_site_id_analytics_content_parameters_parameter_name_id_pages_get(site_id, parameter_name_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_parameter_name_id_pages_get: #{e}"
 end
 ```
@@ -3666,7 +3666,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ParameterPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_parameter_name_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -3711,15 +3711,15 @@ Get the collected values for the specified parameter.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 opts = {
@@ -3736,7 +3736,7 @@ begin
   # Get values for specific parameter from content
   result = api_instance.sites_site_id_analytics_content_parameters_parameter_name_id_values_get(site_id, parameter_name_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_parameter_name_id_values_get: #{e}"
 end
 ```
@@ -3754,7 +3754,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ParameterValueList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_parameter_name_id_values_get_with_http_info: #{e}"
 end
 ```
@@ -3799,15 +3799,15 @@ A series of historical data points showing the amount of visits for a specific p
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 parameter_value_id = 789 # Integer | Id for specific parameter value.
@@ -3824,7 +3824,7 @@ begin
   # Get historical data for specific parameter value from campaigns
   result = api_instance.sites_site_id_analytics_content_parameters_parameter_name_id_values_parameter_value_id_history_get(site_id, parameter_name_id, parameter_value_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_parameter_name_id_values_parameter_value_id_history_get: #{e}"
 end
 ```
@@ -3842,7 +3842,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ParameterNameValueVisitsGraphSliceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_parameter_name_id_values_parameter_value_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -3887,15 +3887,15 @@ Get the pages where the specified parameter value have been collected.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 parameter_name_id = 789 # Integer | Id for specific parameter name.
 parameter_value_id = 789 # Integer | Id for specific parameter value.
@@ -3913,7 +3913,7 @@ begin
   # Get pages for specific parameter value from content
   result = api_instance.sites_site_id_analytics_content_parameters_parameter_name_id_values_parameter_value_id_pages_get(site_id, parameter_name_id, parameter_value_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_parameter_name_id_values_parameter_value_id_pages_get: #{e}"
 end
 ```
@@ -3931,7 +3931,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ParameterPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_content_parameters_parameter_name_id_values_parameter_value_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -3977,15 +3977,15 @@ List of pages with bounces and bounce rate.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -4001,7 +4001,7 @@ begin
   # Get bounce rates from entries and exits
   result = api_instance.sites_site_id_analytics_entries_exits_bounce_rates_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_entries_exits_bounce_rates_get: #{e}"
 end
 ```
@@ -4019,7 +4019,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BounceRatePageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_entries_exits_bounce_rates_get_with_http_info: #{e}"
 end
 ```
@@ -4063,15 +4063,15 @@ List the amount of entries and exits registered for your pages.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -4087,7 +4087,7 @@ begin
   # Get entry and exit rates from entries and exits
   result = api_instance.sites_site_id_analytics_entries_exits_entry_exit_rates_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_entries_exits_entry_exit_rates_get: #{e}"
 end
 ```
@@ -4105,7 +4105,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EntryExitRatePageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_entries_exits_entry_exit_rates_get_with_http_info: #{e}"
 end
 ```
@@ -4149,15 +4149,15 @@ The last outbound links and their amount of clicks for a specific exit page.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -4174,7 +4174,7 @@ begin
   # Get last outbound links for specific exit page from entries and exits
   result = api_instance.sites_site_id_analytics_entries_exits_entry_exit_rates_page_id_last_outbound_links_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_entries_exits_entry_exit_rates_page_id_last_outbound_links_get: #{e}"
 end
 ```
@@ -4192,7 +4192,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LastOutboundLinkPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_entries_exits_entry_exit_rates_page_id_last_outbound_links_get_with_http_info: #{e}"
 end
 ```
@@ -4237,15 +4237,15 @@ Get all the event actions performed on your website.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -4260,7 +4260,7 @@ begin
   # Get actions from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_actions_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_actions_get: #{e}"
 end
 ```
@@ -4278,7 +4278,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EventActionList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_actions_get_with_http_info: #{e}"
 end
 ```
@@ -4321,15 +4321,15 @@ Get the `labels` that have been used in connection with the specified `category`
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 category_id = 789 # Integer | Id of a specific category.
 action_id = 789 # Integer | Id of a specific action.
@@ -4345,7 +4345,7 @@ begin
   # Get labels for specific pair of category and action from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_categories_category_id_actions_action_id_labels_get(site_id, category_id, action_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_categories_category_id_actions_action_id_labels_get: #{e}"
 end
 ```
@@ -4363,7 +4363,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CategoryActionLabelList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_categories_category_id_actions_action_id_labels_get_with_http_info: #{e}"
 end
 ```
@@ -4407,15 +4407,15 @@ Get the `actions` that have been used in connection with a specific `category`.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 category_id = 789 # Integer | Id of a specific category.
 opts = {
@@ -4430,7 +4430,7 @@ begin
   # Get actions for specific category from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_categories_category_id_actions_get(site_id, category_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_categories_category_id_actions_get: #{e}"
 end
 ```
@@ -4448,7 +4448,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CategoryActionList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_categories_category_id_actions_get_with_http_info: #{e}"
 end
 ```
@@ -4491,15 +4491,15 @@ Get all the event categories. Categories are used to group events in logical clu
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -4514,7 +4514,7 @@ begin
   # Get categories from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_categories_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_categories_get: #{e}"
 end
 ```
@@ -4532,7 +4532,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EventCategoryList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_categories_get_with_http_info: #{e}"
 end
 ```
@@ -4575,15 +4575,15 @@ Get the events that have been triggered within the chosen period.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -4599,7 +4599,7 @@ begin
   # Get events from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_events_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_events_get: #{e}"
 end
 ```
@@ -4617,7 +4617,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EventList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_events_get_with_http_info: #{e}"
 end
 ```
@@ -4661,15 +4661,15 @@ A series of historical data points showing the amount of events, visits and page
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -4685,7 +4685,7 @@ begin
   # Get historical data for events from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_events_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_events_history_get: #{e}"
 end
 ```
@@ -4703,7 +4703,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EventGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_events_history_get_with_http_info: #{e}"
 end
 ```
@@ -4747,15 +4747,15 @@ Get the pages where the specified event have been triggered.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   action_id: 789, # Integer | Id of a specific action.
@@ -4773,7 +4773,7 @@ begin
   # Get pages for specific event from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_events_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_events_pages_get: #{e}"
 end
 ```
@@ -4791,7 +4791,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <FilteredEventPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_events_pages_get_with_http_info: #{e}"
 end
 ```
@@ -4837,15 +4837,15 @@ Get all the event labels. Labels are used to see specifics about an event.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -4860,7 +4860,7 @@ begin
   # Get labels from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_labels_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_labels_get: #{e}"
 end
 ```
@@ -4878,7 +4878,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EventLabelList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_labels_get_with_http_info: #{e}"
 end
 ```
@@ -4921,15 +4921,15 @@ Get the `action` and `category` pairs that have been used in connection with the
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 label_id = 789 # Integer | Id of a specific label.
 opts = {
@@ -4944,7 +4944,7 @@ begin
   # Get label details from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_labels_label_id_events_get(site_id, label_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_labels_label_id_events_get: #{e}"
 end
 ```
@@ -4962,7 +4962,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LabelActionList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_labels_label_id_events_get_with_http_info: #{e}"
 end
 ```
@@ -5005,15 +5005,15 @@ Get all the pages where an event have been triggered.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -5029,7 +5029,7 @@ begin
   # Get pages from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_pages_get: #{e}"
 end
 ```
@@ -5047,7 +5047,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EventPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_pages_get_with_http_info: #{e}"
 end
 ```
@@ -5091,15 +5091,15 @@ Get the event details for a specific page.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -5113,7 +5113,7 @@ begin
   # Get event details for specific page from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_pages_page_id_events_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_pages_page_id_events_get: #{e}"
 end
 ```
@@ -5131,7 +5131,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageEventList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_pages_page_id_events_get_with_http_info: #{e}"
 end
 ```
@@ -5173,15 +5173,15 @@ A series of historical data points showing the amount of events for the specifie
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -5196,7 +5196,7 @@ begin
   # Get historical data for specific page from event tracking
   result = api_instance.sites_site_id_analytics_event_tracking_pages_page_id_history_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_pages_page_id_history_get: #{e}"
 end
 ```
@@ -5214,7 +5214,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EventGraphSliceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_event_tracking_pages_page_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -5257,15 +5257,15 @@ The the search terms that your users have entered into your search solution.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -5282,7 +5282,7 @@ begin
   # Get internal searches
   result = api_instance.sites_site_id_analytics_internal_searches_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_internal_searches_get: #{e}"
 end
 ```
@@ -5300,7 +5300,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <InternalSearchList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_internal_searches_get_with_http_info: #{e}"
 end
 ```
@@ -5345,15 +5345,15 @@ A series of historical data points showing the amount of visits, searches and ex
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -5370,7 +5370,7 @@ begin
   # Get historical data from internal searches
   result = api_instance.sites_site_id_analytics_internal_searches_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_internal_searches_history_get: #{e}"
 end
 ```
@@ -5388,7 +5388,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <InternalSearchGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_internal_searches_history_get_with_http_info: #{e}"
 end
 ```
@@ -5433,15 +5433,15 @@ Get the actions performed by the user after searching for the specified search t
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_term_id = 789 # Integer | Id of a specific search term.
 opts = {
@@ -5457,7 +5457,7 @@ begin
   # Get actions for specific search term from internal searches
   result = api_instance.sites_site_id_analytics_internal_searches_search_terms_search_term_id_actions_get(site_id, search_term_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_internal_searches_search_terms_search_term_id_actions_get: #{e}"
 end
 ```
@@ -5475,7 +5475,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <InternalSearchPageActionList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_internal_searches_search_terms_search_term_id_actions_get_with_http_info: #{e}"
 end
 ```
@@ -5519,15 +5519,15 @@ The available categories for use with Key Metrics.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -5541,7 +5541,7 @@ begin
   # Get categories
   result = api_instance.sites_site_id_analytics_keymetrics_categories_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_keymetrics_categories_get: #{e}"
 end
 ```
@@ -5559,7 +5559,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeyMetricsCategoryList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_keymetrics_categories_get_with_http_info: #{e}"
 end
 ```
@@ -5601,15 +5601,15 @@ The Key Performance Indicators for use with Key Metrics.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -5623,7 +5623,7 @@ begin
   # Get Key Performance Indicators
   result = api_instance.sites_site_id_analytics_keymetrics_kpis_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_keymetrics_kpis_get: #{e}"
 end
 ```
@@ -5641,7 +5641,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeyMetricsKpiOverviewList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_keymetrics_kpis_get_with_http_info: #{e}"
 end
 ```
@@ -5683,15 +5683,15 @@ The Key Metrics.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -5705,7 +5705,7 @@ begin
   # Get Key Metrics
   result = api_instance.sites_site_id_analytics_keymetrics_metrics_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_keymetrics_metrics_get: #{e}"
 end
 ```
@@ -5723,7 +5723,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeyMetricsMetricList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_keymetrics_metrics_get_with_http_info: #{e}"
 end
 ```
@@ -5765,15 +5765,15 @@ Get the groups available. Groups are used to display statistics for specific sec
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -5787,7 +5787,7 @@ begin
   # Get analytics groups
   result = api_instance.sites_site_id_analytics_overview_groups_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_groups_get: #{e}"
 end
 ```
@@ -5805,7 +5805,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GroupDetailsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_groups_get_with_http_info: #{e}"
 end
 ```
@@ -5847,15 +5847,15 @@ A series of historical data points showing the most common statistics for your s
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -5870,7 +5870,7 @@ begin
   # Get historical data from overview
   result = api_instance.sites_site_id_analytics_overview_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_history_get: #{e}"
 end
 ```
@@ -5888,7 +5888,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <FullOverviewItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_history_get_with_http_info: #{e}"
 end
 ```
@@ -5931,15 +5931,15 @@ Get the current online visitors.  Will always use the `Now` period.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -5953,7 +5953,7 @@ begin
   # Get online visitors from overview
   result = api_instance.sites_site_id_analytics_overview_online_visitors_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_online_visitors_get: #{e}"
 end
 ```
@@ -5971,7 +5971,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OnlineVisitorList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_online_visitors_get_with_http_info: #{e}"
 end
 ```
@@ -6013,15 +6013,15 @@ Get a detailed view of the specified online visitor.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 session_id = 789 # Integer | Id for specific session.
 opts = {
@@ -6033,7 +6033,7 @@ begin
   # Get details for online visitor from overview
   result = api_instance.sites_site_id_analytics_overview_online_visitors_session_id_details_get(site_id, session_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_online_visitors_session_id_details_get: #{e}"
 end
 ```
@@ -6051,7 +6051,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OnlineVisitorDetails>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_online_visitors_session_id_details_get_with_http_info: #{e}"
 end
 ```
@@ -6091,15 +6091,15 @@ Get the pages visited by the specified online visitor.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 session_id = 789 # Integer | Id for specific session.
 opts = {
@@ -6113,7 +6113,7 @@ begin
   # Get pages for specific online visitor from overview
   result = api_instance.sites_site_id_analytics_overview_online_visitors_session_id_pages_get(site_id, session_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_online_visitors_session_id_pages_get: #{e}"
 end
 ```
@@ -6131,7 +6131,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OnlineVisitorPageViewList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_online_visitors_session_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6173,15 +6173,15 @@ Get a summary of the most common statistics for your site.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -6194,7 +6194,7 @@ begin
   # Get summary for analytics
   result = api_instance.sites_site_id_analytics_overview_summary_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_summary_get: #{e}"
 end
 ```
@@ -6212,7 +6212,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OverviewStat>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_overview_summary_get_with_http_info: #{e}"
 end
 ```
@@ -6253,15 +6253,15 @@ Entry pages for the visits that have started through a direct entry to your webs
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -6277,7 +6277,7 @@ begin
   # Get direct traffic from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_direct_traffic_entry_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_direct_traffic_entry_pages_get: #{e}"
 end
 ```
@@ -6295,7 +6295,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DirectTrafficList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_direct_traffic_entry_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6339,15 +6339,15 @@ A series of historical data points showing the direct traffic from traffic sourc
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -6362,7 +6362,7 @@ begin
   # Get historical data for direct traffic from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_direct_traffic_entry_pages_page_id_history_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_direct_traffic_entry_pages_page_id_history_get: #{e}"
 end
 ```
@@ -6380,7 +6380,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_direct_traffic_entry_pages_page_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -6423,15 +6423,15 @@ A series of historical data points showing the visits from external domains that
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 domain_id = 789 # Integer | Id for specific domain.
 opts = {
@@ -6447,7 +6447,7 @@ begin
   # Get historical data for external referring domains from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_referring_domains_domain_id_history_get(site_id, domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_domains_domain_id_history_get: #{e}"
 end
 ```
@@ -6465,7 +6465,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_domains_domain_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -6509,15 +6509,15 @@ The referring pages on the chosen external domain, that have referred visitors t
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 domain_id = 789 # Integer | Id for specific domain.
 opts = {
@@ -6534,7 +6534,7 @@ begin
   # Get referring pages from an external referring domain from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_referring_domains_domain_id_referring_pages_get(site_id, domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_domains_domain_id_referring_pages_get: #{e}"
 end
 ```
@@ -6552,7 +6552,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ExternalReferringDomainPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_domains_domain_id_referring_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6597,15 +6597,15 @@ External domains that have referred visitors to your website.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -6621,7 +6621,7 @@ begin
   # Get external referring domains from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_referring_domains_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_domains_get: #{e}"
 end
 ```
@@ -6639,7 +6639,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ExternalReferringDomainList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_domains_get_with_http_info: #{e}"
 end
 ```
@@ -6683,15 +6683,15 @@ A series of historical data points showing the visits from external pages that h
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 external_page_id = 789 # Integer | Id for specific external referring page.
 opts = {
@@ -6707,7 +6707,7 @@ begin
   # Get historical data for external referring pages from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_referring_pages_external_page_id_history_get(site_id, external_page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_pages_external_page_id_history_get: #{e}"
 end
 ```
@@ -6725,7 +6725,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_pages_external_page_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -6769,15 +6769,15 @@ The landing pages by external pages that have referred visitors to your website.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 external_page_id = 789 # Integer | Id for specific external referring page.
 opts = {
@@ -6792,7 +6792,7 @@ begin
   # Get landing pages from external referring pages from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_referring_pages_external_page_id_landing_pages_get(site_id, external_page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_pages_external_page_id_landing_pages_get: #{e}"
 end
 ```
@@ -6810,7 +6810,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ExternalReferringPageLandingPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_pages_external_page_id_landing_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6853,15 +6853,15 @@ A series of historical data points showing the visits on landing pages by extern
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 external_page_id = 789 # Integer | Id for specific external referring page.
 opts = {
@@ -6877,7 +6877,7 @@ begin
   # Get historical data for landing pages from external referring pages from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_referring_pages_external_page_id_landing_pages_history_get(site_id, external_page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_pages_external_page_id_landing_pages_history_get: #{e}"
 end
 ```
@@ -6895,7 +6895,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_pages_external_page_id_landing_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -6939,15 +6939,15 @@ Pages on external domains that have referred visitors to your website.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -6963,7 +6963,7 @@ begin
   # Get external referring pages from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_referring_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_pages_get: #{e}"
 end
 ```
@@ -6981,7 +6981,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ExternalReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_referring_pages_get_with_http_info: #{e}"
 end
 ```
@@ -7025,15 +7025,15 @@ Search terms that have been used on external search engines to reach the website
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -7049,7 +7049,7 @@ begin
   # Get external search terms from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_search_terms_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_search_terms_get: #{e}"
 end
 ```
@@ -7067,7 +7067,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ExternalSearchTermList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_search_terms_get_with_http_info: #{e}"
 end
 ```
@@ -7111,15 +7111,15 @@ A series of historical data points showing the visits from search terms that hav
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_term_id = 789 # Integer | Id of a specific search term.
 opts = {
@@ -7134,7 +7134,7 @@ begin
   # Get historical data for external search terms from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_search_terms_search_term_id_history_get(site_id, search_term_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_search_terms_search_term_id_history_get: #{e}"
 end
 ```
@@ -7152,7 +7152,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_search_terms_search_term_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -7195,15 +7195,15 @@ The pages on your website reached by the particular search term.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_term_id = 789 # Integer | Id of a specific search term.
 opts = {
@@ -7219,7 +7219,7 @@ begin
   # Get external search terms pages from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_search_terms_search_term_id_pages_get(site_id, search_term_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_search_terms_search_term_id_pages_get: #{e}"
 end
 ```
@@ -7237,7 +7237,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ExternalSearchTermPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_search_terms_search_term_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -7281,15 +7281,15 @@ A series of historical data points showing the visits on pages on your website r
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_term_id = 789 # Integer | Id of a specific search term.
 page_id = 789 # Integer | Id for specific page.
@@ -7304,7 +7304,7 @@ begin
   # Get historical data for external search terms pages from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_external_search_terms_search_term_id_pages_page_id_history_get(site_id, search_term_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_search_terms_search_term_id_pages_page_id_history_get: #{e}"
 end
 ```
@@ -7322,7 +7322,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_external_search_terms_search_term_id_pages_page_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -7365,15 +7365,15 @@ Search engines that have referred visitors to your website.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -7388,7 +7388,7 @@ begin
   # Get search engines from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_search_engines_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_get: #{e}"
 end
 ```
@@ -7406,7 +7406,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SearchEngineOrganizationList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_get_with_http_info: #{e}"
 end
 ```
@@ -7449,15 +7449,15 @@ A series of historical data points showing the visits for the specified search e
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_engine_id = 789 # Integer | Id for specific search engine.
 domain_id = 789 # Integer | Id for specific domain.
@@ -7475,7 +7475,7 @@ begin
   # Get historical data for specific search engine domain link from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_domain_links_domain_link_id_history_get(site_id, search_engine_id, domain_id, domain_link_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_domain_links_domain_link_id_history_get: #{e}"
 end
 ```
@@ -7493,7 +7493,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsReferralsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_domain_links_domain_link_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -7539,15 +7539,15 @@ Get the referring links for the specified search engine domain.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_engine_id = 789 # Integer | Id for specific search engine.
 domain_id = 789 # Integer | Id for specific domain.
@@ -7564,7 +7564,7 @@ begin
   # Get links for specific search engine domain from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_domain_links_get(site_id, search_engine_id, domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_domain_links_get: #{e}"
 end
 ```
@@ -7582,7 +7582,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SearchEngineDomainLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_domain_links_get_with_http_info: #{e}"
 end
 ```
@@ -7627,15 +7627,15 @@ A series of historical data points showing the visits for the specified search e
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_engine_id = 789 # Integer | Id for specific search engine.
 domain_id = 789 # Integer | Id for specific domain.
@@ -7652,7 +7652,7 @@ begin
   # Get historical data for specific search engine domain from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_history_get(site_id, search_engine_id, domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_history_get: #{e}"
 end
 ```
@@ -7670,7 +7670,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsReferralsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -7715,15 +7715,15 @@ Get the pages that was reached from the specified search engine domain.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_engine_id = 789 # Integer | Id for specific search engine.
 domain_id = 789 # Integer | Id for specific domain.
@@ -7741,7 +7741,7 @@ begin
   # Get pages for specific search engine domain from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_pages_get(site_id, search_engine_id, domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_pages_get: #{e}"
 end
 ```
@@ -7759,7 +7759,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SearchEngineDomainPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -7805,15 +7805,15 @@ A series of historical data points showing the visits for the specified search e
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_engine_id = 789 # Integer | Id for specific search engine.
 domain_id = 789 # Integer | Id for specific domain.
@@ -7830,7 +7830,7 @@ begin
   # Get historical data for specific search engine domain page from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_pages_page_id_history_get(site_id, search_engine_id, domain_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_pages_page_id_history_get: #{e}"
 end
 ```
@@ -7848,7 +7848,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsReferralsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_domain_id_pages_page_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -7893,15 +7893,15 @@ Get the referring domains for the specified search engine.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_engine_id = 789 # Integer | Id for specific search engine.
 opts = {
@@ -7917,7 +7917,7 @@ begin
   # Get domains for search engines from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_get(site_id, search_engine_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_get: #{e}"
 end
 ```
@@ -7935,7 +7935,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SearchEngineDomainList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_domains_get_with_http_info: #{e}"
 end
 ```
@@ -7979,15 +7979,15 @@ A series of historical data points showing the visits for the specified search e
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_engine_id = 789 # Integer | Id for specific search engine.
 opts = {
@@ -8003,7 +8003,7 @@ begin
   # Get historical data for specific search engine from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_history_get(site_id, search_engine_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_history_get: #{e}"
 end
 ```
@@ -8021,7 +8021,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsReferralsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -8065,15 +8065,15 @@ Get the pages that was reached from the specified search engine.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_engine_id = 789 # Integer | Id for specific search engine.
 opts = {
@@ -8090,7 +8090,7 @@ begin
   # Get pages for specific search engine from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_pages_get(site_id, search_engine_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_pages_get: #{e}"
 end
 ```
@@ -8108,7 +8108,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SearchEnginePageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -8153,15 +8153,15 @@ A series of historical data points showing the visits for the specified search e
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 search_engine_id = 789 # Integer | Id for specific search engine.
 page_id = 789 # Integer | Id for specific page.
@@ -8177,7 +8177,7 @@ begin
   # Get historical data for specific search engine page from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_pages_page_id_history_get(site_id, search_engine_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_pages_page_id_history_get: #{e}"
 end
 ```
@@ -8195,7 +8195,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsReferralsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_search_engines_search_engine_id_pages_page_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -8239,15 +8239,15 @@ Get the social media organisations that have referred visitors to your website.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -8262,7 +8262,7 @@ begin
   # Get social media organisations from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_social_media_organisations_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_get: #{e}"
 end
 ```
@@ -8280,7 +8280,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SocialMediaOrganizationList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_get_with_http_info: #{e}"
 end
 ```
@@ -8323,15 +8323,15 @@ A series of historical data points showing the visits for the specified social m
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 social_media_organisation_id = 789 # Integer | Id for specific social media.
 domain_id = 789 # Integer | Id for specific domain.
@@ -8349,7 +8349,7 @@ begin
   # Get historical data for specific social media organisation domain link from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_domain_links_domain_link_id_history_get(site_id, social_media_organisation_id, domain_id, domain_link_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_domain_links_domain_link_id_history_get: #{e}"
 end
 ```
@@ -8367,7 +8367,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsReferralsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_domain_links_domain_link_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -8413,15 +8413,15 @@ Get the referring links for the specified social media organisation domain.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 social_media_organisation_id = 789 # Integer | Id for specific social media.
 domain_id = 789 # Integer | Id for specific domain.
@@ -8438,7 +8438,7 @@ begin
   # Get links for specific social media organisation domain from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_domain_links_get(site_id, social_media_organisation_id, domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_domain_links_get: #{e}"
 end
 ```
@@ -8456,7 +8456,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SocialMediaDomainLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_domain_links_get_with_http_info: #{e}"
 end
 ```
@@ -8501,15 +8501,15 @@ A series of historical data points showing the visits for the specified social m
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 social_media_organisation_id = 789 # Integer | Id for specific social media.
 domain_id = 789 # Integer | Id for specific domain.
@@ -8526,7 +8526,7 @@ begin
   # Get historical data for specific social media organisation domain from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_history_get(site_id, social_media_organisation_id, domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_history_get: #{e}"
 end
 ```
@@ -8544,7 +8544,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsReferralsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -8589,15 +8589,15 @@ Get the pages that was reached from the specified social media organisation doma
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 social_media_organisation_id = 789 # Integer | Id for specific social media.
 domain_id = 789 # Integer | Id for specific domain.
@@ -8615,7 +8615,7 @@ begin
   # Get pages for specific social media organisation domain from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_pages_get(site_id, social_media_organisation_id, domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_pages_get: #{e}"
 end
 ```
@@ -8633,7 +8633,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SocialMediaDomainPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -8679,15 +8679,15 @@ A series of historical data points showing the visits for the specified social m
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 social_media_organisation_id = 789 # Integer | Id for specific social media.
 domain_id = 789 # Integer | Id for specific domain.
@@ -8704,7 +8704,7 @@ begin
   # Get historical data for specific social media organisation domain page from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_pages_page_id_history_get(site_id, social_media_organisation_id, domain_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_pages_page_id_history_get: #{e}"
 end
 ```
@@ -8722,7 +8722,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsReferralsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_domain_id_pages_page_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -8767,15 +8767,15 @@ Get the referring domains for the specified social media organisation.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 social_media_organisation_id = 789 # Integer | Id for specific social media.
 opts = {
@@ -8791,7 +8791,7 @@ begin
   # Get domains for social media organisation from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_get(site_id, social_media_organisation_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_get: #{e}"
 end
 ```
@@ -8809,7 +8809,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SocialMediaDomainList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_domains_get_with_http_info: #{e}"
 end
 ```
@@ -8853,15 +8853,15 @@ A series of historical data points showing the visits for the specified social m
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 social_media_organisation_id = 789 # Integer | Id for specific social media.
 opts = {
@@ -8877,7 +8877,7 @@ begin
   # Get historical data for specific social media organisation from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_history_get(site_id, social_media_organisation_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_history_get: #{e}"
 end
 ```
@@ -8895,7 +8895,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsReferralsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -8939,15 +8939,15 @@ Get the pages that was reached from the specified social media organisation.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 social_media_organisation_id = 789 # Integer | Id for specific social media.
 opts = {
@@ -8964,7 +8964,7 @@ begin
   # Get pages for specific social media organisation from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_pages_get(site_id, social_media_organisation_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_pages_get: #{e}"
 end
 ```
@@ -8982,7 +8982,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SocialMediaPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -9027,15 +9027,15 @@ A series of historical data points showing the visits for the specified social m
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 social_media_organisation_id = 789 # Integer | Id for specific social media.
 page_id = 789 # Integer | Id for specific page.
@@ -9051,7 +9051,7 @@ begin
   # Get historical data for specific social media organisation page from traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_pages_page_id_history_get(site_id, social_media_organisation_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_pages_page_id_history_get: #{e}"
 end
 ```
@@ -9069,7 +9069,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisitsReferralsGraphItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_social_media_organisations_social_media_organisation_id_pages_page_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -9113,15 +9113,15 @@ Get an overview of traffic sources
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -9136,7 +9136,7 @@ begin
   # Get an overview of traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_summary_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_summary_get: #{e}"
 end
 ```
@@ -9154,7 +9154,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <TrafficSourceSummaryList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_summary_get_with_http_info: #{e}"
 end
 ```
@@ -9197,15 +9197,15 @@ Get historical data for traffic sources
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -9220,7 +9220,7 @@ begin
   # Get historical data for traffic sources
   result = api_instance.sites_site_id_analytics_traffic_sources_summary_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_summary_history_get: #{e}"
 end
 ```
@@ -9238,7 +9238,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <TrafficSourceSummaryTrendGraphList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_traffic_sources_summary_history_get_with_http_info: #{e}"
 end
 ```
@@ -9281,15 +9281,15 @@ Get the surveys created for your account.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -9302,7 +9302,7 @@ begin
   # Get surveys from user feedback
   result = api_instance.sites_site_id_analytics_user_feedback_surveys_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_get: #{e}"
 end
 ```
@@ -9320,7 +9320,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SurveyList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_get_with_http_info: #{e}"
 end
 ```
@@ -9361,15 +9361,15 @@ Get the feedbacks received for the specified survey.  Comments and ratings from 
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 survey_id = 789 # Integer | Id of a specific survey.
 opts = {
@@ -9386,7 +9386,7 @@ begin
   # Get feedbacks for specific survey from user feedback
   result = api_instance.sites_site_id_analytics_user_feedback_surveys_survey_id_feedbacks_get(site_id, survey_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_feedbacks_get: #{e}"
 end
 ```
@@ -9404,7 +9404,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <FeedbackPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_feedbacks_get_with_http_info: #{e}"
 end
 ```
@@ -9449,15 +9449,15 @@ A series of historical data points showing the satisfaction scores and amount of
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 survey_id = 789 # Integer | Id of a specific survey.
 opts = {
@@ -9473,7 +9473,7 @@ begin
   # Get historical data for specific survey from user feedback
   result = api_instance.sites_site_id_analytics_user_feedback_surveys_survey_id_feedbacks_history_get(site_id, survey_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_feedbacks_history_get: #{e}"
 end
 ```
@@ -9491,7 +9491,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <FeedbackOverviewGraphSliceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_feedbacks_history_get_with_http_info: #{e}"
 end
 ```
@@ -9535,15 +9535,15 @@ Get the feedback that has been ignored.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 survey_id = 789 # Integer | Id of a specific survey.
 opts = {
@@ -9559,7 +9559,7 @@ begin
   # Get ignored feedbacks for specific survey from user feedback
   result = api_instance.sites_site_id_analytics_user_feedback_surveys_survey_id_ignored_feedbacks_get(site_id, survey_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_ignored_feedbacks_get: #{e}"
 end
 ```
@@ -9577,7 +9577,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <FeedbackIgnoredList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_ignored_feedbacks_get_with_http_info: #{e}"
 end
 ```
@@ -9621,15 +9621,15 @@ Get the pages that have received feedback..
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 survey_id = 789 # Integer | Id of a specific survey.
 opts = {
@@ -9646,7 +9646,7 @@ begin
   # Get pages with feedback for specific survey from user feedback
   result = api_instance.sites_site_id_analytics_user_feedback_surveys_survey_id_pages_with_feedback_get(site_id, survey_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_pages_with_feedback_get: #{e}"
 end
 ```
@@ -9664,7 +9664,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithFeedbackList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_pages_with_feedback_get_with_http_info: #{e}"
 end
 ```
@@ -9709,15 +9709,15 @@ Get the feedbacks received for the specified survey at the specified page.  Comm
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 survey_id = 789 # Integer | Id of a specific survey.
 page_id = 789 # Integer | Id for specific page.
@@ -9734,7 +9734,7 @@ begin
   # Get ratings for specific survey page with feedback from user feedback
   result = api_instance.sites_site_id_analytics_user_feedback_surveys_survey_id_pages_with_feedback_page_id_ratings_get(site_id, survey_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_pages_with_feedback_page_id_ratings_get: #{e}"
 end
 ```
@@ -9752,7 +9752,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <FeedbackOnPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_pages_with_feedback_page_id_ratings_get_with_http_info: #{e}"
 end
 ```
@@ -9797,15 +9797,15 @@ A series of historical data points showing the amount of ratings for the specifi
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 survey_id = 789 # Integer | Id of a specific survey.
 page_id = 789 # Integer | Id for specific page.
@@ -9821,7 +9821,7 @@ begin
   # Get historical rating data for specific survey page with feedback from user feedback
   result = api_instance.sites_site_id_analytics_user_feedback_surveys_survey_id_pages_with_feedback_page_id_ratings_history_get(site_id, survey_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_pages_with_feedback_page_id_ratings_history_get: #{e}"
 end
 ```
@@ -9839,7 +9839,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <FeedbackRatingGraphList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_user_feedback_surveys_survey_id_pages_with_feedback_page_id_ratings_history_get_with_http_info: #{e}"
 end
 ```
@@ -9883,15 +9883,15 @@ Get the versions of the specified browsers that have been used to visit your sit
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 browser_name = 'browser_name_example' # String | Name of specific browser (ie. \"Chrome\", \"Firefox\" etc)
 opts = {
@@ -9907,7 +9907,7 @@ begin
   # Get versions for specific browser from visitors
   result = api_instance.sites_site_id_analytics_visitors_browsers_browser_names_browser_name_versions_get(site_id, browser_name, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_browsers_browser_names_browser_name_versions_get: #{e}"
 end
 ```
@@ -9925,7 +9925,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BrowserVersionList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_browsers_browser_names_browser_name_versions_get_with_http_info: #{e}"
 end
 ```
@@ -9969,15 +9969,15 @@ A series of historical data points showing the amount of visits for a series of 
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 browser_name = 'browser_name_example' # String | Name of specific browser (ie. \"Chrome\", \"Firefox\" etc)
 opts = {
@@ -9993,7 +9993,7 @@ begin
   # Get historical data for a specific browsers versions from visitors
   result = api_instance.sites_site_id_analytics_visitors_browsers_browser_names_browser_name_versions_history_get(site_id, browser_name, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_browsers_browser_names_browser_name_versions_history_get: #{e}"
 end
 ```
@@ -10011,7 +10011,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BrowserVersionGraphSliceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_browsers_browser_names_browser_name_versions_history_get_with_http_info: #{e}"
 end
 ```
@@ -10055,15 +10055,15 @@ Get the browsers used by your visitors.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -10078,7 +10078,7 @@ begin
   # Get browsers from visitors
   result = api_instance.sites_site_id_analytics_visitors_browsers_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_browsers_get: #{e}"
 end
 ```
@@ -10096,7 +10096,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BrowserList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_browsers_get_with_http_info: #{e}"
 end
 ```
@@ -10139,15 +10139,15 @@ A series of historical data points showing the amount of visits for a series of 
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -10162,7 +10162,7 @@ begin
   # Get historical data for browsers from visitors
   result = api_instance.sites_site_id_analytics_visitors_browsers_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_browsers_history_get: #{e}"
 end
 ```
@@ -10180,7 +10180,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BrowserGraphSliceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_browsers_history_get_with_http_info: #{e}"
 end
 ```
@@ -10223,15 +10223,15 @@ Overview of where visitors come from divided by region per country.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 country_id = 789 # Integer | Id for specific country.
 opts = {
@@ -10248,7 +10248,7 @@ begin
   # Get regions of countries from visitors
   result = api_instance.sites_site_id_analytics_visitors_countries_country_id_regions_get(site_id, country_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_countries_country_id_regions_get: #{e}"
 end
 ```
@@ -10266,7 +10266,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RegionList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_countries_country_id_regions_get_with_http_info: #{e}"
 end
 ```
@@ -10311,15 +10311,15 @@ Overview of where visitors come from divided by city per region per country.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 country_id = 789 # Integer | Id for specific country.
 region_id = 789 # Integer | Id for specific region.
@@ -10337,7 +10337,7 @@ begin
   # Get cities of regions of countries from visitors
   result = api_instance.sites_site_id_analytics_visitors_countries_country_id_regions_region_id_cities_get(site_id, country_id, region_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_countries_country_id_regions_region_id_cities_get: #{e}"
 end
 ```
@@ -10355,7 +10355,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CityList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_countries_country_id_regions_region_id_cities_get_with_http_info: #{e}"
 end
 ```
@@ -10401,15 +10401,15 @@ Overview of where visitors come from divided by country.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -10425,7 +10425,7 @@ begin
   # Get countries from visitors
   result = api_instance.sites_site_id_analytics_visitors_countries_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_countries_get: #{e}"
 end
 ```
@@ -10443,7 +10443,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CountryList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_countries_get_with_http_info: #{e}"
 end
 ```
@@ -10487,15 +10487,15 @@ See which type of device is being utilised the most. The category \"Desktop\" in
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -10510,7 +10510,7 @@ begin
   # Get devices from visitors
   result = api_instance.sites_site_id_analytics_visitors_devices_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_devices_get: #{e}"
 end
 ```
@@ -10528,7 +10528,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DeviceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_devices_get_with_http_info: #{e}"
 end
 ```
@@ -10571,15 +10571,15 @@ A series of historical data points showing the devices from visitors.  When view
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -10594,7 +10594,7 @@ begin
   # Get historical data for devices from visitors
   result = api_instance.sites_site_id_analytics_visitors_devices_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_devices_history_get: #{e}"
 end
 ```
@@ -10612,7 +10612,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DeviceGraphSliceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_devices_history_get_with_http_info: #{e}"
 end
 ```
@@ -10655,15 +10655,15 @@ A full list of the operating systems that visitors are using.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -10678,7 +10678,7 @@ begin
   # Get operating systems from visitors
   result = api_instance.sites_site_id_analytics_visitors_operating_systems_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_operating_systems_get: #{e}"
 end
 ```
@@ -10696,7 +10696,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OperatingSystemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_operating_systems_get_with_http_info: #{e}"
 end
 ```
@@ -10739,15 +10739,15 @@ A series of historical data points showing the operating sytems from visitors.  
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -10762,7 +10762,7 @@ begin
   # Get historical data for operating systems from visitors
   result = api_instance.sites_site_id_analytics_visitors_operating_systems_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_operating_systems_history_get: #{e}"
 end
 ```
@@ -10780,7 +10780,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OperatingSystemGraphSliceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_operating_systems_history_get_with_http_info: #{e}"
 end
 ```
@@ -10823,15 +10823,15 @@ Gets a version breakdown of a operating system.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 os_family = 'os_family_example' # String | Name of specific OS (ie. \"Windows\", \"iOS\" etc)
 opts = {
@@ -10847,7 +10847,7 @@ begin
   # Get versions of operating systems from visitors
   result = api_instance.sites_site_id_analytics_visitors_operating_systems_os_families_os_family_versions_get(site_id, os_family, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_operating_systems_os_families_os_family_versions_get: #{e}"
 end
 ```
@@ -10865,7 +10865,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OperatingSystemVersionList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_operating_systems_os_families_os_family_versions_get_with_http_info: #{e}"
 end
 ```
@@ -10909,15 +10909,15 @@ A series of historical data points showing the amount of visits for a series of 
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 os_family = 'os_family_example' # String | Name of specific OS (ie. \"Windows\", \"iOS\" etc)
 opts = {
@@ -10933,7 +10933,7 @@ begin
   # Get historical data for a specific OS's versions from visitors
   result = api_instance.sites_site_id_analytics_visitors_operating_systems_os_families_os_family_versions_history_get(site_id, os_family, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_operating_systems_os_families_os_family_versions_history_get: #{e}"
 end
 ```
@@ -10951,7 +10951,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OperatingSystemVersionGraphSliceList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_operating_systems_os_families_os_family_versions_history_get_with_http_info: #{e}"
 end
 ```
@@ -10995,15 +10995,15 @@ Get a list of visiting organisations, identified through IP address.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -11019,7 +11019,7 @@ begin
   # Get organisations from visitors
   result = api_instance.sites_site_id_analytics_visitors_organisations_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_organisations_get: #{e}"
 end
 ```
@@ -11037,7 +11037,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OrganisationList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_organisations_get_with_http_info: #{e}"
 end
 ```
@@ -11081,15 +11081,15 @@ Get the IP addresses identified as belonging to a specific organisation from vis
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 organisation_id = 789 # Integer | Id for specific organisation.
 opts = {
@@ -11105,7 +11105,7 @@ begin
   # Get a list IP addresses for a specific organisation from visitors
   result = api_instance.sites_site_id_analytics_visitors_organisations_organisation_id_ip_addresses_get(site_id, organisation_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_organisations_organisation_id_ip_addresses_get: #{e}"
 end
 ```
@@ -11123,7 +11123,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OrganisationIpList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_organisations_organisation_id_ip_addresses_get_with_http_info: #{e}"
 end
 ```
@@ -11167,15 +11167,15 @@ All pages visited by a specific organisation.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 organisation_id = 789 # Integer | Id for specific organisation.
 opts = {
@@ -11191,7 +11191,7 @@ begin
   # Get the pages visited by a specific organisation from visitors
   result = api_instance.sites_site_id_analytics_visitors_organisations_organisation_id_pages_get(site_id, organisation_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_organisations_organisation_id_pages_get: #{e}"
 end
 ```
@@ -11209,7 +11209,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OrganisationPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_organisations_organisation_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -11253,15 +11253,15 @@ Get a list of screen resolutions that visitors are using.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::AnalyticsApi.new
+api_instance = SiteImproveAPIClient::AnalyticsApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   filter_id: 789, # Integer | Id for specific filter.
@@ -11276,7 +11276,7 @@ begin
   # Get screen resolutions from visitors
   result = api_instance.sites_site_id_analytics_visitors_screen_resolutions_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_screen_resolutions_get: #{e}"
 end
 ```
@@ -11294,7 +11294,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ResolutionList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling AnalyticsApi->sites_site_id_analytics_visitors_screen_resolutions_get_with_http_info: #{e}"
 end
 ```

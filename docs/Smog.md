@@ -1,4 +1,4 @@
-# SiteImproveApiClient::Smog
+# SiteImproveAPIClient::Smog
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::Smog.new(
+instance = SiteImproveAPIClient::Smog.new(
   poly_syllabic_words_smog: null,
   poly_syllabic_words_unique_smog: null
 )

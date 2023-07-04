@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ArchivedPolicyOnAccountList
+# SiteImproveAPIClient::ArchivedPolicyOnAccountList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ArchivedPolicyOnAccountList.new(
+instance = SiteImproveAPIClient::ArchivedPolicyOnAccountList.new(
   items: null,
   total_items: null,
   total_pages: null,

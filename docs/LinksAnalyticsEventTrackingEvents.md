@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksAnalyticsEventTrackingEvents
+# SiteImproveAPIClient::LinksAnalyticsEventTrackingEvents
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksAnalyticsEventTrackingEvents.new(
+instance = SiteImproveAPIClient::LinksAnalyticsEventTrackingEvents.new(
   all: null,
   pages: null
 )

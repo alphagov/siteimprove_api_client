@@ -1,4 +1,4 @@
-# SiteImproveApiClient::InternalSearch
+# SiteImproveAPIClient::InternalSearch
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::InternalSearch.new(
+instance = SiteImproveAPIClient::InternalSearch.new(
   id: null,
   pages: null,
   search_exits: null,

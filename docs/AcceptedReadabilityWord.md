@@ -1,4 +1,4 @@
-# SiteImproveApiClient::AcceptedReadabilityWord
+# SiteImproveAPIClient::AcceptedReadabilityWord
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::AcceptedReadabilityWord.new(
+instance = SiteImproveAPIClient::AcceptedReadabilityWord.new(
   id: null,
   accepted_word: null,
   created_by: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SpecificIssuePage
+# SiteImproveAPIClient::SpecificIssuePage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SpecificIssuePage.new(
+instance = SiteImproveAPIClient::SpecificIssuePage.new(
   id: null,
   title: null,
   url: null,

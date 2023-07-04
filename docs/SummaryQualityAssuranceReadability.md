@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SummaryQualityAssuranceReadability
+# SiteImproveAPIClient::SummaryQualityAssuranceReadability
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SummaryQualityAssuranceReadability.new(
+instance = SiteImproveAPIClient::SummaryQualityAssuranceReadability.new(
   bucket: null,
   rank: null
 )

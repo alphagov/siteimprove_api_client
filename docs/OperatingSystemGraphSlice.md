@@ -1,4 +1,4 @@
-# SiteImproveApiClient::OperatingSystemGraphSlice
+# SiteImproveAPIClient::OperatingSystemGraphSlice
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::OperatingSystemGraphSlice.new(
+instance = SiteImproveAPIClient::OperatingSystemGraphSlice.new(
   data: null,
   timestamp: null
 )

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::TouchscreenReady
+# SiteImproveAPIClient::TouchscreenReady
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::TouchscreenReady.new(
+instance = SiteImproveAPIClient::TouchscreenReady.new(
   complexity: null,
   fixed: null,
   issue_name: null,

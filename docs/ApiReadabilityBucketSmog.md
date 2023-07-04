@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ApiReadabilityBucketSmog
+# SiteImproveAPIClient::ApiReadabilityBucketSmog
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ApiReadabilityBucketSmog.new(
+instance = SiteImproveAPIClient::ApiReadabilityBucketSmog.new(
   id: null,
   bucket: null,
   max: null,

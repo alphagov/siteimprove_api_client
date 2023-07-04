@@ -1,4 +1,4 @@
-# SiteImproveApiClient::A11YSingleIssueHistoryValueList
+# SiteImproveAPIClient::A11YSingleIssueHistoryValueList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::A11YSingleIssueHistoryValueList.new(
+instance = SiteImproveAPIClient::A11YSingleIssueHistoryValueList.new(
   items: null,
   total_items: null,
   total_pages: null,

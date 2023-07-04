@@ -1,4 +1,4 @@
-# SiteImproveApiClient::DuplicatePageTitleDetails
+# SiteImproveAPIClient::DuplicatePageTitleDetails
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::DuplicatePageTitleDetails.new(
+instance = SiteImproveAPIClient::DuplicatePageTitleDetails.new(
   id: null,
   title: null,
   url: null,

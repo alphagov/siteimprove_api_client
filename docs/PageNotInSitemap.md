@@ -1,4 +1,4 @@
-# SiteImproveApiClient::PageNotInSitemap
+# SiteImproveAPIClient::PageNotInSitemap
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::PageNotInSitemap.new(
+instance = SiteImproveAPIClient::PageNotInSitemap.new(
   id: null,
   title: null,
   url: null,

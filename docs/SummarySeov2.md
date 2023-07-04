@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SummarySeov2
+# SiteImproveAPIClient::SummarySeov2
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SummarySeov2.new(
+instance = SiteImproveAPIClient::SummarySeov2.new(
   content_issues: null,
   mobile_issues: null,
   technical_issues: null,

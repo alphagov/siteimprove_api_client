@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksQualityAssuranceReadabilityTestsFleschKincaidReadingEase
+# SiteImproveAPIClient::LinksQualityAssuranceReadabilityTestsFleschKincaidReadingEase
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksQualityAssuranceReadabilityTestsFleschKincaidReadingEase.new(
+instance = SiteImproveAPIClient::LinksQualityAssuranceReadabilityTestsFleschKincaidReadingEase.new(
   excluded_pages: null,
   pages: null,
   scores: null

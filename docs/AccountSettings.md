@@ -1,4 +1,4 @@
-# SiteImproveApiClient::AccountSettings
+# SiteImproveAPIClient::AccountSettings
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::AccountSettings.new(
+instance = SiteImproveAPIClient::AccountSettings.new(
   account_name: null,
   _links: null
 )

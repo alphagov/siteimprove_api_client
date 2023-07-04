@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ContentOptimizationTargetUrlCompetingContentPage
+# SiteImproveAPIClient::ContentOptimizationTargetUrlCompetingContentPage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ContentOptimizationTargetUrlCompetingContentPage.new(
+instance = SiteImproveAPIClient::ContentOptimizationTargetUrlCompetingContentPage.new(
   id: null,
   title: null,
   url: null,

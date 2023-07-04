@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ActivityPlanHistoryItem
+# SiteImproveAPIClient::ActivityPlanHistoryItem
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ActivityPlanHistoryItem.new(
+instance = SiteImproveAPIClient::ActivityPlanHistoryItem.new(
   average_keyword_position: null,
   estimated_traffic: null,
   keywords: null,

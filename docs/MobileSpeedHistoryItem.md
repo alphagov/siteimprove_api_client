@@ -1,4 +1,4 @@
-# SiteImproveApiClient::MobileSpeedHistoryItem
+# SiteImproveAPIClient::MobileSpeedHistoryItem
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::MobileSpeedHistoryItem.new(
+instance = SiteImproveAPIClient::MobileSpeedHistoryItem.new(
   speed: null,
   timestamp: null
 )

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::FontsizeLegibility
+# SiteImproveAPIClient::FontsizeLegibility
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::FontsizeLegibility.new(
+instance = SiteImproveAPIClient::FontsizeLegibility.new(
   complexity: null,
   fixed: null,
   issue_name: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::BrowserGraphSlice
+# SiteImproveAPIClient::BrowserGraphSlice
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::BrowserGraphSlice.new(
+instance = SiteImproveAPIClient::BrowserGraphSlice.new(
   data: null,
   timestamp: null
 )

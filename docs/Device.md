@@ -1,4 +1,4 @@
-# SiteImproveApiClient::Device
+# SiteImproveAPIClient::Device
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::Device.new(
+instance = SiteImproveAPIClient::Device.new(
   bounce_rate: null,
   device_type: null,
   visits: null

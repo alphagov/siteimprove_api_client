@@ -1,4 +1,4 @@
-# SiteImproveApiClient::QualityAssuranceApi
+# SiteImproveAPIClient::QualityAssuranceApi
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -120,15 +120,15 @@ All capture tags and the pages on which they have been detected
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -141,7 +141,7 @@ begin
   # Get capture tags from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_capture_tags_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_capture_tags_get: #{e}"
 end
 ```
@@ -159,7 +159,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BodyTagNameList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_capture_tags_get_with_http_info: #{e}"
 end
 ```
@@ -200,15 +200,15 @@ The occurrences of a specific capture tag.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 tag_name_id = 789 # Integer | Id for specific tag.
 opts = {
@@ -221,7 +221,7 @@ begin
   # Get capture tags occurrences from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_capture_tags_tag_name_id_occurrences_get(site_id, tag_name_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_capture_tags_tag_name_id_occurrences_get: #{e}"
 end
 ```
@@ -239,7 +239,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BodyTagNameContentList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_capture_tags_tag_name_id_occurrences_get_with_http_info: #{e}"
 end
 ```
@@ -280,15 +280,15 @@ The pages for a specific capture tag occurence.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 tag_name_id = 789 # Integer | Id for specific tag.
 tag_value_id = 789 # Integer | Id for specific tag value.
@@ -303,7 +303,7 @@ begin
   # Get capture tags occurrences' pages from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_capture_tags_tag_name_id_values_tag_value_id_pages_get(site_id, tag_name_id, tag_value_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_capture_tags_tag_name_id_values_tag_value_id_pages_get: #{e}"
 end
 ```
@@ -321,7 +321,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_capture_tags_tag_name_id_values_tag_value_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -364,15 +364,15 @@ All pages with the detected phone number.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 css_id = 789 # Integer | Id of the CSS file
 opts = {
@@ -386,7 +386,7 @@ begin
   # Get pages with css from css inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_css_css_id_pages_with_css_get(site_id, css_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_css_css_id_pages_with_css_get: #{e}"
 end
 ```
@@ -404,7 +404,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_css_css_id_pages_with_css_get_with_http_info: #{e}"
 end
 ```
@@ -446,15 +446,15 @@ All pages with the detected phone number.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 css_id = 789 # Integer | Id of the CSS file
 opts = {
@@ -468,7 +468,7 @@ begin
   # Get pages without css from css inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_css_css_id_pages_without_css_get(site_id, css_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_css_css_id_pages_without_css_get: #{e}"
 end
 ```
@@ -486,7 +486,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_css_css_id_pages_without_css_get_with_http_info: #{e}"
 end
 ```
@@ -528,15 +528,15 @@ All linked CSS assets and the pages on which they have been detected on the site
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -550,7 +550,7 @@ begin
   # Get css assets from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_css_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_css_get: #{e}"
 end
 ```
@@ -568,7 +568,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CssFileList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_css_get_with_http_info: #{e}"
 end
 ```
@@ -610,15 +610,15 @@ A full list of all detected documents.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -633,7 +633,7 @@ begin
   # Get documents from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_documents_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_documents_get: #{e}"
 end
 ```
@@ -651,7 +651,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DocumentList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_documents_get_with_http_info: #{e}"
 end
 ```
@@ -694,15 +694,15 @@ All pages with the detected phone number.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 email_address_id = 789 # Integer | Id for specific email address.
 opts = {
@@ -716,7 +716,7 @@ begin
   # Get pages with email from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_email_addresses_email_address_id_pages_get(site_id, email_address_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_email_addresses_email_address_id_pages_get: #{e}"
 end
 ```
@@ -734,7 +734,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_email_addresses_email_address_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -776,15 +776,15 @@ All email addresses that have been detected on the site.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -798,7 +798,7 @@ begin
   # Get email addresses from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_email_addresses_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_email_addresses_get: #{e}"
 end
 ```
@@ -816,7 +816,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EmailAddressList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_email_addresses_get_with_http_info: #{e}"
 end
 ```
@@ -858,15 +858,15 @@ Inventory history with the total count after each crawl.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -878,7 +878,7 @@ begin
   # Get history from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_history_get: #{e}"
 end
 ```
@@ -896,7 +896,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <InventoryHistoryItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_history_get_with_http_info: #{e}"
 end
 ```
@@ -936,15 +936,15 @@ Text used in relation to links.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -958,7 +958,7 @@ begin
   # Get link texts from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_link_texts_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_link_texts_get: #{e}"
 end
 ```
@@ -976,7 +976,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinkTextList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_link_texts_get_with_http_info: #{e}"
 end
 ```
@@ -1018,15 +1018,15 @@ All pages with the link text.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 text_id = 789 # Integer | Id for specific (link) text.
 opts = {
@@ -1040,7 +1040,7 @@ begin
   # Get pages with link text from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_link_texts_text_id_pages_get(site_id, text_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_link_texts_text_id_pages_get: #{e}"
 end
 ```
@@ -1058,7 +1058,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageForLinktextList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_link_texts_text_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1100,15 +1100,15 @@ All links detected on the site.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1122,7 +1122,7 @@ begin
   # Get links from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_links_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_links_get: #{e}"
 end
 ```
@@ -1140,7 +1140,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_links_get_with_http_info: #{e}"
 end
 ```
@@ -1182,15 +1182,15 @@ All documents containing this particular link.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -1202,7 +1202,7 @@ begin
   # Get documents with link
   result = api_instance.sites_site_id_quality_assurance_inventory_links_link_id_documents_get(site_id, link_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_links_link_id_documents_get: #{e}"
 end
 ```
@@ -1220,7 +1220,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DocumentWithLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_links_link_id_documents_get_with_http_info: #{e}"
 end
 ```
@@ -1260,15 +1260,15 @@ All pages with the detected link.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -1282,7 +1282,7 @@ begin
   # Get pages with link
   result = api_instance.sites_site_id_quality_assurance_inventory_links_link_id_pages_get(site_id, link_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_links_link_id_pages_get: #{e}"
 end
 ```
@@ -1300,7 +1300,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_links_link_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1342,15 +1342,15 @@ All media files on the site.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1364,7 +1364,7 @@ begin
   # Get media files from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_media_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_media_get: #{e}"
 end
 ```
@@ -1382,7 +1382,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MediaList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_media_get_with_http_info: #{e}"
 end
 ```
@@ -1424,15 +1424,15 @@ All meta tags found anywhere on the site.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1446,7 +1446,7 @@ begin
   # Get meta tags from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_meta_tags_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_meta_tags_get: #{e}"
 end
 ```
@@ -1464,7 +1464,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTagNameList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_meta_tags_get_with_http_info: #{e}"
 end
 ```
@@ -1506,15 +1506,15 @@ All occurrences of the specific meta tag.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 meta_name_id = 789 # Integer | Id for specific meta name.
 opts = {
@@ -1528,7 +1528,7 @@ begin
   # Get meta tag contents
   result = api_instance.sites_site_id_quality_assurance_inventory_meta_tags_meta_name_id_contents_get(site_id, meta_name_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_meta_tags_meta_name_id_contents_get: #{e}"
 end
 ```
@@ -1546,7 +1546,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTagNameContentList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_meta_tags_meta_name_id_contents_get_with_http_info: #{e}"
 end
 ```
@@ -1588,15 +1588,15 @@ All pages with the detected phone number
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 meta_name_id = 789 # Integer | Id for specific meta name.
 meta_content_id = 789 # Integer | Id for specific meta content.
@@ -1611,7 +1611,7 @@ begin
   # Get meta tag pages
   result = api_instance.sites_site_id_quality_assurance_inventory_meta_tags_meta_name_id_contents_meta_content_id_pages_get(site_id, meta_name_id, meta_content_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_meta_tags_meta_name_id_contents_meta_content_id_pages_get: #{e}"
 end
 ```
@@ -1629,7 +1629,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_meta_tags_meta_name_id_contents_meta_content_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1672,15 +1672,15 @@ HTML pages with referring page information and the date each page was first dete
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1695,7 +1695,7 @@ begin
   # Get pages from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_pages_get: #{e}"
 end
 ```
@@ -1713,7 +1713,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1756,15 +1756,15 @@ All referring pages to this specific page.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -1778,7 +1778,7 @@ begin
   # Get referring pages for page in inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_pages_page_id_referring_pages_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_pages_page_id_referring_pages_get: #{e}"
 end
 ```
@@ -1796,7 +1796,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageForPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_pages_page_id_referring_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1838,15 +1838,15 @@ During the crawl a check is made for identification numbers relating to where th
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1860,7 +1860,7 @@ begin
   # Get personal id numbers from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_personal_id_numbers_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_personal_id_numbers_get: #{e}"
 end
 ```
@@ -1878,7 +1878,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PersonalIdNumberList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_personal_id_numbers_get_with_http_info: #{e}"
 end
 ```
@@ -1920,15 +1920,15 @@ All documents containing this specific personal id number.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 personal_id_number_id = 789 # Integer | Id for specific personal id.
 opts = {
@@ -1941,7 +1941,7 @@ begin
   # Get documents with personal id numbers from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_personal_id_numbers_personal_id_number_id_documents_get(site_id, personal_id_number_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_personal_id_numbers_personal_id_number_id_documents_get: #{e}"
 end
 ```
@@ -1959,7 +1959,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PersonalIdNumberDocumentList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_personal_id_numbers_personal_id_number_id_documents_get_with_http_info: #{e}"
 end
 ```
@@ -2000,15 +2000,15 @@ All pages containing this specific personal id number.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 personal_id_number_id = 789 # Integer | Id for specific personal id.
 opts = {
@@ -2022,7 +2022,7 @@ begin
   # Get pages with personal id numbers from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_personal_id_numbers_personal_id_number_id_pages_get(site_id, personal_id_number_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_personal_id_numbers_personal_id_number_id_pages_get: #{e}"
 end
 ```
@@ -2040,7 +2040,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageForPersonalIdNumberList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_personal_id_numbers_personal_id_number_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2082,15 +2082,15 @@ Phone numbers and the pages on which they have been detected - useful when numbe
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2104,7 +2104,7 @@ begin
   # Get phone numbers from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_phone_numbers_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_phone_numbers_get: #{e}"
 end
 ```
@@ -2122,7 +2122,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PhoneNumberList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_phone_numbers_get_with_http_info: #{e}"
 end
 ```
@@ -2164,15 +2164,15 @@ All pages with the detected phone number
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 phone_number_id = 789 # Integer | Id for specific phone number.
 opts = {
@@ -2186,7 +2186,7 @@ begin
   # Get pages with phone number from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_phone_numbers_phone_number_id_pages_get(site_id, phone_number_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_phone_numbers_phone_number_id_pages_get: #{e}"
 end
 ```
@@ -2204,7 +2204,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_phone_numbers_phone_number_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2246,15 +2246,15 @@ JavaScript files and the pages on which they have been detected – especially u
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2268,7 +2268,7 @@ begin
   # Get java scripts from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_scripts_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_scripts_get: #{e}"
 end
 ```
@@ -2286,7 +2286,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <JavaScriptList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_scripts_get_with_http_info: #{e}"
 end
 ```
@@ -2328,15 +2328,15 @@ All pages with the specific JavaScript file.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 script_id = 789 # Integer | Id for specific script.
 opts = {
@@ -2350,7 +2350,7 @@ begin
   # Get pages with java script from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_scripts_script_id_pages_with_script_get(site_id, script_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_scripts_script_id_pages_with_script_get: #{e}"
 end
 ```
@@ -2368,7 +2368,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_scripts_script_id_pages_with_script_get_with_http_info: #{e}"
 end
 ```
@@ -2410,15 +2410,15 @@ All pages without this specific JavaScript file.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 script_id = 789 # Integer | Id for specific script.
 opts = {
@@ -2432,7 +2432,7 @@ begin
   # Get pages without java script from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_scripts_script_id_pages_without_script_get(site_id, script_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_scripts_script_id_pages_without_script_get: #{e}"
 end
 ```
@@ -2450,7 +2450,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_scripts_script_id_pages_without_script_get_with_http_info: #{e}"
 end
 ```
@@ -2492,15 +2492,15 @@ All pages containing this specific trademark.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 trademark_id = 789 # Integer | Id for specific trademark.
 opts = {
@@ -2514,7 +2514,7 @@ begin
   # Get pages with trademark from inventory
   result = api_instance.sites_site_id_quality_assurance_inventory_trademarks_trademark_id_pages_get(site_id, trademark_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_trademarks_trademark_id_pages_get: #{e}"
 end
 ```
@@ -2532,7 +2532,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WithContentPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_inventory_trademarks_trademark_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2574,15 +2574,15 @@ All unique links that are broken, and the pages where they are located - Broken 
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2596,7 +2596,7 @@ begin
   # Get broken links
   result = api_instance.sites_site_id_quality_assurance_links_broken_links_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_broken_links_get: #{e}"
 end
 ```
@@ -2614,7 +2614,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BrokenPageLinkList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_broken_links_get_with_http_info: #{e}"
 end
 ```
@@ -2656,15 +2656,15 @@ All unique links that are broken, and the pages where they are located - Broken 
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2677,7 +2677,7 @@ begin
   # Get broken links in documents
   result = api_instance.sites_site_id_quality_assurance_links_broken_links_in_documents_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_broken_links_in_documents_get: #{e}"
 end
 ```
@@ -2695,7 +2695,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BrokenDocumentLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_broken_links_in_documents_get_with_http_info: #{e}"
 end
 ```
@@ -2736,15 +2736,15 @@ Get all the documents that contains this specific broken link.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -2757,7 +2757,7 @@ begin
   # Get documents with broken link
   result = api_instance.sites_site_id_quality_assurance_links_broken_links_in_documents_link_id_documents_get(site_id, link_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_broken_links_in_documents_link_id_documents_get: #{e}"
 end
 ```
@@ -2775,7 +2775,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DocumentWithSpecificBrokenLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_broken_links_in_documents_link_id_documents_get_with_http_info: #{e}"
 end
 ```
@@ -2816,15 +2816,15 @@ All pages containing this specific broken link.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -2838,7 +2838,7 @@ begin
   # Get pages with broken link
   result = api_instance.sites_site_id_quality_assurance_links_broken_links_link_id_pages_get(site_id, link_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_broken_links_link_id_pages_get: #{e}"
 end
 ```
@@ -2856,7 +2856,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageForBrokenLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_broken_links_link_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2892,21 +2892,21 @@ end
 
 Get dismissed links
 
-NOTRANSLATION: TK: SIAPI_ROUTE_DESCRIPTION_GET / /sites/{site_id:long}/quality_assurance/links/dismissed_links ¤
+Dismissed links will not be taken in consideration as broken link and no longer affect your DCI score.  Include also links that have been ignored – errors with these links will no longer be highlighted within QA. 
 
 ### Examples
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2920,7 +2920,7 @@ begin
   # Get dismissed links
   result = api_instance.sites_site_id_quality_assurance_links_dismissed_links_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_dismissed_links_get: #{e}"
 end
 ```
@@ -2938,7 +2938,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DismissedPageLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_dismissed_links_get_with_http_info: #{e}"
 end
 ```
@@ -2980,15 +2980,15 @@ Get all broken links in the specific document.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 document_id = 789 # Integer | Id for specific document.
 opts = {
@@ -3000,7 +3000,7 @@ begin
   # Get all broken links in document
   result = api_instance.sites_site_id_quality_assurance_links_documents_with_broken_links_document_id_broken_links_get(site_id, document_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_documents_with_broken_links_document_id_broken_links_get: #{e}"
 end
 ```
@@ -3018,7 +3018,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DocumentBrokenLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_documents_with_broken_links_document_id_broken_links_get_with_http_info: #{e}"
 end
 ```
@@ -3058,15 +3058,15 @@ All pages where broken links have been found - Broken links detrimentally affect
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 document_id = 789 # Integer | Id for specific document.
 opts = {
@@ -3080,7 +3080,7 @@ begin
   # Get pages with broken links
   result = api_instance.sites_site_id_quality_assurance_links_documents_with_broken_links_document_id_pages_get(site_id, document_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_documents_with_broken_links_document_id_pages_get: #{e}"
 end
 ```
@@ -3098,7 +3098,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_documents_with_broken_links_document_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -3140,15 +3140,15 @@ All PDFs where broken links have been found - Broken links detrimentally affect 
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3163,7 +3163,7 @@ begin
   # Get documents with broken links
   result = api_instance.sites_site_id_quality_assurance_links_documents_with_broken_links_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_documents_with_broken_links_get: #{e}"
 end
 ```
@@ -3181,7 +3181,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DocumentWithBrokenLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_documents_with_broken_links_get_with_http_info: #{e}"
 end
 ```
@@ -3224,15 +3224,15 @@ A series of historical data points showing the link status (pages with broken li
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3244,7 +3244,7 @@ begin
   # Get historical data for links
   result = api_instance.sites_site_id_quality_assurance_links_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_history_get: #{e}"
 end
 ```
@@ -3262,7 +3262,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinkHistoryItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_history_get_with_http_info: #{e}"
 end
 ```
@@ -3302,15 +3302,15 @@ Links that have been ignored – errors with these links will no longer be highl
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -3322,7 +3322,7 @@ begin
   # Get ignored links
   result = api_instance.sites_site_id_quality_assurance_links_ignored_links_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_ignored_links_get: #{e}"
 end
 ```
@@ -3340,7 +3340,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinkDecisionList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_ignored_links_get_with_http_info: #{e}"
 end
 ```
@@ -3380,15 +3380,15 @@ All pages containing this specific broken link.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3403,7 +3403,7 @@ begin
   # Get pages with broken links
   result = api_instance.sites_site_id_quality_assurance_links_pages_with_broken_links_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_pages_with_broken_links_get: #{e}"
 end
 ```
@@ -3421,7 +3421,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithBrokenLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_pages_with_broken_links_get_with_http_info: #{e}"
 end
 ```
@@ -3464,15 +3464,15 @@ All broken links from this specific page containing broken links.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -3484,7 +3484,7 @@ begin
   # Get broken links from page with broken links
   result = api_instance.sites_site_id_quality_assurance_links_pages_with_broken_links_page_id_broken_links_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_pages_with_broken_links_page_id_broken_links_get: #{e}"
 end
 ```
@@ -3502,7 +3502,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageBrokenLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_pages_with_broken_links_page_id_broken_links_get_with_http_info: #{e}"
 end
 ```
@@ -3542,15 +3542,15 @@ All documents containing with links to this unsafe domain.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 domain_id = 789 # Integer | Id for specific domain.
 opts = {
@@ -3564,7 +3564,7 @@ begin
   # Get documents with unsafe domain from links
   result = api_instance.sites_site_id_quality_assurance_links_unsafe_domains_domain_id_documents_get(site_id, domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_unsafe_domains_domain_id_documents_get: #{e}"
 end
 ```
@@ -3582,7 +3582,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UnsafeLinkPdfList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_unsafe_domains_domain_id_documents_get_with_http_info: #{e}"
 end
 ```
@@ -3624,15 +3624,15 @@ All pages containing with links to this unsafe domain.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 domain_id = 789 # Integer | Id for specific domain.
 opts = {
@@ -3646,7 +3646,7 @@ begin
   # Get pages with links to unsafe domain
   result = api_instance.sites_site_id_quality_assurance_links_unsafe_domains_domain_id_pages_get(site_id, domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_unsafe_domains_domain_id_pages_get: #{e}"
 end
 ```
@@ -3664,7 +3664,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UnsafeLinkPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_unsafe_domains_domain_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -3706,15 +3706,15 @@ Links to unsafe domains.  Domains that have been identified as potentially risky
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3728,7 +3728,7 @@ begin
   # Get links to unsafe domains
   result = api_instance.sites_site_id_quality_assurance_links_unsafe_domains_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_unsafe_domains_get: #{e}"
 end
 ```
@@ -3746,7 +3746,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UnsafeDomainList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_links_unsafe_domains_get_with_http_info: #{e}"
 end
 ```
@@ -3788,15 +3788,15 @@ Full history of all checks that have been run for the selected site.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3808,7 +3808,7 @@ begin
   # Get check history from crawls
   result = api_instance.sites_site_id_quality_assurance_overview_check_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_get: #{e}"
 end
 ```
@@ -3826,7 +3826,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CheckHistoryItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_get_with_http_info: #{e}"
 end
 ```
@@ -3866,15 +3866,15 @@ Get all broken links on pages detected at this specific check.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 history_id = 789 # Integer | Id for specific history point - Ie. a specific point in time where checks where run for the site.
 opts = {
@@ -3887,7 +3887,7 @@ begin
   # Get broken links from check in check history 
   result = api_instance.sites_site_id_quality_assurance_overview_check_history_history_id_broken_links_get(site_id, history_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_broken_links_get: #{e}"
 end
 ```
@@ -3905,7 +3905,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CheckHistoryBrokenLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_broken_links_get_with_http_info: #{e}"
 end
 ```
@@ -3946,15 +3946,15 @@ Get all broken links in documents detected at this specific check.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 history_id = 789 # Integer | Id for specific history point - Ie. a specific point in time where checks where run for the site.
 opts = {
@@ -3967,7 +3967,7 @@ begin
   # Get broken links in documents from check history
   result = api_instance.sites_site_id_quality_assurance_overview_check_history_history_id_broken_links_in_documents_get(site_id, history_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_broken_links_in_documents_get: #{e}"
 end
 ```
@@ -3985,7 +3985,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CheckHistoryBrokenLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_broken_links_in_documents_get_with_http_info: #{e}"
 end
 ```
@@ -4026,15 +4026,15 @@ Get all known links on pages detected at this specific check.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 history_id = 789 # Integer | Id for specific history point - Ie. a specific point in time where checks where run for the site.
 opts = {
@@ -4047,7 +4047,7 @@ begin
   # Get known links from check in check history
   result = api_instance.sites_site_id_quality_assurance_overview_check_history_history_id_known_links_get(site_id, history_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_known_links_get: #{e}"
 end
 ```
@@ -4065,7 +4065,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CheckHistoryLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_known_links_get_with_http_info: #{e}"
 end
 ```
@@ -4106,15 +4106,15 @@ Get all known pages visited at this specific check.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 history_id = 789 # Integer | Id for specific history point - Ie. a specific point in time where checks where run for the site.
 opts = {
@@ -4127,7 +4127,7 @@ begin
   # Get known pages from check in check history
   result = api_instance.sites_site_id_quality_assurance_overview_check_history_history_id_known_pages_get(site_id, history_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_known_pages_get: #{e}"
 end
 ```
@@ -4145,7 +4145,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CheckHistoryPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_known_pages_get_with_http_info: #{e}"
 end
 ```
@@ -4186,15 +4186,15 @@ Get all new links visited at this specific check
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 history_id = 789 # Integer | Id for specific history point - Ie. a specific point in time where checks where run for the site.
 opts = {
@@ -4207,7 +4207,7 @@ begin
   # Get new links from check in check history
   result = api_instance.sites_site_id_quality_assurance_overview_check_history_history_id_new_links_get(site_id, history_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_new_links_get: #{e}"
 end
 ```
@@ -4225,7 +4225,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CheckHistoryLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_new_links_get_with_http_info: #{e}"
 end
 ```
@@ -4266,15 +4266,15 @@ Get all new pages visited at this specific check.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 history_id = 789 # Integer | Id for specific history point - Ie. a specific point in time where checks where run for the site.
 opts = {
@@ -4287,7 +4287,7 @@ begin
   # Get new pages from check in check history
   result = api_instance.sites_site_id_quality_assurance_overview_check_history_history_id_new_pages_get(site_id, history_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_new_pages_get: #{e}"
 end
 ```
@@ -4305,7 +4305,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CheckHistoryPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_new_pages_get_with_http_info: #{e}"
 end
 ```
@@ -4346,15 +4346,15 @@ Get all former known links that were no longer present at this specific check.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 history_id = 789 # Integer | Id for specific history point - Ie. a specific point in time where checks where run for the site.
 opts = {
@@ -4367,7 +4367,7 @@ begin
   # Get removed links from check in check history
   result = api_instance.sites_site_id_quality_assurance_overview_check_history_history_id_removed_links_get(site_id, history_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_removed_links_get: #{e}"
 end
 ```
@@ -4385,7 +4385,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CheckHistoryLinkList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_removed_links_get_with_http_info: #{e}"
 end
 ```
@@ -4426,15 +4426,15 @@ Get all former known pages that were no longer present at this specific check.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 history_id = 789 # Integer | Id for specific history point - Ie. a specific point in time where checks where run for the site.
 opts = {
@@ -4447,7 +4447,7 @@ begin
   # Get removed pages from check in check history
   result = api_instance.sites_site_id_quality_assurance_overview_check_history_history_id_removed_pages_get(site_id, history_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_removed_pages_get: #{e}"
 end
 ```
@@ -4465,7 +4465,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CheckHistoryPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_check_history_history_id_removed_pages_get_with_http_info: #{e}"
 end
 ```
@@ -4506,15 +4506,15 @@ Groups are used to display information for specific sections of the website. Onl
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -4526,7 +4526,7 @@ begin
   # Get quality assurance groups
   result = api_instance.sites_site_id_quality_assurance_overview_groups_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_groups_get: #{e}"
 end
 ```
@@ -4544,7 +4544,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GroupDetailsList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_groups_get_with_http_info: #{e}"
 end
 ```
@@ -4584,15 +4584,15 @@ Get users belonging to this specific group.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 group_id = 789 # Integer | Id for specific group.
 opts = {
@@ -4604,7 +4604,7 @@ begin
   # Get users from group
   result = api_instance.sites_site_id_quality_assurance_overview_groups_group_id_users_get(site_id, group_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_groups_group_id_users_get: #{e}"
 end
 ```
@@ -4622,7 +4622,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <QualityAssuranceGroupPersonList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_groups_group_id_users_get_with_http_info: #{e}"
 end
 ```
@@ -4662,15 +4662,15 @@ Pages with errors have a page score to enable you to target those pages where co
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4685,7 +4685,7 @@ begin
   # Get priority pages
   result = api_instance.sites_site_id_quality_assurance_overview_priority_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_priority_pages_get: #{e}"
 end
 ```
@@ -4703,7 +4703,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PriorityPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_priority_pages_get_with_http_info: #{e}"
 end
 ```
@@ -4746,15 +4746,15 @@ Get summary of QA issues detected on the site.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -4764,7 +4764,7 @@ begin
   # Get summary for quality assurance
   result = api_instance.sites_site_id_quality_assurance_overview_summary_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_summary_get: #{e}"
 end
 ```
@@ -4782,7 +4782,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OverviewSummary>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_overview_summary_get_with_http_info: #{e}"
 end
 ```
@@ -4820,15 +4820,15 @@ Accepted words are words that can't be changed or words that should not be alter
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -4840,7 +4840,7 @@ begin
   # Get accepted readability words
   result = api_instance.sites_site_id_quality_assurance_readability_accepted_words_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_accepted_words_get: #{e}"
 end
 ```
@@ -4858,7 +4858,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <AcceptedReadabilityWordList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_accepted_words_get_with_http_info: #{e}"
 end
 ```
@@ -4898,15 +4898,15 @@ All pages that have been excluded from the automated readability test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4920,7 +4920,7 @@ begin
   # Get excluded pages for automated readability
   result = api_instance.sites_site_id_quality_assurance_readability_tests_automated_readability_excluded_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_automated_readability_excluded_pages_get: #{e}"
 end
 ```
@@ -4938,7 +4938,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiIgnoredReadabilityPageAutomatedReadabilityList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_automated_readability_excluded_pages_get_with_http_info: #{e}"
 end
 ```
@@ -4980,15 +4980,15 @@ All pages where a readability score has been calculated for the automated readab
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5002,7 +5002,7 @@ begin
   # Get readability pages for automated readability
   result = api_instance.sites_site_id_quality_assurance_readability_tests_automated_readability_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_automated_readability_pages_get: #{e}"
 end
 ```
@@ -5020,7 +5020,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageAutomatedReadabilityList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_automated_readability_pages_get_with_http_info: #{e}"
 end
 ```
@@ -5062,15 +5062,15 @@ Pages that relates to the reading ability bucket for the automated readability t
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 bucket_id = 56 # Integer | Id of the readability bucket.
 opts = {
@@ -5083,7 +5083,7 @@ begin
   # Get pages with readability score for automated readability
   result = api_instance.sites_site_id_quality_assurance_readability_tests_automated_readability_scores_bucket_id_pages_get(site_id, bucket_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_automated_readability_scores_bucket_id_pages_get: #{e}"
 end
 ```
@@ -5101,7 +5101,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageAutomatedReadabilityList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_automated_readability_scores_bucket_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -5142,15 +5142,15 @@ Pages are placed into levels depending on the difficulty level of the content th
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5162,7 +5162,7 @@ begin
   # Get readability scores for automated readability
   result = api_instance.sites_site_id_quality_assurance_readability_tests_automated_readability_scores_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_automated_readability_scores_get: #{e}"
 end
 ```
@@ -5180,7 +5180,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityBucketAutomatedReadabilityList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_automated_readability_scores_get_with_http_info: #{e}"
 end
 ```
@@ -5220,15 +5220,15 @@ All pages that have been excluded from the coleman liau test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5242,7 +5242,7 @@ begin
   # Get excluded pages for coleman liau
   result = api_instance.sites_site_id_quality_assurance_readability_tests_coleman_liau_excluded_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_coleman_liau_excluded_pages_get: #{e}"
 end
 ```
@@ -5260,7 +5260,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiIgnoredReadabilityPageColemanLiauList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_coleman_liau_excluded_pages_get_with_http_info: #{e}"
 end
 ```
@@ -5302,15 +5302,15 @@ All pages where a readability score has been calculated for the coleman liau tes
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5324,7 +5324,7 @@ begin
   # Get readability pages for coleman liau
   result = api_instance.sites_site_id_quality_assurance_readability_tests_coleman_liau_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_coleman_liau_pages_get: #{e}"
 end
 ```
@@ -5342,7 +5342,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageColemanLiauList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_coleman_liau_pages_get_with_http_info: #{e}"
 end
 ```
@@ -5384,15 +5384,15 @@ Pages that relates to the reading ability bucket for coleman liau.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 bucket_id = 56 # Integer | Id of the readability bucket.
 opts = {
@@ -5405,7 +5405,7 @@ begin
   # Get pages with readability score for coleman liau
   result = api_instance.sites_site_id_quality_assurance_readability_tests_coleman_liau_scores_bucket_id_pages_get(site_id, bucket_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_coleman_liau_scores_bucket_id_pages_get: #{e}"
 end
 ```
@@ -5423,7 +5423,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageColemanLiauList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_coleman_liau_scores_bucket_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -5464,15 +5464,15 @@ Pages are placed into levels depending on the difficulty level of the content th
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5484,7 +5484,7 @@ begin
   # Get readability scores for coleman liau
   result = api_instance.sites_site_id_quality_assurance_readability_tests_coleman_liau_scores_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_coleman_liau_scores_get: #{e}"
 end
 ```
@@ -5502,7 +5502,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityBucketColemanLiauList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_coleman_liau_scores_get_with_http_info: #{e}"
 end
 ```
@@ -5542,15 +5542,15 @@ All pages that have been excluded from the flesch kincaid grade level test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5564,7 +5564,7 @@ begin
   # Get excluded pages for flesch kincaid grade level
   result = api_instance.sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_excluded_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_excluded_pages_get: #{e}"
 end
 ```
@@ -5582,7 +5582,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiIgnoredReadabilityPageFleschKincaidGradeLevelList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_excluded_pages_get_with_http_info: #{e}"
 end
 ```
@@ -5624,15 +5624,15 @@ All pages where a readability score has been calculated for the flesch kincade g
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5646,7 +5646,7 @@ begin
   # Get readability pages for flesch kincaid grade level
   result = api_instance.sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_pages_get: #{e}"
 end
 ```
@@ -5664,7 +5664,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageFleschKincaidGradeLevelList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_pages_get_with_http_info: #{e}"
 end
 ```
@@ -5706,15 +5706,15 @@ Pages that relates to the reading ability bucket for the flesch kincaid grade le
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 bucket_id = 56 # Integer | Id of the readability bucket.
 opts = {
@@ -5727,7 +5727,7 @@ begin
   # Get pages with readability score for flesch kincaid grade level
   result = api_instance.sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_scores_bucket_id_pages_get(site_id, bucket_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_scores_bucket_id_pages_get: #{e}"
 end
 ```
@@ -5745,7 +5745,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageFleschKincaidGradeLevelList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_scores_bucket_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -5786,15 +5786,15 @@ Pages are placed into levels depending on the difficulty level of the content th
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5806,7 +5806,7 @@ begin
   # Get readability scores for flesch kincaid grade level
   result = api_instance.sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_scores_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_scores_get: #{e}"
 end
 ```
@@ -5824,7 +5824,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityBucketFleschKincaidGradeLevelList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_grade_level_scores_get_with_http_info: #{e}"
 end
 ```
@@ -5864,15 +5864,15 @@ All pages that have been excluded from the flesch kincaid reading ease test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5886,7 +5886,7 @@ begin
   # Get excluded pages for flesch kincaid reading ease
   result = api_instance.sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_excluded_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_excluded_pages_get: #{e}"
 end
 ```
@@ -5904,7 +5904,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiIgnoredReadabilityPageFleschKincaidReadingEaseList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_excluded_pages_get_with_http_info: #{e}"
 end
 ```
@@ -5946,15 +5946,15 @@ All pages where a readability score has been calculated for the flesch kincade r
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5968,7 +5968,7 @@ begin
   # Get readability pages for flesch kincaid reading ease
   result = api_instance.sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_pages_get: #{e}"
 end
 ```
@@ -5986,7 +5986,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageFleschKincaidReadingEaseList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6028,15 +6028,15 @@ Pages that relates to the reading ability bucket for the flesch kincaid reading 
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 bucket_id = 56 # Integer | Id of the readability bucket.
 opts = {
@@ -6049,7 +6049,7 @@ begin
   # Get pages with readability score for flesch kincaid reading ease
   result = api_instance.sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_scores_bucket_id_pages_get(site_id, bucket_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_scores_bucket_id_pages_get: #{e}"
 end
 ```
@@ -6067,7 +6067,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageFleschKincaidReadingEaseList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_scores_bucket_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6108,15 +6108,15 @@ Pages are placed into levels depending on the difficulty level of the content th
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6128,7 +6128,7 @@ begin
   # Get readability scores for flesch kincaid reading ease
   result = api_instance.sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_scores_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_scores_get: #{e}"
 end
 ```
@@ -6146,7 +6146,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityBucketFleschKincaidReadingEaseList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_flesch_kincaid_reading_ease_scores_get_with_http_info: #{e}"
 end
 ```
@@ -6186,15 +6186,15 @@ All pages that have been excluded from the gunning fog test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6208,7 +6208,7 @@ begin
   # Get excluded pages for gunning fog
   result = api_instance.sites_site_id_quality_assurance_readability_tests_gunning_fog_excluded_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_gunning_fog_excluded_pages_get: #{e}"
 end
 ```
@@ -6226,7 +6226,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiIgnoredReadabilityPageGunningFogList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_gunning_fog_excluded_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6268,15 +6268,15 @@ All pages where a readability score has been calculated for the gunning fog test
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6290,7 +6290,7 @@ begin
   # Get readability pages for gunning fog
   result = api_instance.sites_site_id_quality_assurance_readability_tests_gunning_fog_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_gunning_fog_pages_get: #{e}"
 end
 ```
@@ -6308,7 +6308,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageGunningFogList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_gunning_fog_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6350,15 +6350,15 @@ Pages that relates to the reading ability bucket for the gunning fog test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 bucket_id = 56 # Integer | Id of the readability bucket.
 opts = {
@@ -6371,7 +6371,7 @@ begin
   # Get pages with readability score for gunning fog
   result = api_instance.sites_site_id_quality_assurance_readability_tests_gunning_fog_scores_bucket_id_pages_get(site_id, bucket_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_gunning_fog_scores_bucket_id_pages_get: #{e}"
 end
 ```
@@ -6389,7 +6389,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageGunningFogList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_gunning_fog_scores_bucket_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6430,15 +6430,15 @@ Pages are placed into levels depending on the difficulty level of the content th
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6450,7 +6450,7 @@ begin
   # Get readability scores for gunning fog
   result = api_instance.sites_site_id_quality_assurance_readability_tests_gunning_fog_scores_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_gunning_fog_scores_get: #{e}"
 end
 ```
@@ -6468,7 +6468,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityBucketGunningFogList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_gunning_fog_scores_get_with_http_info: #{e}"
 end
 ```
@@ -6508,15 +6508,15 @@ All pages that have been excluded from the lix test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6530,7 +6530,7 @@ begin
   # Get excluded pages for lix
   result = api_instance.sites_site_id_quality_assurance_readability_tests_lix_excluded_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_lix_excluded_pages_get: #{e}"
 end
 ```
@@ -6548,7 +6548,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiIgnoredReadabilityPageLixList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_lix_excluded_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6590,15 +6590,15 @@ All pages where a readability score has been calculated for the lix test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6612,7 +6612,7 @@ begin
   # Get readability pages for lix
   result = api_instance.sites_site_id_quality_assurance_readability_tests_lix_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_lix_pages_get: #{e}"
 end
 ```
@@ -6630,7 +6630,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageLixList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_lix_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6672,15 +6672,15 @@ Pages that relates to the reading ability bucket for the lix test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 bucket_id = 56 # Integer | Id of the readability bucket.
 opts = {
@@ -6693,7 +6693,7 @@ begin
   # Get pages with readability score for lix
   result = api_instance.sites_site_id_quality_assurance_readability_tests_lix_scores_bucket_id_pages_get(site_id, bucket_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_lix_scores_bucket_id_pages_get: #{e}"
 end
 ```
@@ -6711,7 +6711,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageLixList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_lix_scores_bucket_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6752,15 +6752,15 @@ Pages are placed into levels depending on the difficulty level of the content th
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6772,7 +6772,7 @@ begin
   # Get readability scores for lix
   result = api_instance.sites_site_id_quality_assurance_readability_tests_lix_scores_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_lix_scores_get: #{e}"
 end
 ```
@@ -6790,7 +6790,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityBucketLixList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_lix_scores_get_with_http_info: #{e}"
 end
 ```
@@ -6830,15 +6830,15 @@ All pages that have been excluded from the smog test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6852,7 +6852,7 @@ begin
   # Get excluded pages for smog
   result = api_instance.sites_site_id_quality_assurance_readability_tests_smog_excluded_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_smog_excluded_pages_get: #{e}"
 end
 ```
@@ -6870,7 +6870,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiIgnoredReadabilityPageSmogList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_smog_excluded_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6912,15 +6912,15 @@ All pages where a readability score has been calculated for the smog test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6934,7 +6934,7 @@ begin
   # Get readability pages for smog
   result = api_instance.sites_site_id_quality_assurance_readability_tests_smog_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_smog_pages_get: #{e}"
 end
 ```
@@ -6952,7 +6952,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageSmogList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_smog_pages_get_with_http_info: #{e}"
 end
 ```
@@ -6994,15 +6994,15 @@ Pages that relates to the reading ability bucket for the smog test.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 bucket_id = 56 # Integer | Id of the readability bucket.
 opts = {
@@ -7015,7 +7015,7 @@ begin
   # Get pages with readability score for smog
   result = api_instance.sites_site_id_quality_assurance_readability_tests_smog_scores_bucket_id_pages_get(site_id, bucket_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_smog_scores_bucket_id_pages_get: #{e}"
 end
 ```
@@ -7033,7 +7033,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityPageSmogList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_smog_scores_bucket_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -7074,15 +7074,15 @@ Pages are placed into levels depending on the difficulty level of the content th
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7094,7 +7094,7 @@ begin
   # Get readability scores for smog
   result = api_instance.sites_site_id_quality_assurance_readability_tests_smog_scores_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_smog_scores_get: #{e}"
 end
 ```
@@ -7112,7 +7112,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiReadabilityBucketSmogList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_readability_tests_smog_scores_get_with_http_info: #{e}"
 end
 ```
@@ -7152,15 +7152,15 @@ Words that we have found and that has been accepted by users.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7173,7 +7173,7 @@ begin
   # Get approved words from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_approved_words_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_approved_words_get: #{e}"
 end
 ```
@@ -7191,7 +7191,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <AcceptedWordList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_approved_words_get_with_http_info: #{e}"
 end
 ```
@@ -7232,15 +7232,15 @@ Get pages containing this specific word that has been approved by a user.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 word_id = 789 # Integer | Id for specific word.
 opts = {
@@ -7253,7 +7253,7 @@ begin
   # Get pages with approved words from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_approved_words_word_id_pages_get(site_id, word_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_approved_words_word_id_pages_get: #{e}"
 end
 ```
@@ -7271,7 +7271,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageForWordList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_approved_words_word_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -7312,15 +7312,15 @@ A series of historical data points showing the status of misspellings and potent
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7332,7 +7332,7 @@ begin
   # Get historical data for spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_history_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_history_get: #{e}"
 end
 ```
@@ -7350,7 +7350,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SpellingHistoryItemList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_history_get_with_http_info: #{e}"
 end
 ```
@@ -7390,15 +7390,15 @@ All languages detected on the site and the percentage of content written in each
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7411,7 +7411,7 @@ begin
   # Get languages from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_languages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_languages_get: #{e}"
 end
 ```
@@ -7429,7 +7429,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LanguageList1>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_languages_get_with_http_info: #{e}"
 end
 ```
@@ -7470,15 +7470,15 @@ Get pages written in this specific language.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 language_code = 'language_code_example' # String | Language code for specific country (ie. \"en\", \"de\" etc.)
 opts = {
@@ -7492,7 +7492,7 @@ begin
   # Get pages with language from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_languages_language_code_pages_get(site_id, language_code, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_languages_language_code_pages_get: #{e}"
 end
 ```
@@ -7510,7 +7510,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LanguagePageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_languages_language_code_pages_get_with_http_info: #{e}"
 end
 ```
@@ -7552,15 +7552,15 @@ Words that could not be found in the system's dictionary or words that have been
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7574,7 +7574,7 @@ begin
   # Get misspellings from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_misspellings_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_misspellings_get: #{e}"
 end
 ```
@@ -7592,7 +7592,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ConfirmedMisspellingV2List>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_misspellings_get_with_http_info: #{e}"
 end
 ```
@@ -7634,15 +7634,15 @@ Get pages containing this specific misspelling.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 word_id = 789 # Integer | Id for specific word.
 opts = {
@@ -7656,7 +7656,7 @@ begin
   # Get pages with misspelling from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_misspellings_word_id_pages_get(site_id, word_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_misspellings_word_id_pages_get: #{e}"
 end
 ```
@@ -7674,7 +7674,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageForWordList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_misspellings_word_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -7716,15 +7716,15 @@ All pages where either misspellings or potential misspellings have been detected
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7739,7 +7739,7 @@ begin
   # Get pages from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_pages_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_pages_get: #{e}"
 end
 ```
@@ -7757,7 +7757,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithMisspellingsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_pages_get_with_http_info: #{e}"
 end
 ```
@@ -7800,15 +7800,15 @@ Get misspellings for this specific page.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -7821,7 +7821,7 @@ begin
   # Get misspellings for a page from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_pages_page_id_misspellings_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_pages_page_id_misspellings_get: #{e}"
 end
 ```
@@ -7839,7 +7839,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MisspellingOnPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_pages_page_id_misspellings_get_with_http_info: #{e}"
 end
 ```
@@ -7880,15 +7880,15 @@ This endpoint is deprecated. Get potential misspellings for this specific page
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -7901,7 +7901,7 @@ begin
   # Get potential misspelling for a page from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_pages_page_id_potential_misspellings_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_pages_page_id_potential_misspellings_get: #{e}"
 end
 ```
@@ -7919,7 +7919,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagePotentialMisspellingList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_pages_page_id_potential_misspellings_get_with_http_info: #{e}"
 end
 ```
@@ -7960,15 +7960,15 @@ Get words to review for this specific page.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -7981,7 +7981,7 @@ begin
   # Get words to review for a page from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_pages_page_id_words_to_review_get(site_id, page_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_pages_page_id_words_to_review_get: #{e}"
 end
 ```
@@ -7999,7 +7999,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SpellingReviewOnPageList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_pages_page_id_words_to_review_get_with_http_info: #{e}"
 end
 ```
@@ -8040,15 +8040,15 @@ This endpoint is deprecated. Potential misspellings are words on the site, which
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -8062,7 +8062,7 @@ begin
   # Get potential misspellings from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_potential_misspellings_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_potential_misspellings_get: #{e}"
 end
 ```
@@ -8080,7 +8080,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PotentialMisspellingList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_potential_misspellings_get_with_http_info: #{e}"
 end
 ```
@@ -8122,15 +8122,15 @@ This endpoint is deprecated. Get pages containing this specific potential misspe
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 word_id = 789 # Integer | Id for specific word.
 opts = {
@@ -8144,7 +8144,7 @@ begin
   # Get pages with potential misspelling from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_potential_misspellings_word_id_pages_get(site_id, word_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_potential_misspellings_word_id_pages_get: #{e}"
 end
 ```
@@ -8162,7 +8162,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageForWordList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_potential_misspellings_word_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -8204,15 +8204,15 @@ Words to review are words on the site, which are not found in the dictionary, an
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -8226,7 +8226,7 @@ begin
   # Get words to review from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_words_to_review_get(site_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_words_to_review_get: #{e}"
 end
 ```
@@ -8244,7 +8244,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SpellingReviewList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_words_to_review_get_with_http_info: #{e}"
 end
 ```
@@ -8286,15 +8286,15 @@ Get pages containing this specific word to review.
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::QualityAssuranceApi.new
+api_instance = SiteImproveAPIClient::QualityAssuranceApi.new
 site_id = 789 # Integer | Id for specific site.
 word_id = 789 # Integer | Id for specific word.
 opts = {
@@ -8307,7 +8307,7 @@ begin
   # Get pages with words to review from spelling
   result = api_instance.sites_site_id_quality_assurance_spelling_words_to_review_word_id_pages_get(site_id, word_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_words_to_review_word_id_pages_get: #{e}"
 end
 ```
@@ -8325,7 +8325,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageForWordList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling QualityAssuranceApi->sites_site_id_quality_assurance_spelling_words_to_review_word_id_pages_get_with_http_info: #{e}"
 end
 ```

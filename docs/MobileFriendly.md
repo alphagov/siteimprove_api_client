@@ -1,4 +1,4 @@
-# SiteImproveApiClient::MobileFriendly
+# SiteImproveAPIClient::MobileFriendly
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::MobileFriendly.new(
+instance = SiteImproveAPIClient::MobileFriendly.new(
   complexity: null,
   fixed: null,
   issue_name: null,

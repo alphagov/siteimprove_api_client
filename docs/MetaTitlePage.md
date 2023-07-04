@@ -1,4 +1,4 @@
-# SiteImproveApiClient::MetaTitlePage
+# SiteImproveAPIClient::MetaTitlePage
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::MetaTitlePage.new(
+instance = SiteImproveAPIClient::MetaTitlePage.new(
   id: null,
   title: null,
   url: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::DuplicateMetaDescription
+# SiteImproveAPIClient::DuplicateMetaDescription
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::DuplicateMetaDescription.new(
+instance = SiteImproveAPIClient::DuplicateMetaDescription.new(
   meta_description: null,
   page_level: null,
   page_views: null,

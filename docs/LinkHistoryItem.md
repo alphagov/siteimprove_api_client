@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinkHistoryItem
+# SiteImproveAPIClient::LinkHistoryItem
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinkHistoryItem.new(
+instance = SiteImproveAPIClient::LinkHistoryItem.new(
   broken_links: null,
   pages: null,
   timestamp: null,

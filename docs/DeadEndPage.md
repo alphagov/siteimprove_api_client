@@ -1,4 +1,4 @@
-# SiteImproveApiClient::DeadEndPage
+# SiteImproveAPIClient::DeadEndPage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::DeadEndPage.new(
+instance = SiteImproveAPIClient::DeadEndPage.new(
   id: null,
   title: null,
   url: null,

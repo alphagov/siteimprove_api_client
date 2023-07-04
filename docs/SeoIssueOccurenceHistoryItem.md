@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SeoIssueOccurenceHistoryItem
+# SiteImproveAPIClient::SeoIssueOccurenceHistoryItem
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SeoIssueOccurenceHistoryItem.new(
+instance = SiteImproveAPIClient::SeoIssueOccurenceHistoryItem.new(
   occurrences: null,
   timestamp: null
 )

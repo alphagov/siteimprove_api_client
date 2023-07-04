@@ -1,4 +1,4 @@
-# SiteImproveApiClient::EventGraphSlice
+# SiteImproveAPIClient::EventGraphSlice
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::EventGraphSlice.new(
+instance = SiteImproveAPIClient::EventGraphSlice.new(
   events: null,
   timestamp: null
 )

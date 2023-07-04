@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksAccessibilityValidation
+# SiteImproveAPIClient::LinksAccessibilityValidation
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksAccessibilityValidation.new(
+instance = SiteImproveAPIClient::LinksAccessibilityValidation.new(
   css: null,
   html: null,
   pdf: null

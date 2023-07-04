@@ -1,4 +1,4 @@
-# SiteImproveApiClient::A11YHistoryValueList
+# SiteImproveAPIClient::A11YHistoryValueList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::A11YHistoryValueList.new(
+instance = SiteImproveAPIClient::A11YHistoryValueList.new(
   items: null,
   total_items: null,
   total_pages: null,

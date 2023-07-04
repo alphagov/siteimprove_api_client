@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ApiReadabilityPageColemanLiauList1
+# SiteImproveAPIClient::ApiReadabilityPageColemanLiauList1
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ApiReadabilityPageColemanLiauList1.new(
+instance = SiteImproveAPIClient::ApiReadabilityPageColemanLiauList1.new(
   items: null,
   total_items: null,
   total_pages: null,

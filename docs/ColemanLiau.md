@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ColemanLiau
+# SiteImproveAPIClient::ColemanLiau
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ColemanLiau.new(
+instance = SiteImproveAPIClient::ColemanLiau.new(
   average_chars_with_digits: null,
   average_sentences_with_digits: null,
   long_sentences_with_digits_unique: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::VisitMonthDay
+# SiteImproveAPIClient::VisitMonthDay
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::VisitMonthDay.new(
+instance = SiteImproveAPIClient::VisitMonthDay.new(
   average_page_views_per_visit: null,
   day_of_month: null,
   page_views: null,

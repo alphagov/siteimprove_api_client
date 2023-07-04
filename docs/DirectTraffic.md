@@ -1,4 +1,4 @@
-# SiteImproveApiClient::DirectTraffic
+# SiteImproveAPIClient::DirectTraffic
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::DirectTraffic.new(
+instance = SiteImproveAPIClient::DirectTraffic.new(
   id: null,
   title: null,
   url: null,

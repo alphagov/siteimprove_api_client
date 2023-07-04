@@ -1,4 +1,4 @@
-# SiteImproveApiClient::FeedbackNote
+# SiteImproveAPIClient::FeedbackNote
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::FeedbackNote.new(
+instance = SiteImproveAPIClient::FeedbackNote.new(
   note_by: null,
   note_text: null,
   timestamp: null

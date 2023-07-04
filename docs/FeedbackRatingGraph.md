@@ -1,4 +1,4 @@
-# SiteImproveApiClient::FeedbackRatingGraph
+# SiteImproveAPIClient::FeedbackRatingGraph
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::FeedbackRatingGraph.new(
+instance = SiteImproveAPIClient::FeedbackRatingGraph.new(
   data: null,
   timestamp: null
 )

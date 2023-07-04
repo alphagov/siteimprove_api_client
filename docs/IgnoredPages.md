@@ -1,4 +1,4 @@
-# SiteImproveApiClient::IgnoredPages
+# SiteImproveAPIClient::IgnoredPages
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::IgnoredPages.new(
+instance = SiteImproveAPIClient::IgnoredPages.new(
   id: null,
   title: null,
   url: null,

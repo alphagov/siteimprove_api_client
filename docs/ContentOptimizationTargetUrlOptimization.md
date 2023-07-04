@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ContentOptimizationTargetUrlOptimization
+# SiteImproveAPIClient::ContentOptimizationTargetUrlOptimization
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ContentOptimizationTargetUrlOptimization.new(
+instance = SiteImproveAPIClient::ContentOptimizationTargetUrlOptimization.new(
   database: null,
   h1_occurrences: null,
   h2_occurrences: null,

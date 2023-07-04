@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SummaryPolicy
+# SiteImproveAPIClient::SummaryPolicy
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SummaryPolicy.new(
+instance = SiteImproveAPIClient::SummaryPolicy.new(
   high_priority_matching_policies: null,
   high_priority_pending_checks: null,
   matching_policies: null

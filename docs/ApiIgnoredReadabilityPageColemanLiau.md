@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ApiIgnoredReadabilityPageColemanLiau
+# SiteImproveAPIClient::ApiIgnoredReadabilityPageColemanLiau
 
 ## Properties
 
@@ -23,9 +23,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ApiIgnoredReadabilityPageColemanLiau.new(
+instance = SiteImproveAPIClient::ApiIgnoredReadabilityPageColemanLiau.new(
   id: null,
   title: null,
   url: null,

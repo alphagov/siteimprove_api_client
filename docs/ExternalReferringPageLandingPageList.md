@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ExternalReferringPageLandingPageList
+# SiteImproveAPIClient::ExternalReferringPageLandingPageList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ExternalReferringPageLandingPageList.new(
+instance = SiteImproveAPIClient::ExternalReferringPageLandingPageList.new(
   items: null,
   total_items: null,
   total_pages: null,

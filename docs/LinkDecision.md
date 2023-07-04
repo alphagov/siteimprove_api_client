@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinkDecision
+# SiteImproveAPIClient::LinkDecision
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinkDecision.new(
+instance = SiteImproveAPIClient::LinkDecision.new(
   id: null,
   url: null,
   created: null,

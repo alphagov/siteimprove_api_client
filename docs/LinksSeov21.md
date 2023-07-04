@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksSeov21
+# SiteImproveAPIClient::LinksSeov21
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksSeov21.new(
+instance = SiteImproveAPIClient::LinksSeov21.new(
   activity_plans: null,
   issues: null,
   keywords: null,

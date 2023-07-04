@@ -1,4 +1,4 @@
-# SiteImproveApiClient::MetaTitleMultipleInfo
+# SiteImproveAPIClient::MetaTitleMultipleInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::MetaTitleMultipleInfo.new(
+instance = SiteImproveAPIClient::MetaTitleMultipleInfo.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

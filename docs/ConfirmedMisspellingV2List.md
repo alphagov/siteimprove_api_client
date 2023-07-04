@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ConfirmedMisspellingV2List
+# SiteImproveAPIClient::ConfirmedMisspellingV2List
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ConfirmedMisspellingV2List.new(
+instance = SiteImproveAPIClient::ConfirmedMisspellingV2List.new(
   items: null,
   total_items: null,
   total_pages: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SlowSeoPage
+# SiteImproveAPIClient::SlowSeoPage
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SlowSeoPage.new(
+instance = SiteImproveAPIClient::SlowSeoPage.new(
   id: null,
   title: null,
   url: null,

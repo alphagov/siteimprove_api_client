@@ -1,4 +1,4 @@
-# SiteImproveApiClient::AnalyticsFilterDetails
+# SiteImproveAPIClient::AnalyticsFilterDetails
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::AnalyticsFilterDetails.new(
+instance = SiteImproveAPIClient::AnalyticsFilterDetails.new(
   id: null,
   name: null,
   created_by: null,

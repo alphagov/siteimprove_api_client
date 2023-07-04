@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksQualityAssuranceOverview
+# SiteImproveAPIClient::LinksQualityAssuranceOverview
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksQualityAssuranceOverview.new(
+instance = SiteImproveAPIClient::LinksQualityAssuranceOverview.new(
   summary: null,
   check_history: null,
   groups: null,

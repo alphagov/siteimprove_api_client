@@ -1,4 +1,4 @@
-# SiteImproveApiClient::CheckHistoryBrokenLink
+# SiteImproveAPIClient::CheckHistoryBrokenLink
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::CheckHistoryBrokenLink.new(
+instance = SiteImproveAPIClient::CheckHistoryBrokenLink.new(
   id: null,
   url: null,
   documents: null,

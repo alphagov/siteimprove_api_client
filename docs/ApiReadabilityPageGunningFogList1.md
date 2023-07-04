@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ApiReadabilityPageGunningFogList1
+# SiteImproveAPIClient::ApiReadabilityPageGunningFogList1
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ApiReadabilityPageGunningFogList1.new(
+instance = SiteImproveAPIClient::ApiReadabilityPageGunningFogList1.new(
   items: null,
   total_items: null,
   total_pages: null,

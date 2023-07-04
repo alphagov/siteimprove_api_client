@@ -1,4 +1,4 @@
-# SiteImproveApiClient::BrokenPageLink1
+# SiteImproveAPIClient::BrokenPageLink1
 
 ## Properties
 
@@ -18,9 +18,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::BrokenPageLink1.new(
+instance = SiteImproveAPIClient::BrokenPageLink1.new(
   id: null,
   url: null,
   http_status: null,

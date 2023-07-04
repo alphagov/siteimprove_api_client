@@ -1,4 +1,4 @@
-# SiteImproveApiClient::DocumentWithErrorList1
+# SiteImproveAPIClient::DocumentWithErrorList1
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::DocumentWithErrorList1.new(
+instance = SiteImproveAPIClient::DocumentWithErrorList1.new(
   items: null,
   total_items: null,
   total_pages: null,

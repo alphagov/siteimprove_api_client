@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksSeov2TargetPages
+# SiteImproveAPIClient::LinksSeov2TargetPages
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksSeov2TargetPages.new(
+instance = SiteImproveAPIClient::LinksSeov2TargetPages.new(
   all: null
 )
 ```

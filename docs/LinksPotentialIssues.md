@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksPotentialIssues
+# SiteImproveAPIClient::LinksPotentialIssues
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksPotentialIssues.new(
+instance = SiteImproveAPIClient::LinksPotentialIssues.new(
   issues: null,
   pages: null
 )

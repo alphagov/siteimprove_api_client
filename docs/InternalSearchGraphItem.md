@@ -1,4 +1,4 @@
-# SiteImproveApiClient::InternalSearchGraphItem
+# SiteImproveAPIClient::InternalSearchGraphItem
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::InternalSearchGraphItem.new(
+instance = SiteImproveAPIClient::InternalSearchGraphItem.new(
   search_exits: null,
   searches: null,
   timestamp: null,

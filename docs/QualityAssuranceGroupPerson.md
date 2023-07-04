@@ -1,4 +1,4 @@
-# SiteImproveApiClient::QualityAssuranceGroupPerson
+# SiteImproveAPIClient::QualityAssuranceGroupPerson
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::QualityAssuranceGroupPerson.new(
+instance = SiteImproveAPIClient::QualityAssuranceGroupPerson.new(
   id: null,
   email: null,
   fullname: null

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::MultipleMetaDescriptionPage
+# SiteImproveAPIClient::MultipleMetaDescriptionPage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::MultipleMetaDescriptionPage.new(
+instance = SiteImproveAPIClient::MultipleMetaDescriptionPage.new(
   id: null,
   title: null,
   url: null,

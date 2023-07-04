@@ -1,4 +1,4 @@
-# SiteImproveApiClient::DciOverallScore
+# SiteImproveAPIClient::DciOverallScore
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::DciOverallScore.new(
+instance = SiteImproveAPIClient::DciOverallScore.new(
   a11y: null,
   accessibility: null,
   qa: null,

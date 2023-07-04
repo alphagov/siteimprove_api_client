@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ManyInternalLinksPageList
+# SiteImproveAPIClient::ManyInternalLinksPageList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ManyInternalLinksPageList.new(
+instance = SiteImproveAPIClient::ManyInternalLinksPageList.new(
   items: null,
   total_items: null,
   total_pages: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ApiReadabilityPageAutomatedReadability
+# SiteImproveAPIClient::ApiReadabilityPageAutomatedReadability
 
 ## Properties
 
@@ -22,9 +22,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ApiReadabilityPageAutomatedReadability.new(
+instance = SiteImproveAPIClient::ApiReadabilityPageAutomatedReadability.new(
   id: null,
   title: null,
   url: null,

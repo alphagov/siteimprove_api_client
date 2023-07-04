@@ -1,4 +1,4 @@
-# SiteImproveApiClient::HighlightInfo
+# SiteImproveAPIClient::HighlightInfo
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::HighlightInfo.new(
+instance = SiteImproveAPIClient::HighlightInfo.new(
   offset: null,
   selector: null
 )

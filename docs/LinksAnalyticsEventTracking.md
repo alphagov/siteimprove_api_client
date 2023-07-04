@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksAnalyticsEventTracking
+# SiteImproveAPIClient::LinksAnalyticsEventTracking
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksAnalyticsEventTracking.new(
+instance = SiteImproveAPIClient::LinksAnalyticsEventTracking.new(
   actions: null,
   categories: null,
   events: null,

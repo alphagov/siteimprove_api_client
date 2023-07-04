@@ -1,4 +1,4 @@
-# SiteImproveApiClient::JavaScriptList
+# SiteImproveAPIClient::JavaScriptList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::JavaScriptList.new(
+instance = SiteImproveAPIClient::JavaScriptList.new(
   items: null,
   total_items: null,
   total_pages: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ApiReadabilityBucketFleschKincaidReadingEase
+# SiteImproveAPIClient::ApiReadabilityBucketFleschKincaidReadingEase
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ApiReadabilityBucketFleschKincaidReadingEase.new(
+instance = SiteImproveAPIClient::ApiReadabilityBucketFleschKincaidReadingEase.new(
   id: null,
   bucket: null,
   max: null,

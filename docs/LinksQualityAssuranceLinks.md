@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksQualityAssuranceLinks
+# SiteImproveAPIClient::LinksQualityAssuranceLinks
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksQualityAssuranceLinks.new(
+instance = SiteImproveAPIClient::LinksQualityAssuranceLinks.new(
   broken_links: null,
   broken_links_in_documents: null,
   documents_with_broken_links: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ReferringPageCss
+# SiteImproveAPIClient::ReferringPageCss
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ReferringPageCss.new(
+instance = SiteImproveAPIClient::ReferringPageCss.new(
   id: null,
   title: null,
   url: null,

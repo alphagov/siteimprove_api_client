@@ -1,4 +1,4 @@
-# SiteImproveApiClient::UnsafeDomainList1
+# SiteImproveAPIClient::UnsafeDomainList1
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::UnsafeDomainList1.new(
+instance = SiteImproveAPIClient::UnsafeDomainList1.new(
   items: null,
   total_items: null,
   total_pages: null,

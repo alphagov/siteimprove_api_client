@@ -1,4 +1,4 @@
-# SiteImproveApiClient::OperatingSystem
+# SiteImproveAPIClient::OperatingSystem
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::OperatingSystem.new(
+instance = SiteImproveAPIClient::OperatingSystem.new(
   bounce_rate: null,
   is_unknown: null,
   os_family: null,

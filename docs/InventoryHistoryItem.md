@@ -1,4 +1,4 @@
-# SiteImproveApiClient::InventoryHistoryItem
+# SiteImproveAPIClient::InventoryHistoryItem
 
 ## Properties
 
@@ -20,9 +20,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::InventoryHistoryItem.new(
+instance = SiteImproveAPIClient::InventoryHistoryItem.new(
   css_files: null,
   documents: null,
   emails: null,

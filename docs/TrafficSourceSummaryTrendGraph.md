@@ -1,4 +1,4 @@
-# SiteImproveApiClient::TrafficSourceSummaryTrendGraph
+# SiteImproveAPIClient::TrafficSourceSummaryTrendGraph
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::TrafficSourceSummaryTrendGraph.new(
+instance = SiteImproveAPIClient::TrafficSourceSummaryTrendGraph.new(
   direct_traffic: null,
   external_referrer: null,
   search_domain: null,

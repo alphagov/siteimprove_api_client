@@ -1,4 +1,4 @@
-# SiteImproveApiClient::PageDeletionMetaSeoRelationsCrossProduct
+# SiteImproveAPIClient::PageDeletionMetaSeoRelationsCrossProduct
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::PageDeletionMetaSeoRelationsCrossProduct.new(
+instance = SiteImproveAPIClient::PageDeletionMetaSeoRelationsCrossProduct.new(
   backlinks: null,
   is_target_page: null,
   ranking_keywords: null

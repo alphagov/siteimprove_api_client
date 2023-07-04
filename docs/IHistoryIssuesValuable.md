@@ -1,4 +1,4 @@
-# SiteImproveApiClient::IHistoryIssuesValuable
+# SiteImproveAPIClient::IHistoryIssuesValuable
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::IHistoryIssuesValuable.new(
+instance = SiteImproveAPIClient::IHistoryIssuesValuable.new(
   a_issues: null,
   aa_issues: null,
   aaa_issues: null,

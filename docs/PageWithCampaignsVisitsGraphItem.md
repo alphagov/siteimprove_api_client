@@ -1,4 +1,4 @@
-# SiteImproveApiClient::PageWithCampaignsVisitsGraphItem
+# SiteImproveAPIClient::PageWithCampaignsVisitsGraphItem
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::PageWithCampaignsVisitsGraphItem.new(
+instance = SiteImproveAPIClient::PageWithCampaignsVisitsGraphItem.new(
   timestamp: null,
   visits: null
 )

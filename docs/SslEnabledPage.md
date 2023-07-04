@@ -1,4 +1,4 @@
-# SiteImproveApiClient::SslEnabledPage
+# SiteImproveAPIClient::SslEnabledPage
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::SslEnabledPage.new(
+instance = SiteImproveAPIClient::SslEnabledPage.new(
   id: null,
   title: null,
   url: null,

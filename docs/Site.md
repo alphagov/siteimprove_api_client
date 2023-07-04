@@ -1,4 +1,4 @@
-# SiteImproveApiClient::Site
+# SiteImproveAPIClient::Site
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::Site.new(
+instance = SiteImproveAPIClient::Site.new(
   id: null,
   site_name: null,
   url: null,

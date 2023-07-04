@@ -1,4 +1,4 @@
-# SiteImproveApiClient::Occurrence
+# SiteImproveAPIClient::Occurrence
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::Occurrence.new(
+instance = SiteImproveAPIClient::Occurrence.new(
   highlights: null
 )
 ```

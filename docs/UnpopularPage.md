@@ -1,4 +1,4 @@
-# SiteImproveApiClient::UnpopularPage
+# SiteImproveAPIClient::UnpopularPage
 
 ## Properties
 
@@ -20,9 +20,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::UnpopularPage.new(
+instance = SiteImproveAPIClient::UnpopularPage.new(
   id: null,
   title: null,
   url: null,

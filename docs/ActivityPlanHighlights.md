@@ -1,4 +1,4 @@
-# SiteImproveApiClient::ActivityPlanHighlights
+# SiteImproveAPIClient::ActivityPlanHighlights
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::ActivityPlanHighlights.new(
+instance = SiteImproveAPIClient::ActivityPlanHighlights.new(
   average_search_engine_visibility: null,
   total_keywords: null,
   _links: null

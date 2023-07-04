@@ -1,4 +1,4 @@
-# SiteImproveApiClient::CssFile
+# SiteImproveAPIClient::CssFile
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::CssFile.new(
+instance = SiteImproveAPIClient::CssFile.new(
   id: null,
   url: null,
   pages_with_css: null,

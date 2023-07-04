@@ -1,4 +1,4 @@
-# SiteImproveApiClient::GDPRApi
+# SiteImproveAPIClient::GDPRApi
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -21,22 +21,22 @@ Get information about nameservers, registrant, subdomains etc for a specific dom
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GDPRApi.new
+api_instance = SiteImproveAPIClient::GDPRApi.new
 domain_id = 789 # Integer | Id for specific domain.
 
 begin
   # Get GDPR-information for a specific domain
   result = api_instance.gdpr_domains_and_ip_addresses_domains_domain_id_get(domain_id)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GDPRApi->gdpr_domains_and_ip_addresses_domains_domain_id_get: #{e}"
 end
 ```
@@ -54,7 +54,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DomainDetails>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GDPRApi->gdpr_domains_and_ip_addresses_domains_domain_id_get_with_http_info: #{e}"
 end
 ```
@@ -91,15 +91,15 @@ Get information about all subdomains to this domain, inclusive optional redirect
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GDPRApi.new
+api_instance = SiteImproveAPIClient::GDPRApi.new
 domain_id = 789 # Integer | Id for specific domain.
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -110,7 +110,7 @@ begin
   # Get GDPR-information about subdomains
   result = api_instance.gdpr_domains_and_ip_addresses_domains_domain_id_subdomains_get(domain_id, opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GDPRApi->gdpr_domains_and_ip_addresses_domains_domain_id_subdomains_get: #{e}"
 end
 ```
@@ -128,7 +128,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DomainsSubdomainsList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GDPRApi->gdpr_domains_and_ip_addresses_domains_domain_id_subdomains_get_with_http_info: #{e}"
 end
 ```
@@ -167,15 +167,15 @@ Get all available GDPR-information about the domains, IP-addresses, and sub-doma
 
 ```ruby
 require 'time'
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 # setup authorization
-SiteImproveApiClient.configure do |config|
+SiteImproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveApiClient::GDPRApi.new
+api_instance = SiteImproveAPIClient::GDPRApi.new
 opts = {
   domain_status: 'confirmed', # String | Domain status to show confirmed, uncertain or rejected domains.
   is_top_level: true, # Boolean | True for \"a.com\" and \"b.co.uk\" but false for \"c.d.com\" and \"e.f.co.uk\".
@@ -188,7 +188,7 @@ begin
   # Get GDPR-info for all domains
   result = api_instance.gdpr_domains_and_ip_addresses_domains_get(opts)
   p result
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GDPRApi->gdpr_domains_and_ip_addresses_domains_get: #{e}"
 end
 ```
@@ -206,7 +206,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DomainIndexList>
-rescue SiteImproveApiClient::ApiError => e
+rescue SiteImproveAPIClient::ApiError => e
   puts "Error when calling GDPRApi->gdpr_domains_and_ip_addresses_domains_get_with_http_info: #{e}"
 end
 ```

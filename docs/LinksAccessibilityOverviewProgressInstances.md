@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksAccessibilityOverviewProgressInstances
+# SiteImproveAPIClient::LinksAccessibilityOverviewProgressInstances
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksAccessibilityOverviewProgressInstances.new(
+instance = SiteImproveAPIClient::LinksAccessibilityOverviewProgressInstances.new(
   history: null
 )
 ```

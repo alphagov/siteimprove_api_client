@@ -1,4 +1,4 @@
-# SiteImproveApiClient::KeywordRankingList
+# SiteImproveAPIClient::KeywordRankingList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::KeywordRankingList.new(
+instance = SiteImproveAPIClient::KeywordRankingList.new(
   items: null,
   total_items: null,
   total_pages: null,

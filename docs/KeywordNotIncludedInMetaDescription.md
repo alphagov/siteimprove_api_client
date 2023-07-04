@@ -1,4 +1,4 @@
-# SiteImproveApiClient::KeywordNotIncludedInMetaDescription
+# SiteImproveAPIClient::KeywordNotIncludedInMetaDescription
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::KeywordNotIncludedInMetaDescription.new(
+instance = SiteImproveAPIClient::KeywordNotIncludedInMetaDescription.new(
   id: null,
   title: null,
   url: null,

@@ -1,4 +1,4 @@
-# SiteImproveApiClient::LinksProjectManagementTaskManagersJiraCloud
+# SiteImproveAPIClient::LinksProjectManagementTaskManagersJiraCloud
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'site_improve_api_client'
+require 'site-improve-api-client'
 
-instance = SiteImproveApiClient::LinksProjectManagementTaskManagersJiraCloud.new(
+instance = SiteImproveAPIClient::LinksProjectManagementTaskManagersJiraCloud.new(
   tasks: null
 )
 ```
