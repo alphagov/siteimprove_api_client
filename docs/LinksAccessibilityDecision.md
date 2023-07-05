@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::LinksAccessibilityDecision
+# SiteimproveAPIClient::LinksAccessibilityDecision
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::LinksAccessibilityDecision.new(
+instance = SiteimproveAPIClient::LinksAccessibilityDecision.new(
   issues: null,
   items: null
 )

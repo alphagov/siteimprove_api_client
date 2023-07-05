@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::DocumentBrokenLinkList
+# SiteimproveAPIClient::DocumentBrokenLinkList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::DocumentBrokenLinkList.new(
+instance = SiteimproveAPIClient::DocumentBrokenLinkList.new(
   items: null,
   total_items: null,
   total_pages: null,

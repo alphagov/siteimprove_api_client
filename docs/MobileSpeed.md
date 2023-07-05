@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::MobileSpeed
+# SiteimproveAPIClient::MobileSpeed
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::MobileSpeed.new(
+instance = SiteimproveAPIClient::MobileSpeed.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

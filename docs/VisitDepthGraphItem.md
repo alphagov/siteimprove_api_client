@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::VisitDepthGraphItem
+# SiteimproveAPIClient::VisitDepthGraphItem
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::VisitDepthGraphItem.new(
+instance = SiteimproveAPIClient::VisitDepthGraphItem.new(
   page_views_average: null,
   timestamp: null
 )

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::UrlShortenerLinkDetails
+# SiteimproveAPIClient::UrlShortenerLinkDetails
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::UrlShortenerLinkDetails.new(
+instance = SiteimproveAPIClient::UrlShortenerLinkDetails.new(
   link_creation_time: null,
   long_url: null,
   short_url: null,

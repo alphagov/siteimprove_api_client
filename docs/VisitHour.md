@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::VisitHour
+# SiteimproveAPIClient::VisitHour
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::VisitHour.new(
+instance = SiteimproveAPIClient::VisitHour.new(
   average_page_views_per_visit: null,
   hour_of_day: null,
   page_views: null,

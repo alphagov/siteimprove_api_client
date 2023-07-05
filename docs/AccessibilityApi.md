@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::AccessibilityApi
+# SiteimproveAPIClient::AccessibilityApi
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -38,15 +38,15 @@ Get decisions on issues for specific pages from accessibility
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 chapter = 'chapter_example' # String | WCAG issue chapter for the problem
 check_id = 789 # Integer | id for the Accessibility check. {1, 2, ... 135} Lookup: https://support.siteimprove.com/hc/en-gb/articles/360002273918
@@ -62,7 +62,7 @@ begin
   # Get decisions on issues for specific pages from accessibility
   result = api_instance.sites_site_id_accessibility_decision_issues_chapter_check_id_subtype_pages_get(site_id, chapter, check_id, subtype, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_decision_issues_chapter_check_id_subtype_pages_get: #{e}"
 end
 ```
@@ -80,7 +80,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageForIgnoredIssueDecisionList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_decision_issues_chapter_check_id_subtype_pages_get_with_http_info: #{e}"
 end
 ```
@@ -124,15 +124,15 @@ Get decisions on issues from accessibility
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -144,7 +144,7 @@ begin
   # Get decisions on issues from accessibility
   result = api_instance.sites_site_id_accessibility_decision_issues_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_decision_issues_get: #{e}"
 end
 ```
@@ -162,7 +162,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IgnoredIssueDecisionList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_decision_issues_get_with_http_info: #{e}"
 end
 ```
@@ -202,15 +202,15 @@ Get decisions on items for specific pages from accessibility
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 chapter = 'chapter_example' # String | WCAG issue chapter for the problem
 check_id = 789 # Integer | id for the Accessibility check. {1, 2, ... 135} Lookup: https://support.siteimprove.com/hc/en-gb/articles/360002273918
@@ -226,7 +226,7 @@ begin
   # Get decisions on items for specific pages from accessibility
   result = api_instance.sites_site_id_accessibility_decision_items_chapter_check_id_subtype_hash_pages_get(site_id, chapter, check_id, subtype, hash, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_decision_items_chapter_check_id_subtype_hash_pages_get: #{e}"
 end
 ```
@@ -244,7 +244,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IgnoredItemPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_decision_items_chapter_check_id_subtype_hash_pages_get_with_http_info: #{e}"
 end
 ```
@@ -288,15 +288,15 @@ Get decisions on items from accessibility
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -308,7 +308,7 @@ begin
   # Get decisions on items from accessibility
   result = api_instance.sites_site_id_accessibility_decision_items_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_decision_items_get: #{e}"
 end
 ```
@@ -326,7 +326,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IgnoredItemDecisionList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_decision_items_get_with_http_info: #{e}"
 end
 ```
@@ -366,15 +366,15 @@ Retrieves the issues from accessibility; how many pages that have the Issue; the
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -386,7 +386,7 @@ begin
   # Get issues from accessibility
   result = api_instance.sites_site_id_accessibility_issues_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_issues_get: #{e}"
 end
 ```
@@ -404,7 +404,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IssueList1>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_issues_get_with_http_info: #{e}"
 end
 ```
@@ -444,15 +444,15 @@ Retrieves pages with this issue from accessibility. The issue is identified by i
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 success_criterion = 'success_criterion_example' # String | WCAG success criterion key (e.g. 2.4.9). Lookup: https://www.w3.org/TR/WCAG20/ 
 check_id = 56 # Integer | id for the Accessibility check. {1, 2, ... 135} Lookup: https://support.siteimprove.com/hc/en-gb/articles/360002273918
@@ -469,7 +469,7 @@ begin
   # Get pages with this issue from accessibility
   result = api_instance.sites_site_id_accessibility_issues_success_criterion_check_id_pages_get(site_id, success_criterion, check_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_issues_success_criterion_check_id_pages_get: #{e}"
 end
 ```
@@ -487,7 +487,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SpecificIssuePageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_issues_success_criterion_check_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -532,15 +532,15 @@ Retrieves issue progress for accessibility. Returns a list of how many many inst
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 success_criterion = 'success_criterion_example' # String | WCAG success criterion key (e.g. 2.4.9). Lookup: https://www.w3.org/TR/WCAG20/ 
 check_id = 56 # Integer | id for the Accessibility check. {1, 2, ... 135} Lookup: https://support.siteimprove.com/hc/en-gb/articles/360002273918
@@ -555,7 +555,7 @@ begin
   # Get progress for this issue from accessibility
   result = api_instance.sites_site_id_accessibility_issues_success_criterion_check_id_progress_history_get(site_id, success_criterion, check_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_issues_success_criterion_check_id_progress_history_get: #{e}"
 end
 ```
@@ -573,7 +573,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <AccessibilityHistoryIssueInstancesList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_issues_success_criterion_check_id_progress_history_get_with_http_info: #{e}"
 end
 ```
@@ -616,15 +616,15 @@ Retrieve overview of groups for accessibility. Returns the name of the group; it
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -636,7 +636,7 @@ begin
   # Get overview of groups for accessibility
   result = api_instance.sites_site_id_accessibility_overview_groups_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_overview_groups_get: #{e}"
 end
 ```
@@ -654,7 +654,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <AccessibilityGroupsOverviewList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_overview_groups_get_with_http_info: #{e}"
 end
 ```
@@ -694,15 +694,15 @@ Retrieves list of users for this group. Returns id for user, user name, and user
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 group_id = 789 # Integer | Id for specific group.
 opts = {
@@ -714,7 +714,7 @@ begin
   # Get list of users for this group
   result = api_instance.sites_site_id_accessibility_overview_groups_group_id_users_get(site_id, group_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_overview_groups_group_id_users_get: #{e}"
 end
 ```
@@ -732,7 +732,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <AccessibilityGroupPersonList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_overview_groups_group_id_users_get_with_http_info: #{e}"
 end
 ```
@@ -772,15 +772,15 @@ Retrieves overall instance progress for accessibility. Returns a list of how man
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -795,7 +795,7 @@ begin
   # Get progress for all instances from accessibility
   result = api_instance.sites_site_id_accessibility_overview_progress_instances_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_overview_progress_instances_history_get: #{e}"
 end
 ```
@@ -813,7 +813,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IHistoryInstancesValuableList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_overview_progress_instances_history_get_with_http_info: #{e}"
 end
 ```
@@ -856,15 +856,15 @@ Retrieves overall issue progress for accessibility. Returns a list of how many t
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -879,7 +879,7 @@ begin
   # Get progress for all issues from accessibility
   result = api_instance.sites_site_id_accessibility_overview_progress_issues_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_overview_progress_issues_history_get: #{e}"
 end
 ```
@@ -897,7 +897,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IHistoryIssuesValuableList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_overview_progress_issues_history_get_with_http_info: #{e}"
 end
 ```
@@ -940,15 +940,15 @@ Retrieves issue overview for accessibility, according to conformance level (a, a
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -960,7 +960,7 @@ begin
   # Get summary for accessibility
   result = api_instance.sites_site_id_accessibility_overview_summary_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_overview_summary_get: #{e}"
 end
 ```
@@ -978,7 +978,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SummaryIssueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_overview_summary_get_with_http_info: #{e}"
 end
 ```
@@ -1018,15 +1018,15 @@ Retrieves HTML pages from accessibility with the number of A, AA, and AAA issues
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1041,7 +1041,7 @@ begin
   # Get HTML pages from accessibility
   result = api_instance.sites_site_id_accessibility_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_pages_get: #{e}"
 end
 ```
@@ -1059,7 +1059,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1102,15 +1102,15 @@ Retrieves the number of issues within a conformance level * severity set
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -1122,7 +1122,7 @@ begin
   # Get overview of issues for page in accessibility
   result = api_instance.sites_site_id_accessibility_pages_page_id_issues_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_pages_page_id_issues_get: #{e}"
 end
 ```
@@ -1140,7 +1140,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IssueSummaryPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_pages_page_id_issues_get_with_http_info: #{e}"
 end
 ```
@@ -1180,15 +1180,15 @@ Retrieves the HTML pages referencing specific CSS stylesheet. Returns name of HT
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 css_id = 789 # Integer | Id of the CSS file
 opts = {
@@ -1202,7 +1202,7 @@ begin
   # Get HTML pages referencing specific CSS stylesheet
   result = api_instance.sites_site_id_accessibility_validation_css_css_id_pages_using_css_get(site_id, css_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_css_css_id_pages_using_css_get: #{e}"
 end
 ```
@@ -1220,7 +1220,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageCssList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_css_css_id_pages_using_css_get_with_http_info: #{e}"
 end
 ```
@@ -1262,15 +1262,15 @@ Retrieves CSS error report from accesibility. Contains the number of CSS errors 
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1284,7 +1284,7 @@ begin
   # Get W3C CSS error report from accessibility
   result = api_instance.sites_site_id_accessibility_validation_css_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_css_get: #{e}"
 end
 ```
@@ -1302,7 +1302,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CssValidationList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_css_get_with_http_info: #{e}"
 end
 ```
@@ -1344,15 +1344,15 @@ Retrieves W3C HTML error report from accesibility. Returns name of HTML page, it
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1367,7 +1367,7 @@ begin
   # Get W3C HTML error report from accessibility
   result = api_instance.sites_site_id_accessibility_validation_html_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_html_get: #{e}"
 end
 ```
@@ -1385,7 +1385,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <HtmlValidationPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_html_get_with_http_info: #{e}"
 end
 ```
@@ -1428,15 +1428,15 @@ Retrieves PDF documents from accessibility. Contains the PDF documents referred 
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1451,7 +1451,7 @@ begin
   # Get report on PDF errors from accessibility
   result = api_instance.sites_site_id_accessibility_validation_pdf_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_pdf_get: #{e}"
 end
 ```
@@ -1469,7 +1469,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DocumentWithErrorList1>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_pdf_get_with_http_info: #{e}"
 end
 ```
@@ -1512,15 +1512,15 @@ List of errors for the PDF document
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -1532,7 +1532,7 @@ begin
   # Get errors for specific PDF document
   result = api_instance.sites_site_id_accessibility_validation_pdf_link_id_issues_get(site_id, link_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_pdf_link_id_issues_get: #{e}"
 end
 ```
@@ -1550,7 +1550,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DocumentErrorDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_pdf_link_id_issues_get_with_http_info: #{e}"
 end
 ```
@@ -1590,15 +1590,15 @@ List of HTML pages on the site that refers to the PDF document
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::AccessibilityApi.new
+api_instance = SiteimproveAPIClient::AccessibilityApi.new
 site_id = 789 # Integer | Id for specific site.
 pdf_id = 789 # Integer | id of the PDF document
 opts = {
@@ -1612,7 +1612,7 @@ begin
   # Get HTML pages referring to specific PDF document
   result = api_instance.sites_site_id_accessibility_validation_pdf_pdf_id_pages_using_pdf_get(site_id, pdf_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_pdf_pdf_id_pages_using_pdf_get: #{e}"
 end
 ```
@@ -1630,7 +1630,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling AccessibilityApi->sites_site_id_accessibility_validation_pdf_pdf_id_pages_using_pdf_get_with_http_info: #{e}"
 end
 ```

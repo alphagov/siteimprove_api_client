@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::OverviewStat
+# SiteimproveAPIClient::OverviewStat
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::OverviewStat.new(
+instance = SiteimproveAPIClient::OverviewStat.new(
   bounce_rate: null,
   new_visitors: null,
   page_views: null,

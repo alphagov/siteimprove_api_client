@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ContentOptimizationKeywordHighlights
+# SiteimproveAPIClient::ContentOptimizationKeywordHighlights
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ContentOptimizationKeywordHighlights.new(
+instance = SiteimproveAPIClient::ContentOptimizationKeywordHighlights.new(
   average_progress: null,
   keywords_with_target_urls: null,
   total_keywords: null,

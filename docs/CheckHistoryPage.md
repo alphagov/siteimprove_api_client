@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::CheckHistoryPage
+# SiteimproveAPIClient::CheckHistoryPage
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::CheckHistoryPage.new(
+instance = SiteimproveAPIClient::CheckHistoryPage.new(
   id: null,
   title: null,
   url: null

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageWithCampaignsVisitsList
+# SiteimproveAPIClient::PageWithCampaignsVisitsList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageWithCampaignsVisitsList.new(
+instance = SiteimproveAPIClient::PageWithCampaignsVisitsList.new(
   items: null,
   total_items: null,
   total_pages: null,

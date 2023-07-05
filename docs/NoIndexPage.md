@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::NoIndexPage
+# SiteimproveAPIClient::NoIndexPage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::NoIndexPage.new(
+instance = SiteimproveAPIClient::NoIndexPage.new(
   id: null,
   title: null,
   url: null,

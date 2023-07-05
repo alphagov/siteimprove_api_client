@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageDeletionMetaRankingKeyword
+# SiteimproveAPIClient::PageDeletionMetaRankingKeyword
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageDeletionMetaRankingKeyword.new(
+instance = SiteimproveAPIClient::PageDeletionMetaRankingKeyword.new(
   country: null,
   keyword: null,
   position: null

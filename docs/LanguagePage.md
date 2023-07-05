@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::LanguagePage
+# SiteimproveAPIClient::LanguagePage
 
 ## Properties
 
@@ -18,9 +18,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::LanguagePage.new(
+instance = SiteimproveAPIClient::LanguagePage.new(
   id: null,
   title: null,
   url: null,

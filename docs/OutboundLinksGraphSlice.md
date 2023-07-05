@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::OutboundLinksGraphSlice
+# SiteimproveAPIClient::OutboundLinksGraphSlice
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::OutboundLinksGraphSlice.new(
+instance = SiteimproveAPIClient::OutboundLinksGraphSlice.new(
   timestamp: null,
   visits: null
 )

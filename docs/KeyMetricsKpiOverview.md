@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::KeyMetricsKpiOverview
+# SiteimproveAPIClient::KeyMetricsKpiOverview
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::KeyMetricsKpiOverview.new(
+instance = SiteimproveAPIClient::KeyMetricsKpiOverview.new(
   id: null,
   name: null,
   completion_value: null,

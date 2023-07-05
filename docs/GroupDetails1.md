@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::GroupDetails1
+# SiteimproveAPIClient::GroupDetails1
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::GroupDetails1.new(
+instance = SiteimproveAPIClient::GroupDetails1.new(
   id: null,
   broken_links: null,
   group_name: null,

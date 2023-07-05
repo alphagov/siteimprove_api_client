@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ContentCheckPolicyInfo
+# SiteimproveAPIClient::ContentCheckPolicyInfo
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ContentCheckPolicyInfo.new(
+instance = SiteimproveAPIClient::ContentCheckPolicyInfo.new(
   id: null,
   occurrences: null,
   policy_category: null,

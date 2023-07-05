@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::VisitLengthList
+# SiteimproveAPIClient::VisitLengthList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::VisitLengthList.new(
+instance = SiteimproveAPIClient::VisitLengthList.new(
   items: null,
   total_items: null,
   total_pages: null,

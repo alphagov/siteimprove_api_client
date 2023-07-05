@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::NonUpdatedMedia
+# SiteimproveAPIClient::NonUpdatedMedia
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::NonUpdatedMedia.new(
+instance = SiteimproveAPIClient::NonUpdatedMedia.new(
   id: null,
   file_size: null,
   last_modified: null,

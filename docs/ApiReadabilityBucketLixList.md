@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ApiReadabilityBucketLixList
+# SiteimproveAPIClient::ApiReadabilityBucketLixList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ApiReadabilityBucketLixList.new(
+instance = SiteimproveAPIClient::ApiReadabilityBucketLixList.new(
   items: null,
   total_items: null,
   total_pages: null,

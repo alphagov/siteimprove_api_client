@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::IntegrationsApi
+# SiteimproveAPIClient::IntegrationsApi
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -21,21 +21,21 @@ Integrations to external systems, Like Jira
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::IntegrationsApi.new
+api_instance = SiteimproveAPIClient::IntegrationsApi.new
 
 begin
   # Integrations to external systems
   result = api_instance.integrations_get
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling IntegrationsApi->integrations_get: #{e}"
 end
 ```
@@ -53,7 +53,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Integrations>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling IntegrationsApi->integrations_get_with_http_info: #{e}"
 end
 ```
@@ -88,15 +88,15 @@ Get a list of tasks created for external project management systems, linking ite
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::IntegrationsApi.new
+api_instance = SiteimproveAPIClient::IntegrationsApi.new
 task_manager = 'jira_cloud' # String | External project management system supported by Siteimprove
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -108,7 +108,7 @@ begin
   # List tasks created for external task management systems
   result = api_instance.integrations_project_management_task_managers_task_manager_tasks_get(task_manager, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling IntegrationsApi->integrations_project_management_task_managers_task_manager_tasks_get: #{e}"
 end
 ```
@@ -126,7 +126,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IssueTrackerWorkItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling IntegrationsApi->integrations_project_management_task_managers_task_manager_tasks_get_with_http_info: #{e}"
 end
 ```
@@ -166,15 +166,15 @@ Show the details for a single task.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::IntegrationsApi.new
+api_instance = SiteimproveAPIClient::IntegrationsApi.new
 task_manager = 'jira_cloud' # String | External project management system supported by Siteimprove
 task_id = 789 # Integer | ID of the task to display
 
@@ -182,7 +182,7 @@ begin
   # Show data for a single task
   result = api_instance.integrations_project_management_task_managers_task_manager_tasks_task_id_get(task_manager, task_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling IntegrationsApi->integrations_project_management_task_managers_task_manager_tasks_task_id_get: #{e}"
 end
 ```
@@ -200,7 +200,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IssueTrackerWorkItem1>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling IntegrationsApi->integrations_project_management_task_managers_task_manager_tasks_task_id_get_with_http_info: #{e}"
 end
 ```

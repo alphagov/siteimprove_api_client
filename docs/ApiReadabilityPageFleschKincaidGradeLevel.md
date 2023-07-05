@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ApiReadabilityPageFleschKincaidGradeLevel
+# SiteimproveAPIClient::ApiReadabilityPageFleschKincaidGradeLevel
 
 ## Properties
 
@@ -22,9 +22,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ApiReadabilityPageFleschKincaidGradeLevel.new(
+instance = SiteimproveAPIClient::ApiReadabilityPageFleschKincaidGradeLevel.new(
   id: null,
   title: null,
   url: null,

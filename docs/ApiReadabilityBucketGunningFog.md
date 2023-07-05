@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ApiReadabilityBucketGunningFog
+# SiteimproveAPIClient::ApiReadabilityBucketGunningFog
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ApiReadabilityBucketGunningFog.new(
+instance = SiteimproveAPIClient::ApiReadabilityBucketGunningFog.new(
   id: null,
   bucket: null,
   max: null,

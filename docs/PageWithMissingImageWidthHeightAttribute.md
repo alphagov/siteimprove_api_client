@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageWithMissingImageWidthHeightAttribute
+# SiteimproveAPIClient::PageWithMissingImageWidthHeightAttribute
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageWithMissingImageWidthHeightAttribute.new(
+instance = SiteimproveAPIClient::PageWithMissingImageWidthHeightAttribute.new(
   id: null,
   title: null,
   url: null,

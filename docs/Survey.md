@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::Survey
+# SiteimproveAPIClient::Survey
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::Survey.new(
+instance = SiteimproveAPIClient::Survey.new(
   id: null,
   name: null,
   is_active: null,

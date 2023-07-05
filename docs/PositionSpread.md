@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PositionSpread
+# SiteimproveAPIClient::PositionSpread
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PositionSpread.new(
+instance = SiteimproveAPIClient::PositionSpread.new(
   name: null,
   keywords: null,
   range: null

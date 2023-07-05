@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::RobotsTxtExist
+# SiteimproveAPIClient::RobotsTxtExist
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::RobotsTxtExist.new(
+instance = SiteimproveAPIClient::RobotsTxtExist.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

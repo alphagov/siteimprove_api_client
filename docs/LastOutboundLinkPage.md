@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::LastOutboundLinkPage
+# SiteimproveAPIClient::LastOutboundLinkPage
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::LastOutboundLinkPage.new(
+instance = SiteimproveAPIClient::LastOutboundLinkPage.new(
   id: null,
   title: null,
   url: null,

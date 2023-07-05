@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageWithCanonical
+# SiteimproveAPIClient::PageWithCanonical
 
 ## Properties
 
@@ -18,9 +18,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageWithCanonical.new(
+instance = SiteimproveAPIClient::PageWithCanonical.new(
   id: null,
   title: null,
   url: null,

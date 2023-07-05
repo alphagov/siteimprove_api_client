@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::SearchEngineDomain
+# SiteimproveAPIClient::SearchEngineDomain
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::SearchEngineDomain.new(
+instance = SiteimproveAPIClient::SearchEngineDomain.new(
   id: null,
   domain: null,
   pages: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::CampaignSummary
+# SiteimproveAPIClient::CampaignSummary
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::CampaignSummary.new(
+instance = SiteimproveAPIClient::CampaignSummary.new(
   name: null,
   bounce_rate: null,
   medium: null,

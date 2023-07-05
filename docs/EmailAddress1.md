@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::EmailAddress1
+# SiteimproveAPIClient::EmailAddress1
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::EmailAddress1.new(
+instance = SiteimproveAPIClient::EmailAddress1.new(
   id: null,
   action_required: null,
   detected: null,

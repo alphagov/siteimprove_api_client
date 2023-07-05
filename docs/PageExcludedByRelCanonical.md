@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageExcludedByRelCanonical
+# SiteimproveAPIClient::PageExcludedByRelCanonical
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageExcludedByRelCanonical.new(
+instance = SiteimproveAPIClient::PageExcludedByRelCanonical.new(
   id: null,
   title: null,
   url: null,

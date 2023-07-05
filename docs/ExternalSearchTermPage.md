@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ExternalSearchTermPage
+# SiteimproveAPIClient::ExternalSearchTermPage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ExternalSearchTermPage.new(
+instance = SiteimproveAPIClient::ExternalSearchTermPage.new(
   id: null,
   title: null,
   url: null,

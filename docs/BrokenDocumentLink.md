@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::BrokenDocumentLink
+# SiteimproveAPIClient::BrokenDocumentLink
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::BrokenDocumentLink.new(
+instance = SiteimproveAPIClient::BrokenDocumentLink.new(
   id: null,
   url: null,
   documents: null,

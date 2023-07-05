@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PolicyApi
+# SiteimproveAPIClient::PolicyApi
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -35,15 +35,15 @@ An overview of all archived policies.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
   page_size: 56, # Integer | Number of items/records per page in paged output.
@@ -54,7 +54,7 @@ begin
   # Get all archived policies
   result = api_instance.products_policy_archived_policies_get(opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->products_policy_archived_policies_get: #{e}"
 end
 ```
@@ -72,7 +72,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ArchivedPolicyOnAccountList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->products_policy_archived_policies_get_with_http_info: #{e}"
 end
 ```
@@ -111,22 +111,22 @@ Unarchive a policy with a policy id.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 policy_id = 789 # Integer | Id of the policy.
 
 begin
   # Unarchive policy
   result = api_instance.products_policy_archived_policies_policy_id_unarchive_post(policy_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->products_policy_archived_policies_policy_id_unarchive_post: #{e}"
 end
 ```
@@ -144,7 +144,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ProductsPolicyArchivedPoliciesPolicyIdUnarchivePost200Response>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->products_policy_archived_policies_policy_id_unarchive_post_with_http_info: #{e}"
 end
 ```
@@ -181,15 +181,15 @@ An overview of all policies that have been setup for the account, including thei
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
   page_size: 56, # Integer | Number of items/records per page in paged output.
@@ -200,7 +200,7 @@ begin
   # Get all policies on the account
   result = api_instance.products_policy_policies_get(opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->products_policy_policies_get: #{e}"
 end
 ```
@@ -218,7 +218,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PolicyOnAccountList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->products_policy_policies_get_with_http_info: #{e}"
 end
 ```
@@ -257,22 +257,22 @@ Archive a policy with a policy id.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 policy_id = 789 # Integer | Id of the policy.
 
 begin
   # Archive policy
   result = api_instance.products_policy_policies_policy_id_archive_post(policy_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->products_policy_policies_policy_id_archive_post: #{e}"
 end
 ```
@@ -290,7 +290,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ProductsPolicyArchivedPoliciesPolicyIdUnarchivePost200Response>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->products_policy_policies_policy_id_archive_post_with_http_info: #{e}"
 end
 ```
@@ -327,15 +327,15 @@ Information about all sites on which this policy is active. All such sites will 
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 policy_id = 789 # Integer | Id of the policy.
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -346,7 +346,7 @@ begin
   # Get policy matches for all sites on the account
   result = api_instance.products_policy_policies_policy_id_sites_get(policy_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->products_policy_policies_policy_id_sites_get: #{e}"
 end
 ```
@@ -364,7 +364,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PolicySiteList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->products_policy_policies_policy_id_sites_get_with_http_info: #{e}"
 end
 ```
@@ -403,15 +403,15 @@ Total amount of matches for all policies on a given site.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -423,7 +423,7 @@ begin
   # Get history of total matches across a site
   result = api_instance.sites_site_id_policy_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_history_get: #{e}"
 end
 ```
@@ -441,7 +441,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PolicySiteTotalHistoryEntryList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_history_get_with_http_info: #{e}"
 end
 ```
@@ -481,15 +481,15 @@ Documents that refer to the resource being matched by this policy.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -501,7 +501,7 @@ begin
   # Get referring documents for specific match in policies
   result = api_instance.sites_site_id_policy_links_link_id_referring_documents_get(site_id, link_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_links_link_id_referring_documents_get: #{e}"
 end
 ```
@@ -519,7 +519,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PolicyDocumentWithLinkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_links_link_id_referring_documents_get_with_http_info: #{e}"
 end
 ```
@@ -559,15 +559,15 @@ Media that refer to the resource being matched by this policy.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -579,7 +579,7 @@ begin
   # Get referring media for specific match in policies
   result = api_instance.sites_site_id_policy_links_link_id_referring_media_get(site_id, link_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_links_link_id_referring_media_get: #{e}"
 end
 ```
@@ -597,7 +597,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PolicyMediaWithLinkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_links_link_id_referring_media_get_with_http_info: #{e}"
 end
 ```
@@ -637,15 +637,15 @@ Pages that refer to the resource being matched by this policy.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -658,7 +658,7 @@ begin
   # Get referring pages for specific match in policies
   result = api_instance.sites_site_id_policy_links_link_id_referring_pages_get(site_id, link_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_links_link_id_referring_pages_get: #{e}"
 end
 ```
@@ -676,7 +676,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PolicyLinkDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_links_link_id_referring_pages_get_with_http_info: #{e}"
 end
 ```
@@ -717,15 +717,15 @@ All content on the site which is matched by one or more policies.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -740,7 +740,7 @@ begin
   # Get content matched by any policy
   result = api_instance.sites_site_id_policy_matches_content_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_matches_content_get: #{e}"
 end
 ```
@@ -758,7 +758,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithPoliciesList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_matches_content_get_with_http_info: #{e}"
 end
 ```
@@ -801,15 +801,15 @@ All pages that refer to the item that is matched by this specific policy.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -822,7 +822,7 @@ begin
   # Referring pages to item matched by specific policy
   result = api_instance.sites_site_id_policy_matches_details_links_link_id_referring_pages_get(site_id, link_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_matches_details_links_link_id_referring_pages_get: #{e}"
 end
 ```
@@ -840,7 +840,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithPolicyExpanderList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_matches_details_links_link_id_referring_pages_get_with_http_info: #{e}"
 end
 ```
@@ -881,15 +881,15 @@ All policies that matches the item that is matched by this specific policy.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 match_id = 789 # Integer | Id of the match.
 opts = {
@@ -901,7 +901,7 @@ begin
   # Matching policies to item matched by specific policy
   result = api_instance.sites_site_id_policy_matches_details_matches_match_id_matching_policies_get(site_id, match_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_matches_details_matches_match_id_matching_policies_get: #{e}"
 end
 ```
@@ -919,7 +919,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PolicyInfoList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_matches_details_matches_match_id_matching_policies_get_with_http_info: #{e}"
 end
 ```
@@ -959,15 +959,15 @@ All policies that match this specific page.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -980,7 +980,7 @@ begin
   # Get policy matches for page in policies
   result = api_instance.sites_site_id_policy_pages_page_id_matching_policies_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_pages_page_id_matching_policies_get: #{e}"
 end
 ```
@@ -998,7 +998,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagePolicyList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_pages_page_id_matching_policies_get_with_http_info: #{e}"
 end
 ```
@@ -1039,15 +1039,15 @@ An overview of all policies that have been setup and any current matches.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1061,7 +1061,7 @@ begin
   # Get policies
   result = api_instance.sites_site_id_policy_policies_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_policies_get: #{e}"
 end
 ```
@@ -1079,7 +1079,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ExecutedPolicyList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_policies_get_with_http_info: #{e}"
 end
 ```
@@ -1121,15 +1121,15 @@ Get a list of all content (pages) on the site that is matched by this specific p
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 policy_id = 789 # Integer | Id of the policy.
 opts = {
@@ -1144,7 +1144,7 @@ begin
   # Get content matched by policy
   result = api_instance.sites_site_id_policy_policies_policy_id_content_get(site_id, policy_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_policies_policy_id_content_get: #{e}"
 end
 ```
@@ -1162,7 +1162,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PolicyContentPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_policies_policy_id_content_get_with_http_info: #{e}"
 end
 ```
@@ -1205,15 +1205,15 @@ Get a list of all documents on the site that is matched by this specific policy.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 policy_id = 789 # Integer | Id of the policy.
 opts = {
@@ -1228,7 +1228,7 @@ begin
   # Get documents matched by policy
   result = api_instance.sites_site_id_policy_policies_policy_id_documents_get(site_id, policy_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_policies_policy_id_documents_get: #{e}"
 end
 ```
@@ -1246,7 +1246,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PolicyDocumentLinkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_policies_policy_id_documents_get_with_http_info: #{e}"
 end
 ```
@@ -1289,15 +1289,15 @@ Get a list of all media on the site that is matched by this specific policy.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::PolicyApi.new
+api_instance = SiteimproveAPIClient::PolicyApi.new
 site_id = 789 # Integer | Id for specific site.
 policy_id = 789 # Integer | Id of the policy.
 opts = {
@@ -1311,7 +1311,7 @@ begin
   # Get media matched by policy
   result = api_instance.sites_site_id_policy_policies_policy_id_media_get(site_id, policy_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_policies_policy_id_media_get: #{e}"
 end
 ```
@@ -1329,7 +1329,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PolicyMediaLinkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling PolicyApi->sites_site_id_policy_policies_policy_id_media_get_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::Resolution
+# SiteimproveAPIClient::Resolution
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::Resolution.new(
+instance = SiteimproveAPIClient::Resolution.new(
   bounce_rate: null,
   height: null,
   is_unknown: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ParameterNameValueVisitsGraphSlice
+# SiteimproveAPIClient::ParameterNameValueVisitsGraphSlice
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ParameterNameValueVisitsGraphSlice.new(
+instance = SiteimproveAPIClient::ParameterNameValueVisitsGraphSlice.new(
   timestamp: null,
   visits: null
 )

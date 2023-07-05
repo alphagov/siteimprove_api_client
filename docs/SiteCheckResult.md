@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::SiteCheckResult
+# SiteimproveAPIClient::SiteCheckResult
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::SiteCheckResult.new(
+instance = SiteimproveAPIClient::SiteCheckResult.new(
   message: null,
   status_code: null,
   success: null,

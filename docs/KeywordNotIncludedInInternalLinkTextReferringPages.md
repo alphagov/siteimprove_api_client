@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::KeywordNotIncludedInInternalLinkTextReferringPages
+# SiteimproveAPIClient::KeywordNotIncludedInInternalLinkTextReferringPages
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::KeywordNotIncludedInInternalLinkTextReferringPages.new(
+instance = SiteimproveAPIClient::KeywordNotIncludedInInternalLinkTextReferringPages.new(
   id: null,
   title: null,
   url: null,

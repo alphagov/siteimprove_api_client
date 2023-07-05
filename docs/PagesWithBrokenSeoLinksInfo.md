@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PagesWithBrokenSeoLinksInfo
+# SiteimproveAPIClient::PagesWithBrokenSeoLinksInfo
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PagesWithBrokenSeoLinksInfo.new(
+instance = SiteimproveAPIClient::PagesWithBrokenSeoLinksInfo.new(
   broken_links: null,
   complexity: null,
   issue_name: null,

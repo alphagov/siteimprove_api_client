@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::Redirect301PagesInfo
+# SiteimproveAPIClient::Redirect301PagesInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::Redirect301PagesInfo.new(
+instance = SiteimproveAPIClient::Redirect301PagesInfo.new(
   _301_redirects: null,
   complexity: null,
   issue_name: null,

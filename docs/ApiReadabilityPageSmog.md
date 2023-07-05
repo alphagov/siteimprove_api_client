@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ApiReadabilityPageSmog
+# SiteimproveAPIClient::ApiReadabilityPageSmog
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ApiReadabilityPageSmog.new(
+instance = SiteimproveAPIClient::ApiReadabilityPageSmog.new(
   id: null,
   title: null,
   url: null,

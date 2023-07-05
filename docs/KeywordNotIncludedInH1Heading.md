@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::KeywordNotIncludedInH1Heading
+# SiteimproveAPIClient::KeywordNotIncludedInH1Heading
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::KeywordNotIncludedInH1Heading.new(
+instance = SiteimproveAPIClient::KeywordNotIncludedInH1Heading.new(
   id: null,
   title: null,
   url: null,

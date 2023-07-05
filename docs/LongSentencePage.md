@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::LongSentencePage
+# SiteimproveAPIClient::LongSentencePage
 
 ## Properties
 
@@ -20,9 +20,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::LongSentencePage.new(
+instance = SiteimproveAPIClient::LongSentencePage.new(
   id: null,
   title: null,
   url: null,

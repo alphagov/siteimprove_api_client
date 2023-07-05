@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ContentApi
+# SiteimproveAPIClient::ContentApi
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -49,21 +49,21 @@ Upload content for an on-demand content check
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 
 begin
   # Upload content for an on-demand content check
   result = api_instance.content_check_post
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_check_post: #{e}"
 end
 ```
@@ -81,7 +81,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentCheckResult>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_check_post_with_http_info: #{e}"
 end
 ```
@@ -116,15 +116,15 @@ Get the a11y issues found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -135,7 +135,7 @@ begin
   # Get the a11y issues found in the content 
   result = api_instance.content_checks_content_id_a11y_issue_on_page_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_a11y_issue_on_page_get: #{e}"
 end
 ```
@@ -153,7 +153,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IssueOnPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_a11y_issue_on_page_get_with_http_info: #{e}"
 end
 ```
@@ -192,15 +192,15 @@ Get a list of accessibility issues for the specified content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -211,7 +211,7 @@ begin
   # Get a list of accessibility issues for the specified content
   result = api_instance.content_checks_content_id_accessibility_issues_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_accessibility_issues_get: #{e}"
 end
 ```
@@ -229,7 +229,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageIssueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_accessibility_issues_get_with_http_info: #{e}"
 end
 ```
@@ -268,22 +268,22 @@ Get the full list of content-check issue found for this page.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 
 begin
   # Get issue found for this page
   result = api_instance.content_checks_content_id_issues_get(content_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_issues_get: #{e}"
 end
 ```
@@ -301,7 +301,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentCheckIssues>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_issues_get_with_http_info: #{e}"
 end
 ```
@@ -338,15 +338,15 @@ Get the matching policies for the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -357,7 +357,7 @@ begin
   # Get the matching policies for the content
   result = api_instance.content_checks_content_id_policy_matching_policies_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_policy_matching_policies_get: #{e}"
 end
 ```
@@ -375,7 +375,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentCheckPolicyInfoList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_policy_matching_policies_get_with_http_info: #{e}"
 end
 ```
@@ -414,15 +414,15 @@ Get the capture tags found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -433,7 +433,7 @@ begin
   # Get the capture tags found in the content
   result = api_instance.content_checks_content_id_quality_assurance_inventory_capture_tags_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_capture_tags_get: #{e}"
 end
 ```
@@ -451,7 +451,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BodyTagNameList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_capture_tags_get_with_http_info: #{e}"
 end
 ```
@@ -490,15 +490,15 @@ Get the email addresses found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -509,7 +509,7 @@ begin
   # Get the email addresses found in the content
   result = api_instance.content_checks_content_id_quality_assurance_inventory_email_addresses_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_email_addresses_get: #{e}"
 end
 ```
@@ -527,7 +527,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <EmailAddressList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_email_addresses_get_with_http_info: #{e}"
 end
 ```
@@ -566,15 +566,15 @@ Get the link texts found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -585,7 +585,7 @@ begin
   # Get the link texts found in the content
   result = api_instance.content_checks_content_id_quality_assurance_inventory_link_texts_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_link_texts_get: #{e}"
 end
 ```
@@ -603,7 +603,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinkTextList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_link_texts_get_with_http_info: #{e}"
 end
 ```
@@ -642,15 +642,15 @@ Get the links found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -661,7 +661,7 @@ begin
   # Get the links found in the content
   result = api_instance.content_checks_content_id_quality_assurance_inventory_links_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_links_get: #{e}"
 end
 ```
@@ -679,7 +679,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_links_get_with_http_info: #{e}"
 end
 ```
@@ -718,15 +718,15 @@ Get the meta tags found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -737,7 +737,7 @@ begin
   # Get the meta tags found in the content
   result = api_instance.content_checks_content_id_quality_assurance_inventory_meta_tags_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_meta_tags_get: #{e}"
 end
 ```
@@ -755,7 +755,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTagNameList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_meta_tags_get_with_http_info: #{e}"
 end
 ```
@@ -794,15 +794,15 @@ Get the personal id numbers found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -813,7 +813,7 @@ begin
   # Get the personal id numbers found in the content
   result = api_instance.content_checks_content_id_quality_assurance_inventory_personal_id_numbers_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_personal_id_numbers_get: #{e}"
 end
 ```
@@ -831,7 +831,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PersonalIdNumberList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_personal_id_numbers_get_with_http_info: #{e}"
 end
 ```
@@ -870,15 +870,15 @@ Get the phone numbers found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -889,7 +889,7 @@ begin
   # Get the phone numbers found in the content
   result = api_instance.content_checks_content_id_quality_assurance_inventory_phone_numbers_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_phone_numbers_get: #{e}"
 end
 ```
@@ -907,7 +907,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PhoneNumberList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_phone_numbers_get_with_http_info: #{e}"
 end
 ```
@@ -946,15 +946,15 @@ Get the trademarks found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -965,7 +965,7 @@ begin
   # Get the trademarks found in the content
   result = api_instance.content_checks_content_id_quality_assurance_inventory_trademarks_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_trademarks_get: #{e}"
 end
 ```
@@ -983,7 +983,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <TrademarkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_inventory_trademarks_get_with_http_info: #{e}"
 end
 ```
@@ -1022,15 +1022,15 @@ Get the broken links found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -1041,7 +1041,7 @@ begin
   # Get the broken links found in the content
   result = api_instance.content_checks_content_id_quality_assurance_links_broken_links_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_links_broken_links_get: #{e}"
 end
 ```
@@ -1059,7 +1059,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <BrokenPageLinkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_links_broken_links_get_with_http_info: #{e}"
 end
 ```
@@ -1098,15 +1098,15 @@ Get the list of links to unsafe domains found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -1117,7 +1117,7 @@ begin
   # Get the list of links to unsafe domains found in the content
   result = api_instance.content_checks_content_id_quality_assurance_links_unsafe_domains_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_links_unsafe_domains_get: #{e}"
 end
 ```
@@ -1135,7 +1135,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UnsafeDomainList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_links_unsafe_domains_get_with_http_info: #{e}"
 end
 ```
@@ -1174,22 +1174,22 @@ Get detailed information of the readability scores of the content for the variou
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 
 begin
   # Get detailed information of the readability scores of the content for the various metrics
   result = api_instance.content_checks_content_id_quality_assurance_readability_get(content_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_readability_get: #{e}"
 end
 ```
@@ -1207,7 +1207,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentCheckReadability>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_readability_get_with_http_info: #{e}"
 end
 ```
@@ -1244,15 +1244,15 @@ Lists the languages that was detected in the content, along with info about the 
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -1263,7 +1263,7 @@ begin
   # Get the languages found in the content
   result = api_instance.content_checks_content_id_quality_assurance_spelling_languages_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_spelling_languages_get: #{e}"
 end
 ```
@@ -1281,7 +1281,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LanguageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_spelling_languages_get_with_http_info: #{e}"
 end
 ```
@@ -1320,15 +1320,15 @@ Get the misspellings found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -1339,7 +1339,7 @@ begin
   # Get the misspellings found in the content
   result = api_instance.content_checks_content_id_quality_assurance_spelling_misspellings_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_spelling_misspellings_get: #{e}"
 end
 ```
@@ -1357,7 +1357,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MisspellingOnPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_spelling_misspellings_get_with_http_info: #{e}"
 end
 ```
@@ -1396,15 +1396,15 @@ Get the potential misspellings found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -1415,7 +1415,7 @@ begin
   # Get the potential misspellings found in the content
   result = api_instance.content_checks_content_id_quality_assurance_spelling_potential_misspellings_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_spelling_potential_misspellings_get: #{e}"
 end
 ```
@@ -1433,7 +1433,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagePotentialMisspellingList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_quality_assurance_spelling_potential_misspellings_get_with_http_info: #{e}"
 end
 ```
@@ -1472,15 +1472,15 @@ Get a list of SEO issues found in the content
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -1491,7 +1491,7 @@ begin
   # Get a list of SEO issues found in the content
   result = api_instance.content_checks_content_id_seov2_issues_get(content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_seov2_issues_get: #{e}"
 end
 ```
@@ -1509,7 +1509,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueWithRecommendationList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_seov2_issues_get_with_http_info: #{e}"
 end
 ```
@@ -1548,22 +1548,22 @@ Get a summary of the findings of the content check
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 content_id = 789 # Integer | The content id returned when the content was uploaded
 
 begin
   # Get a summary of the findings of the content check
   result = api_instance.content_checks_content_id_summary_get(content_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_summary_get: #{e}"
 end
 ```
@@ -1581,7 +1581,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentCheckSummary>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_checks_content_id_summary_get_with_http_info: #{e}"
 end
 ```
@@ -1618,22 +1618,22 @@ Get all information for this page that will be impacted in case of unpublishing 
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 url = 'url_example' # String | Url of the site
 
 begin
   # Get unpublishing impact for a page via Url
   result = api_instance.content_unpublish_impact_get(url)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_unpublish_impact_get: #{e}"
 end
 ```
@@ -1651,7 +1651,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageDeletionMetaCrossProduct>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->content_unpublish_impact_get_with_http_info: #{e}"
 end
 ```
@@ -1688,15 +1688,15 @@ Get check status for a page specified by Url.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 site_id = 789 # Integer | Id for specific site.
 url = 'url_example' # String | Url of the site
 opts = {
@@ -1707,7 +1707,7 @@ begin
   # Get check status for a page via Url
   result = api_instance.sites_site_id_content_check_page_get(site_id, url, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_check_page_get: #{e}"
 end
 ```
@@ -1725,7 +1725,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageChecking>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_check_page_get_with_http_info: #{e}"
 end
 ```
@@ -1764,15 +1764,15 @@ Get check status for a page via page id.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -1783,7 +1783,7 @@ begin
   # Get check status for a page via page id
   result = api_instance.sites_site_id_content_check_page_page_id_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_check_page_page_id_get: #{e}"
 end
 ```
@@ -1801,7 +1801,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageChecking>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_check_page_page_id_get_with_http_info: #{e}"
 end
 ```
@@ -1840,15 +1840,15 @@ POST a page check request via page id.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 
@@ -1856,7 +1856,7 @@ begin
   # Post a page check request via page id
   result = api_instance.sites_site_id_content_check_page_page_id_post(site_id, page_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_check_page_page_id_post: #{e}"
 end
 ```
@@ -1874,7 +1874,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RecheckResult>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_check_page_page_id_post_with_http_info: #{e}"
 end
 ```
@@ -1912,15 +1912,15 @@ POST a page check request via Url.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 site_id = 789 # Integer | Id for specific site.
 url = 'url_example' # String | Url of the site
 
@@ -1928,7 +1928,7 @@ begin
   # Post a page check request via Url
   result = api_instance.sites_site_id_content_check_page_post(site_id, url)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_check_page_post: #{e}"
 end
 ```
@@ -1946,7 +1946,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SinglePageCheckResult>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_check_page_post_with_http_info: #{e}"
 end
 ```
@@ -1984,15 +1984,15 @@ Get info about the crawl status for a site.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -2002,7 +2002,7 @@ begin
   # Get crawl status for a site
   result = api_instance.sites_site_id_content_crawl_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_crawl_get: #{e}"
 end
 ```
@@ -2020,7 +2020,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CrawlStatus>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_crawl_get_with_http_info: #{e}"
 end
 ```
@@ -2058,22 +2058,22 @@ POST a crawl request for the site.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Request a crawl for the site
   result = api_instance.sites_site_id_content_crawl_post(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_crawl_post: #{e}"
 end
 ```
@@ -2091,7 +2091,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SiteCheckResult>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_crawl_post_with_http_info: #{e}"
 end
 ```
@@ -2128,15 +2128,15 @@ Get list of pages for a site.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2151,7 +2151,7 @@ begin
   # Get list of pages for a site
   result = api_instance.sites_site_id_content_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_pages_get: #{e}"
 end
 ```
@@ -2169,7 +2169,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageApiList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2212,15 +2212,15 @@ Get page details for a page.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -2231,7 +2231,7 @@ begin
   # Get page details for page
   result = api_instance.sites_site_id_content_pages_page_id_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_pages_page_id_get: #{e}"
 end
 ```
@@ -2249,7 +2249,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageSummary>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_pages_page_id_get_with_http_info: #{e}"
 end
 ```
@@ -2288,15 +2288,15 @@ Get all information for this page that will be impacted in case of unpublishing 
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::ContentApi.new
+api_instance = SiteimproveAPIClient::ContentApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 
@@ -2304,7 +2304,7 @@ begin
   # Get unpublishing impact for a page
   result = api_instance.sites_site_id_content_pages_page_id_unpublish_impact_get(site_id, page_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_pages_page_id_unpublish_impact_get: #{e}"
 end
 ```
@@ -2322,7 +2322,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UnpublishPageCheck>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling ContentApi->sites_site_id_content_pages_page_id_unpublish_impact_get_with_http_info: #{e}"
 end
 ```

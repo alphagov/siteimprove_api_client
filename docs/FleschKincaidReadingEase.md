@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::FleschKincaidReadingEase
+# SiteimproveAPIClient::FleschKincaidReadingEase
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::FleschKincaidReadingEase.new(
+instance = SiteimproveAPIClient::FleschKincaidReadingEase.new(
   long_sentences_unique: null,
   poly_syllabic_words_unique: null,
   sentences: null,

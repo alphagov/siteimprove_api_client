@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::UnsafeLinkPdf
+# SiteimproveAPIClient::UnsafeLinkPdf
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::UnsafeLinkPdf.new(
+instance = SiteimproveAPIClient::UnsafeLinkPdf.new(
   id: null,
   url: null,
   checking_now: null,

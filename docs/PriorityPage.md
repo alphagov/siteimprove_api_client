@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PriorityPage
+# SiteimproveAPIClient::PriorityPage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PriorityPage.new(
+instance = SiteimproveAPIClient::PriorityPage.new(
   id: null,
   title: null,
   url: null,

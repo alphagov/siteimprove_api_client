@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::SpellingHistoryItem
+# SiteimproveAPIClient::SpellingHistoryItem
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::SpellingHistoryItem.new(
+instance = SiteimproveAPIClient::SpellingHistoryItem.new(
   misspellings: null,
   potential_misspellings: null,
   timestamp: null,

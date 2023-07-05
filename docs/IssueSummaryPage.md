@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::IssueSummaryPage
+# SiteimproveAPIClient::IssueSummaryPage
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::IssueSummaryPage.new(
+instance = SiteimproveAPIClient::IssueSummaryPage.new(
   conformance_level: null,
   issues: null,
   severity: null

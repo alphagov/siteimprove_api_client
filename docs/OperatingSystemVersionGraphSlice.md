@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::OperatingSystemVersionGraphSlice
+# SiteimproveAPIClient::OperatingSystemVersionGraphSlice
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::OperatingSystemVersionGraphSlice.new(
+instance = SiteimproveAPIClient::OperatingSystemVersionGraphSlice.new(
   data: null,
   timestamp: null
 )

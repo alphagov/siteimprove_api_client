@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::SitemapExist
+# SiteimproveAPIClient::SitemapExist
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::SitemapExist.new(
+instance = SiteimproveAPIClient::SitemapExist.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

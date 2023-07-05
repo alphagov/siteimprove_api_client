@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::CategoryAction
+# SiteimproveAPIClient::CategoryAction
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::CategoryAction.new(
+instance = SiteimproveAPIClient::CategoryAction.new(
   id: null,
   action: null,
   events: null,

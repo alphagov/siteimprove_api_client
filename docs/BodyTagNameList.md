@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::BodyTagNameList
+# SiteimproveAPIClient::BodyTagNameList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::BodyTagNameList.new(
+instance = SiteimproveAPIClient::BodyTagNameList.new(
   items: null,
   total_items: null,
   total_pages: null,

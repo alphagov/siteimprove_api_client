@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::SpellingReview
+# SiteimproveAPIClient::SpellingReview
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::SpellingReview.new(
+instance = SiteimproveAPIClient::SpellingReview.new(
   id: null,
   suggestion: null,
   word: null,

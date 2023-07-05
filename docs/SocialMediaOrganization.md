@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::SocialMediaOrganization
+# SiteimproveAPIClient::SocialMediaOrganization
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::SocialMediaOrganization.new(
+instance = SiteimproveAPIClient::SocialMediaOrganization.new(
   id: null,
   organisation: null,
   pages: null,

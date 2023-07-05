@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::AccountUtilization
+# SiteimproveAPIClient::AccountUtilization
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::AccountUtilization.new(
+instance = SiteimproveAPIClient::AccountUtilization.new(
   behaviour_maps: null,
   current_month_page_views: null,
   documents: null,

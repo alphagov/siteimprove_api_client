@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PagePolicy
+# SiteimproveAPIClient::PagePolicy
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PagePolicy.new(
+instance = SiteimproveAPIClient::PagePolicy.new(
   id: null,
   detected_date: null,
   policy_category: null,

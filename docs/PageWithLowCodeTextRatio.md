@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageWithLowCodeTextRatio
+# SiteimproveAPIClient::PageWithLowCodeTextRatio
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageWithLowCodeTextRatio.new(
+instance = SiteimproveAPIClient::PageWithLowCodeTextRatio.new(
   id: null,
   title: null,
   url: null,

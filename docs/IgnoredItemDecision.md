@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::IgnoredItemDecision
+# SiteimproveAPIClient::IgnoredItemDecision
 
 ## Properties
 
@@ -20,9 +20,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::IgnoredItemDecision.new(
+instance = SiteimproveAPIClient::IgnoredItemDecision.new(
   chapter: null,
   check: null,
   check_id: null,

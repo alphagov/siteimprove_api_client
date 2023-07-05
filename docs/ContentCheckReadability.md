@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ContentCheckReadability
+# SiteimproveAPIClient::ContentCheckReadability
 
 ## Properties
 
@@ -18,9 +18,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ContentCheckReadability.new(
+instance = SiteimproveAPIClient::ContentCheckReadability.new(
   account_readability_type: null,
   automated_readability: null,
   coleman_liau: null,

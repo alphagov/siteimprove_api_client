@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ValueOfMax
+# SiteimproveAPIClient::ValueOfMax
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ValueOfMax.new(
+instance = SiteimproveAPIClient::ValueOfMax.new(
   max: null,
   value: null
 )

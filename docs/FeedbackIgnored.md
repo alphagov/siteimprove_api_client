@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::FeedbackIgnored
+# SiteimproveAPIClient::FeedbackIgnored
 
 ## Properties
 
@@ -26,9 +26,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::FeedbackIgnored.new(
+instance = SiteimproveAPIClient::FeedbackIgnored.new(
   id: null,
   title: null,
   url: null,

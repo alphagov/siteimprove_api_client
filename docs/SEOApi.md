@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::SEOApi
+# SiteimproveAPIClient::SEOApi
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -52,15 +52,15 @@ Get specific issues that have been ignored within the SEO service. This includes
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -72,7 +72,7 @@ begin
   # Get ignored issues from decisions
   result = api_instance.sites_site_id_seo_decisions_ignored_issues_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_decisions_ignored_issues_get: #{e}"
 end
 ```
@@ -90,7 +90,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IgnoredIssuesList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_decisions_ignored_issues_get_with_http_info: #{e}"
 end
 ```
@@ -130,15 +130,15 @@ Get all pages affected by a specific issue.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -151,7 +151,7 @@ begin
   # Get ignored issue's pages from decisions
   result = api_instance.sites_site_id_seo_decisions_ignored_issues_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_decisions_ignored_issues_pages_get: #{e}"
 end
 ```
@@ -169,7 +169,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IgnoredIssuesDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_decisions_ignored_issues_pages_get_with_http_info: #{e}"
 end
 ```
@@ -210,15 +210,15 @@ Get pages have been ignored within the SEO service.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -232,7 +232,7 @@ begin
   # Get ignored pages from decisions
   result = api_instance.sites_site_id_seo_decisions_ignored_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_decisions_ignored_pages_get: #{e}"
 end
 ```
@@ -250,7 +250,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IgnoredPagesList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_decisions_ignored_pages_get_with_http_info: #{e}"
 end
 ```
@@ -292,15 +292,15 @@ Get issues of two or more pages that share the same H1 heading. The H1 heading i
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -313,7 +313,7 @@ begin
   # Get \"duplicate H1 headings\" from issues
   result = api_instance.sites_site_id_seo_issues_duplicate_h1_headings_h1_headings_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_h1_headings_h1_headings_get: #{e}"
 end
 ```
@@ -331,7 +331,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DuplicateH1HeadingList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_h1_headings_h1_headings_get_with_http_info: #{e}"
 end
 ```
@@ -372,15 +372,15 @@ Get all pages that have duplicate H1 headings.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 h1heading_id = 789 # Integer | Id for specific H1 heading.
 opts = {
@@ -394,7 +394,7 @@ begin
   # Get pages for \"duplicate H1 headings\" from issues
   result = api_instance.sites_site_id_seo_issues_duplicate_h1_headings_h1_headings_h1heading_id_pages_get(site_id, h1heading_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_h1_headings_h1_headings_h1heading_id_pages_get: #{e}"
 end
 ```
@@ -412,7 +412,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DuplicateH1HeadingDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_h1_headings_h1_headings_h1heading_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -454,15 +454,15 @@ Two or more pages share the same meta description. The meta description is your 
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -475,7 +475,7 @@ begin
   # Get \"duplicate meta descriptions\" from issues
   result = api_instance.sites_site_id_seo_issues_duplicate_meta_descriptions_meta_descriptions_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_meta_descriptions_meta_descriptions_get: #{e}"
 end
 ```
@@ -493,7 +493,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DuplicateMetaDescriptionList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_meta_descriptions_meta_descriptions_get_with_http_info: #{e}"
 end
 ```
@@ -534,15 +534,15 @@ Get all pages that have duplicate meta descriptions.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 meta_name_id = 789 # Integer | Id for specific meta name.
 meta_content_id = 789 # Integer | Id for specific meta content.
@@ -557,7 +557,7 @@ begin
   # Get pages with \"duplicate meta descriptions\" from issues
   result = api_instance.sites_site_id_seo_issues_duplicate_meta_descriptions_meta_descriptions_meta_name_id_meta_content_id_pages_get(site_id, meta_name_id, meta_content_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_meta_descriptions_meta_descriptions_meta_name_id_meta_content_id_pages_get: #{e}"
 end
 ```
@@ -575,7 +575,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DuplicateMetaDescriptionDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_meta_descriptions_meta_descriptions_meta_name_id_meta_content_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -618,15 +618,15 @@ Two or more pages share the same page title. This may cause the pages to compete
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -639,7 +639,7 @@ begin
   # Get \"duplicate page titles\" from issues
   result = api_instance.sites_site_id_seo_issues_duplicate_page_title_titles_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_page_title_titles_get: #{e}"
 end
 ```
@@ -657,7 +657,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DuplicatePageTitlesList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_page_title_titles_get_with_http_info: #{e}"
 end
 ```
@@ -698,15 +698,15 @@ Get all pages that have duplicate page titles.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -720,7 +720,7 @@ begin
   # Get pages for \"duplicate page titles\" from issues
   result = api_instance.sites_site_id_seo_issues_duplicate_page_title_titles_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_page_title_titles_pages_get: #{e}"
 end
 ```
@@ -738,7 +738,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DuplicatePageTitleDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_duplicate_page_title_titles_pages_get_with_http_info: #{e}"
 end
 ```
@@ -780,15 +780,15 @@ Get all SEO issues on your website.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -802,7 +802,7 @@ begin
   # Get issues
   result = api_instance.sites_site_id_seo_issues_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_get: #{e}"
 end
 ```
@@ -820,7 +820,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_get_with_http_info: #{e}"
 end
 ```
@@ -862,15 +862,15 @@ The H1 heading is the main heading on the page and it defines the semantic relat
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -885,7 +885,7 @@ begin
   # Get pages for \"keyword not included in h1\" from issues
   result = api_instance.sites_site_id_seo_issues_keyword_not_included_in_h1_heading_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_h1_heading_pages_get: #{e}"
 end
 ```
@@ -903,7 +903,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordNotIncludedInH1HeadingList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_h1_heading_pages_get_with_http_info: #{e}"
 end
 ```
@@ -946,15 +946,15 @@ The keyword is not included in any of the image alt texts in the page. Including
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -969,7 +969,7 @@ begin
   # Get pages for \"keyword not included in image alt text\" from issues
   result = api_instance.sites_site_id_seo_issues_keyword_not_included_in_image_alt_text_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_image_alt_text_pages_get: #{e}"
 end
 ```
@@ -987,7 +987,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordNotIncludedInImageAltTextList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_image_alt_text_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1030,15 +1030,15 @@ This will return the pages for this particular SEO issue.  The keyword is not in
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1052,7 +1052,7 @@ begin
   # Get pages for \"keyword not included in internal link text\" from issues
   result = api_instance.sites_site_id_seo_issues_keyword_not_included_in_internal_link_text_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_internal_link_text_pages_get: #{e}"
 end
 ```
@@ -1070,7 +1070,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordNotIncludedInInternalLinkTextList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_internal_link_text_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1112,15 +1112,15 @@ This will return the link texts for this particular SEO issue.  The keyword is n
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -1132,7 +1132,7 @@ begin
   # Get link texts for \"keyword not included in internal link text\" from issues
   result = api_instance.sites_site_id_seo_issues_keyword_not_included_in_internal_link_text_pages_page_id_link_texts_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_internal_link_text_pages_page_id_link_texts_get: #{e}"
 end
 ```
@@ -1150,7 +1150,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordNotIncludedInInternalLinkTextDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_internal_link_text_pages_page_id_link_texts_get_with_http_info: #{e}"
 end
 ```
@@ -1190,15 +1190,15 @@ This will return the referring pages to the specific link text on for this parti
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 link_text_id = 789 # Integer | Id for specific link text.
@@ -1212,7 +1212,7 @@ begin
   # Get referring pages to link text for \"keyword not included in internal link text\" from issues
   result = api_instance.sites_site_id_seo_issues_keyword_not_included_in_internal_link_text_pages_page_id_link_texts_link_text_id_referring_pages_get(site_id, page_id, link_text_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_internal_link_text_pages_page_id_link_texts_link_text_id_referring_pages_get: #{e}"
 end
 ```
@@ -1230,7 +1230,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordNotIncludedInInternalLinkTextReferringPagesList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_internal_link_text_pages_page_id_link_texts_link_text_id_referring_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1272,15 +1272,15 @@ The meta description is your opportunity to advertise the content of the page an
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1295,7 +1295,7 @@ begin
   # Get pages for \"keyword not included in meta description\" from issues
   result = api_instance.sites_site_id_seo_issues_keyword_not_included_in_meta_description_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_meta_description_pages_get: #{e}"
 end
 ```
@@ -1313,7 +1313,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordNotIncludedInMetaDescriptionList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_meta_description_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1356,15 +1356,15 @@ The keyword is not included in the page title. The page title is the single most
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1379,7 +1379,7 @@ begin
   # Get pages for \"keyword not included in page title\" from issues
   result = api_instance.sites_site_id_seo_issues_keyword_not_included_in_page_title_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_page_title_pages_get: #{e}"
 end
 ```
@@ -1397,7 +1397,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordNotIncludedInPageTitleList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_page_title_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1440,15 +1440,15 @@ Heading tags are used to structure your content and make it easier for users as 
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1463,7 +1463,7 @@ begin
   # Get pages for \"keyword not included in sub headings\" from issues
   result = api_instance.sites_site_id_seo_issues_keyword_not_included_in_sub_headings_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_sub_headings_pages_get: #{e}"
 end
 ```
@@ -1481,7 +1481,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordNotIncludedInSubHeadingsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_sub_headings_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1524,15 +1524,15 @@ When the keyword is included in the page's URL, it tells both users and search e
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1547,7 +1547,7 @@ begin
   # Get pages for \"keyword not included in url\" from issues
   result = api_instance.sites_site_id_seo_issues_keyword_not_included_in_url_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_url_pages_get: #{e}"
 end
 ```
@@ -1565,7 +1565,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordNotIncludedInUrlList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_keyword_not_included_in_url_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1608,15 +1608,15 @@ Blocking pages by noindex/nofollow is a way to keep pages accessible to users na
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1630,7 +1630,7 @@ begin
   # Get pages for \"pages excluded by noindex/nofollow\" from issues
   result = api_instance.sites_site_id_seo_issues_page_excluded_by_noindex_nofollow_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_page_excluded_by_noindex_nofollow_pages_get: #{e}"
 end
 ```
@@ -1648,7 +1648,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageExcludedByNoindexNofollowList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_page_excluded_by_noindex_nofollow_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1690,15 +1690,15 @@ Get all referring pages to this particular page.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -1711,7 +1711,7 @@ begin
   # Get referring pages for \"pages excluded by noindex/nofollow\" from issues
   result = api_instance.sites_site_id_seo_issues_page_excluded_by_noindex_nofollow_pages_page_id_referring_pages_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_page_excluded_by_noindex_nofollow_pages_page_id_referring_pages_get: #{e}"
 end
 ```
@@ -1729,7 +1729,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList1>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_page_excluded_by_noindex_nofollow_pages_page_id_referring_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1770,15 +1770,15 @@ Blocking pages by rel=canonical is a way to keep duplicate pages accessible to u
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1792,7 +1792,7 @@ begin
   # Get pages for \"page excluded by rel=canonical\" from issues
   result = api_instance.sites_site_id_seo_issues_page_excluded_by_rel_canonical_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_page_excluded_by_rel_canonical_pages_get: #{e}"
 end
 ```
@@ -1810,7 +1810,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageExcludedByRelCanonicalList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_page_excluded_by_rel_canonical_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1852,15 +1852,15 @@ Robots.txt is a text file at the top-level directory of a web server that tells 
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1874,7 +1874,7 @@ begin
   # Get pages for \"pages excluded by robots.txt\" from issues
   result = api_instance.sites_site_id_seo_issues_page_excluded_by_robots_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_page_excluded_by_robots_pages_get: #{e}"
 end
 ```
@@ -1892,7 +1892,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageExcludedByRobotsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_page_excluded_by_robots_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1934,15 +1934,15 @@ Pages that are not included in the website’s XML Sitemap. The XML Sitemap info
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1956,7 +1956,7 @@ begin
   # Get pages for \"page not included in xml sitemap\" from issues
   result = api_instance.sites_site_id_seo_issues_page_not_included_in_xml_sitemap_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_page_not_included_in_xml_sitemap_pages_get: #{e}"
 end
 ```
@@ -1974,7 +1974,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageNotIncludedInXmlSitemapList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_page_not_included_in_xml_sitemap_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2016,15 +2016,15 @@ The H1 heading is the main heading on the page and it defines the semantic relat
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2038,7 +2038,7 @@ begin
   # Get pages for \"pages without h1 headings\" from issues
   result = api_instance.sites_site_id_seo_issues_pages_without_h1_heading_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_pages_without_h1_heading_pages_get: #{e}"
 end
 ```
@@ -2056,7 +2056,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithoutH1HeadingList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_pages_without_h1_heading_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2098,15 +2098,15 @@ The meta description is your opportunity to advertise the content of the page an
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2121,7 +2121,7 @@ begin
   # Get pages for \"pages without meta descriptions\" from issues
   result = api_instance.sites_site_id_seo_issues_pages_without_meta_description_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_pages_without_meta_description_pages_get: #{e}"
 end
 ```
@@ -2139,7 +2139,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithoutMetaDescriptionList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_pages_without_meta_description_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2182,15 +2182,15 @@ When a page has no page title it makes it difficult for search engines to determ
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2204,7 +2204,7 @@ begin
   # Get pages for \"pages without page title\" from issues
   result = api_instance.sites_site_id_seo_issues_pages_without_page_title_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_pages_without_page_title_pages_get: #{e}"
 end
 ```
@@ -2222,7 +2222,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithoutPageTitleList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_pages_without_page_title_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2264,15 +2264,15 @@ A 302 redirect is a temporary redirect that sends users and search engines - but
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2286,7 +2286,7 @@ begin
   # Get redirect links from issues
   result = api_instance.sites_site_id_seo_issues_redirect_links_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_redirect_links_get: #{e}"
 end
 ```
@@ -2304,7 +2304,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RedirectRequestDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_redirect_links_get_with_http_info: #{e}"
 end
 ```
@@ -2346,15 +2346,15 @@ Get the entire list of redirections involved, from the start page to the end pag
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -2366,7 +2366,7 @@ begin
   # Get redirection steps in redirect links from issues
   result = api_instance.sites_site_id_seo_issues_redirect_links_link_id_steps_get(site_id, link_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_redirect_links_link_id_steps_get: #{e}"
 end
 ```
@@ -2384,7 +2384,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RedirectChainRequestDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_issues_redirect_links_link_id_steps_get_with_http_info: #{e}"
 end
 ```
@@ -2424,15 +2424,15 @@ Groups are used to display information for specific sections of the website. Onl
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -2444,7 +2444,7 @@ begin
   # Get SEO groups
   result = api_instance.sites_site_id_seo_overview_groups_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_overview_groups_get: #{e}"
 end
 ```
@@ -2462,7 +2462,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoGroupOverviewDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_overview_groups_get_with_http_info: #{e}"
 end
 ```
@@ -2502,15 +2502,15 @@ Policies created within the Policy service that have been chosen to be displayed
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2524,7 +2524,7 @@ begin
   # Get SEO policies
   result = api_instance.sites_site_id_seo_overview_policies_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_overview_policies_get: #{e}"
 end
 ```
@@ -2542,7 +2542,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ExecutedPolicyList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_overview_policies_get_with_http_info: #{e}"
 end
 ```
@@ -2584,15 +2584,15 @@ Get overall summary of the issues identified by SEO.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2604,7 +2604,7 @@ begin
   # Get summary for SEO
   result = api_instance.sites_site_id_seo_overview_summary_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_overview_summary_get: #{e}"
 end
 ```
@@ -2622,7 +2622,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoSummaryIssueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_overview_summary_get_with_http_info: #{e}"
 end
 ```
@@ -2662,15 +2662,15 @@ Get all pages that are being checked for SEO issues, including pages that are be
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2685,7 +2685,7 @@ begin
   # Get pages
   result = api_instance.sites_site_id_seo_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_pages_get: #{e}"
 end
 ```
@@ -2703,7 +2703,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2746,15 +2746,15 @@ Get SEO issues for a specific page.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SEOApi.new
+api_instance = SiteimproveAPIClient::SEOApi.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -2767,7 +2767,7 @@ begin
   # Get issues for page
   result = api_instance.sites_site_id_seo_pages_page_id_issues_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_pages_page_id_issues_get: #{e}"
 end
 ```
@@ -2785,7 +2785,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoPageIssueDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SEOApi->sites_site_id_seo_pages_page_id_issues_get_with_http_info: #{e}"
 end
 ```

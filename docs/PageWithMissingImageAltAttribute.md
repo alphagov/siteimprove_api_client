@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageWithMissingImageAltAttribute
+# SiteimproveAPIClient::PageWithMissingImageAltAttribute
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageWithMissingImageAltAttribute.new(
+instance = SiteimproveAPIClient::PageWithMissingImageAltAttribute.new(
   id: null,
   title: null,
   url: null,

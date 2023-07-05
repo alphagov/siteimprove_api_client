@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::LinksProjectManagementTaskManagers
+# SiteimproveAPIClient::LinksProjectManagementTaskManagers
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::LinksProjectManagementTaskManagers.new(
+instance = SiteimproveAPIClient::LinksProjectManagementTaskManagers.new(
   azure_dev_ops: null,
   jira_cloud: null
 )

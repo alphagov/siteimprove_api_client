@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::EventGraphItem
+# SiteimproveAPIClient::EventGraphItem
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::EventGraphItem.new(
+instance = SiteimproveAPIClient::EventGraphItem.new(
   event_count_per_visit: null,
   events: null,
   pages: null,

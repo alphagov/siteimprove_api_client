@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::Document
+# SiteimproveAPIClient::Document
 
 ## Properties
 
@@ -21,9 +21,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::Document.new(
+instance = SiteimproveAPIClient::Document.new(
   id: null,
   url: null,
   document_too_large: null,

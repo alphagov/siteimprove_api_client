@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ExternalReferringPage
+# SiteimproveAPIClient::ExternalReferringPage
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ExternalReferringPage.new(
+instance = SiteimproveAPIClient::ExternalReferringPage.new(
   id: null,
   url: null,
   bounce_rate: null,
