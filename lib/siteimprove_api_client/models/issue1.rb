@@ -117,7 +117,7 @@ module SiteimproveAPIClient
       if attributes.key?(:'difficulty')
         self.difficulty = attributes[:'difficulty']
       else
-        self.difficulty = 'difficulty1'
+        self.difficulty = '1'
       end
 
       if attributes.key?(:'help')
@@ -165,7 +165,7 @@ module SiteimproveAPIClient
     def valid?
       conformance_validator = EnumAttributeValidator.new('String', ["a", "aa", "aaa", "aria", "si"])
       return false unless conformance_validator.valid?(@conformance)
-      difficulty_validator = EnumAttributeValidator.new('String', ["difficulty1", "difficulty2", "difficulty3", "difficulty4"])
+      difficulty_validator = EnumAttributeValidator.new('String', ["1", "2", "3", "4"])
       return false unless difficulty_validator.valid?(@difficulty)
       return false if @occurrences.nil?
       return false if @pages.nil?
@@ -186,7 +186,7 @@ module SiteimproveAPIClient
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] difficulty Object to be assigned
     def difficulty=(difficulty)
-      validator = EnumAttributeValidator.new('String', ["difficulty1", "difficulty2", "difficulty3", "difficulty4"])
+      validator = EnumAttributeValidator.new('String', ["1", "2", "3", "4"])
       unless validator.valid?(difficulty)
         fail ArgumentError, "invalid value for \"difficulty\", must be one of #{validator.allowable_values}."
       end

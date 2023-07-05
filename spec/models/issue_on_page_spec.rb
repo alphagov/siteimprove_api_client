@@ -38,7 +38,7 @@ describe SiteimproveAPIClient::IssueOnPage do
   describe 'test attribute "difficulty"' do
     it 'should work' do
       # assertion here. ref: https://rspec.info/features/3-12/rspec-expectations/built-in-matchers/
-      # validator = Petstore::EnumTest::EnumAttributeValidator.new('String', ["difficulty1", "difficulty2", "difficulty3", "difficulty4"])
+      # validator = Petstore::EnumTest::EnumAttributeValidator.new('String', ["1", "2", "3", "4"])
       # validator.allowable_values.each do |value|
       #   expect { instance.difficulty = value }.not_to raise_error
       # end
