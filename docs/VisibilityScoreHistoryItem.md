@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::VisibilityScoreHistoryItem
+# SiteimproveAPIClient::VisibilityScoreHistoryItem
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::VisibilityScoreHistoryItem.new(
+instance = SiteimproveAPIClient::VisibilityScoreHistoryItem.new(
   name: null,
   data: null,
   search_engine_visibility: null,

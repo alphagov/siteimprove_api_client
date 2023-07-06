@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::VisitLengthGraphItem
+# SiteimproveAPIClient::VisitLengthGraphItem
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::VisitLengthGraphItem.new(
+instance = SiteimproveAPIClient::VisitLengthGraphItem.new(
   timestamp: null,
   visit_duration_average_in_minutes: null
 )

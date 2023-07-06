@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PagesWithHighNavigationDepthInfo
+# SiteimproveAPIClient::PagesWithHighNavigationDepthInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PagesWithHighNavigationDepthInfo.new(
+instance = SiteimproveAPIClient::PagesWithHighNavigationDepthInfo.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::CssValidation
+# SiteimproveAPIClient::CssValidation
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::CssValidation.new(
+instance = SiteimproveAPIClient::CssValidation.new(
   id: null,
   url: null,
   checking_now: null,

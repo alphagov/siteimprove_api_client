@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::RedirectChainRequestDetails
+# SiteimproveAPIClient::RedirectChainRequestDetails
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::RedirectChainRequestDetails.new(
+instance = SiteimproveAPIClient::RedirectChainRequestDetails.new(
   id: null,
   url: null,
   http_status: null,

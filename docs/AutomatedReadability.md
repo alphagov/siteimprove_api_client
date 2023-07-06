@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::AutomatedReadability
+# SiteimproveAPIClient::AutomatedReadability
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::AutomatedReadability.new(
+instance = SiteimproveAPIClient::AutomatedReadability.new(
   chars_with_digits: null,
   long_sentences_with_digits_unique: null,
   long_words_unique: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageTooLarge
+# SiteimproveAPIClient::PageTooLarge
 
 ## Properties
 
@@ -18,9 +18,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageTooLarge.new(
+instance = SiteimproveAPIClient::PageTooLarge.new(
   id: null,
   title: null,
   url: null,

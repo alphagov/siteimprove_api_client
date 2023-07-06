@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PolicySiteTotalHistoryEntry
+# SiteimproveAPIClient::PolicySiteTotalHistoryEntry
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PolicySiteTotalHistoryEntry.new(
+instance = SiteimproveAPIClient::PolicySiteTotalHistoryEntry.new(
   matches: null,
   timestamp: null
 )

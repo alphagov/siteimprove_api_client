@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::HtmlValidationSeoPagesInfo
+# SiteimproveAPIClient::HtmlValidationSeoPagesInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::HtmlValidationSeoPagesInfo.new(
+instance = SiteimproveAPIClient::HtmlValidationSeoPagesInfo.new(
   complexity: null,
   invalid_pages: null,
   issue_name: null,

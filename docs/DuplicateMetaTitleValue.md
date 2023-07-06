@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::DuplicateMetaTitleValue
+# SiteimproveAPIClient::DuplicateMetaTitleValue
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::DuplicateMetaTitleValue.new(
+instance = SiteimproveAPIClient::DuplicateMetaTitleValue.new(
   meta_title: null,
   pages: null
 )

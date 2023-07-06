@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PagesWithoutMetaDescription
+# SiteimproveAPIClient::PagesWithoutMetaDescription
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PagesWithoutMetaDescription.new(
+instance = SiteimproveAPIClient::PagesWithoutMetaDescription.new(
   id: null,
   title: null,
   url: null,

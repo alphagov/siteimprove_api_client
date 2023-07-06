@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::TargetPagesIssuesHighlights
+# SiteimproveAPIClient::TargetPagesIssuesHighlights
 
 ## Properties
 
@@ -18,9 +18,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::TargetPagesIssuesHighlights.new(
+instance = SiteimproveAPIClient::TargetPagesIssuesHighlights.new(
   average_content_score: null,
   average_seo_score: null,
   average_technical_score: null,

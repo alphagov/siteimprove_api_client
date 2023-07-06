@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::KeywordMonitoringKeyword
+# SiteimproveAPIClient::KeywordMonitoringKeyword
 
 ## Properties
 
@@ -21,9 +21,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::KeywordMonitoringKeyword.new(
+instance = SiteimproveAPIClient::KeywordMonitoringKeyword.new(
   id: null,
   database: null,
   estimated_traffic: null,

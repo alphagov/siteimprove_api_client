@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::VisitDepthList
+# SiteimproveAPIClient::VisitDepthList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::VisitDepthList.new(
+instance = SiteimproveAPIClient::VisitDepthList.new(
   items: null,
   total_items: null,
   total_pages: null,

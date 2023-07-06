@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::MetaTagName
+# SiteimproveAPIClient::MetaTagName
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::MetaTagName.new(
+instance = SiteimproveAPIClient::MetaTagName.new(
   id: null,
   meta_tag: null,
   _links: null

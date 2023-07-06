@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::TextOffset
+# SiteimproveAPIClient::TextOffset
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::TextOffset.new(
+instance = SiteimproveAPIClient::TextOffset.new(
   child: null,
   length: null,
   start: null

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::CssValidationErrorInfo
+# SiteimproveAPIClient::CssValidationErrorInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::CssValidationErrorInfo.new(
+instance = SiteimproveAPIClient::CssValidationErrorInfo.new(
   complexity: null,
   invalid_stylesheets: null,
   issue_name: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::UnsafeLinkPageList
+# SiteimproveAPIClient::UnsafeLinkPageList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::UnsafeLinkPageList.new(
+instance = SiteimproveAPIClient::UnsafeLinkPageList.new(
   items: null,
   total_items: null,
   total_pages: null,

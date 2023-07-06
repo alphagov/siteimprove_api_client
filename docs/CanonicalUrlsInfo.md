@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::CanonicalUrlsInfo
+# SiteimproveAPIClient::CanonicalUrlsInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::CanonicalUrlsInfo.new(
+instance = SiteimproveAPIClient::CanonicalUrlsInfo.new(
   canonicals: null,
   complexity: null,
   issue_name: null,

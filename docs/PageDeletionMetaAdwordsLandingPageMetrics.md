@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageDeletionMetaAdwordsLandingPageMetrics
+# SiteimproveAPIClient::PageDeletionMetaAdwordsLandingPageMetrics
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageDeletionMetaAdwordsLandingPageMetrics.new(
+instance = SiteimproveAPIClient::PageDeletionMetaAdwordsLandingPageMetrics.new(
   ad_groups: null,
   ads: null,
   adwords_account_id: null,

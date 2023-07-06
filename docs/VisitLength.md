@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::VisitLength
+# SiteimproveAPIClient::VisitLength
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::VisitLength.new(
+instance = SiteimproveAPIClient::VisitLength.new(
   visit_duration_in_minutes: null,
   visits: null
 )

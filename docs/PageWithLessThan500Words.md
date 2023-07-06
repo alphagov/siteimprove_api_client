@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageWithLessThan500Words
+# SiteimproveAPIClient::PageWithLessThan500Words
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageWithLessThan500Words.new(
+instance = SiteimproveAPIClient::PageWithLessThan500Words.new(
   id: null,
   title: null,
   url: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::StructuredDataMarkupPage
+# SiteimproveAPIClient::StructuredDataMarkupPage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::StructuredDataMarkupPage.new(
+instance = SiteimproveAPIClient::StructuredDataMarkupPage.new(
   id: null,
   title: null,
   url: null,

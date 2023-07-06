@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageForWord
+# SiteimproveAPIClient::PageForWord
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageForWord.new(
+instance = SiteimproveAPIClient::PageForWord.new(
   id: null,
   title: null,
   url: null,

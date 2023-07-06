@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ReadabilityScorePage
+# SiteimproveAPIClient::ReadabilityScorePage
 
 ## Properties
 
@@ -20,9 +20,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ReadabilityScorePage.new(
+instance = SiteimproveAPIClient::ReadabilityScorePage.new(
   id: null,
   title: null,
   url: null,

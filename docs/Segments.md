@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::Segments
+# SiteimproveAPIClient::Segments
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::Segments.new(
+instance = SiteimproveAPIClient::Segments.new(
   demographics: null,
   devices: null,
   events: null,

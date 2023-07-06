@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::DesktopSpeed
+# SiteimproveAPIClient::DesktopSpeed
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::DesktopSpeed.new(
+instance = SiteimproveAPIClient::DesktopSpeed.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

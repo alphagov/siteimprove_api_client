@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::KeyMetricsCategory
+# SiteimproveAPIClient::KeyMetricsCategory
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::KeyMetricsCategory.new(
+instance = SiteimproveAPIClient::KeyMetricsCategory.new(
   id: null,
   name: null,
   completion_value: null,

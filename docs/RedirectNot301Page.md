@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::RedirectNot301Page
+# SiteimproveAPIClient::RedirectNot301Page
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::RedirectNot301Page.new(
+instance = SiteimproveAPIClient::RedirectNot301Page.new(
   id: null,
   title: null,
   url: null,

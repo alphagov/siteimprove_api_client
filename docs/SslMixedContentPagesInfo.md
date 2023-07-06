@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::SslMixedContentPagesInfo
+# SiteimproveAPIClient::SslMixedContentPagesInfo
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::SslMixedContentPagesInfo.new(
+instance = SiteimproveAPIClient::SslMixedContentPagesInfo.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

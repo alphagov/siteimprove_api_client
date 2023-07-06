@@ -12,14 +12,14 @@ OpenAPI Generator version: 6.6.0
 
 require 'spec_helper'
 
-describe SiteImproveAPIClient::Configuration do
-  let(:config) { SiteImproveAPIClient::Configuration.default }
+describe SiteimproveAPIClient::Configuration do
+  let(:config) { SiteimproveAPIClient::Configuration.default }
 
   before(:each) do
     # uncomment below to setup host and base_path
     # require 'URI'
     # uri = URI.parse("https://api.eu.siteimprove.com/v2")
-    # SiteImproveAPIClient.configure do |c|
+    # SiteimproveAPIClient.configure do |c|
     #   c.host = uri.host
     #   c.base_path = uri.path
     # end

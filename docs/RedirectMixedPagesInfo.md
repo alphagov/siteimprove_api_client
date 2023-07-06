@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::RedirectMixedPagesInfo
+# SiteimproveAPIClient::RedirectMixedPagesInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::RedirectMixedPagesInfo.new(
+instance = SiteimproveAPIClient::RedirectMixedPagesInfo.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

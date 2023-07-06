@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::DismissedPageLink
+# SiteimproveAPIClient::DismissedPageLink
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::DismissedPageLink.new(
+instance = SiteimproveAPIClient::DismissedPageLink.new(
   id: null,
   url: null,
   comments: null,

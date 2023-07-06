@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::FeedbackResolution
+# SiteimproveAPIClient::FeedbackResolution
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::FeedbackResolution.new(
+instance = SiteimproveAPIClient::FeedbackResolution.new(
   height: null,
   width: null
 )

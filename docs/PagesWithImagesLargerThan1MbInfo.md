@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PagesWithImagesLargerThan1MbInfo
+# SiteimproveAPIClient::PagesWithImagesLargerThan1MbInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PagesWithImagesLargerThan1MbInfo.new(
+instance = SiteimproveAPIClient::PagesWithImagesLargerThan1MbInfo.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

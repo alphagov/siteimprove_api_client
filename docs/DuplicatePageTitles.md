@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::DuplicatePageTitles
+# SiteimproveAPIClient::DuplicatePageTitles
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::DuplicatePageTitles.new(
+instance = SiteimproveAPIClient::DuplicatePageTitles.new(
   title: null,
   page_level: null,
   page_views: null,

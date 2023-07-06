@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::Href60
+# SiteimproveAPIClient::Href60
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::Href60.new(
+instance = SiteimproveAPIClient::Href60.new(
   href: null
 )
 ```

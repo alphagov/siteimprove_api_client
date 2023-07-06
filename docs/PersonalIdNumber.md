@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PersonalIdNumber
+# SiteimproveAPIClient::PersonalIdNumber
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PersonalIdNumber.new(
+instance = SiteimproveAPIClient::PersonalIdNumber.new(
   id: null,
   documents: null,
   pages: null,

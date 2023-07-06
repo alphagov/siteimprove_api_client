@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PositionSpreadHistoryItem
+# SiteimproveAPIClient::PositionSpreadHistoryItem
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PositionSpreadHistoryItem.new(
+instance = SiteimproveAPIClient::PositionSpreadHistoryItem.new(
   data: null,
   timestamp: null
 )

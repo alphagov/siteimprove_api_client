@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::Event
+# SiteimproveAPIClient::Event
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::Event.new(
+instance = SiteimproveAPIClient::Event.new(
   id: null,
   action: null,
   category: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PolicyContentPage
+# SiteimproveAPIClient::PolicyContentPage
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PolicyContentPage.new(
+instance = SiteimproveAPIClient::PolicyContentPage.new(
   id: null,
   title: null,
   url: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageSizeInfo
+# SiteimproveAPIClient::PageSizeInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageSizeInfo.new(
+instance = SiteimproveAPIClient::PageSizeInfo.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

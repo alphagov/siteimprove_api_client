@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::KeywordNotIncludedInInternalLinkTextDetails
+# SiteimproveAPIClient::KeywordNotIncludedInInternalLinkTextDetails
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::KeywordNotIncludedInInternalLinkTextDetails.new(
+instance = SiteimproveAPIClient::KeywordNotIncludedInInternalLinkTextDetails.new(
   id: null,
   link_text: null,
   _links: null

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::SeoV2Api
+# SiteimproveAPIClient::SeoV2Api
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -236,15 +236,15 @@ Get all SEO activity plans on this site
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -256,7 +256,7 @@ begin
   # Get activity plans
   result = api_instance.sites_site_id_seov2_activity_plans_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_get: #{e}"
 end
 ```
@@ -274,7 +274,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ActivityPlanList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_get_with_http_info: #{e}"
 end
 ```
@@ -314,15 +314,15 @@ Get all competitors for the activity plan
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 activity_plan_id = 789 # Integer | Id for specific activity plan
 opts = {
@@ -334,7 +334,7 @@ begin
   # Get competitors for the specific activity plan
   result = api_instance.sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_get(site_id, activity_plan_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_get: #{e}"
 end
 ```
@@ -352,7 +352,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CompetitorAnalysisVisibilityScoreTrendList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_get_with_http_info: #{e}"
 end
 ```
@@ -392,15 +392,15 @@ Get yours and your competitors search engine visibility historically for the act
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 activity_plan_id = 789 # Integer | Id for specific activity plan
 opts = {
@@ -413,7 +413,7 @@ begin
   # Get competitors search engine visibility historically
   result = api_instance.sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_history_get(site_id, activity_plan_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_history_get: #{e}"
 end
 ```
@@ -431,7 +431,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VisibilityScoreHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_history_get_with_http_info: #{e}"
 end
 ```
@@ -472,15 +472,15 @@ Get the position distribution of your website and your competitors
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 activity_plan_id = 789 # Integer | Id for specific activity plan
 opts = {
@@ -492,7 +492,7 @@ begin
   # Get the position distribution of competitors
   result = api_instance.sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_positions_get(site_id, activity_plan_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_positions_get: #{e}"
 end
 ```
@@ -510,7 +510,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PositionSpreadList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_positions_get_with_http_info: #{e}"
 end
 ```
@@ -550,15 +550,15 @@ Get the historical position distribution of your website and your competitors
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 activity_plan_id = 789 # Integer | Id for specific activity plan
 opts = {
@@ -571,7 +571,7 @@ begin
   # Get the position distribution for your competitors historically
   result = api_instance.sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_positions_history_get(site_id, activity_plan_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_positions_history_get: #{e}"
 end
 ```
@@ -589,7 +589,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PositionSpreadHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_plans_activity_plan_id_competitors_positions_history_get_with_http_info: #{e}"
 end
 ```
@@ -630,15 +630,15 @@ Get historical metrics for the activity plan
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 activity_plan_id = 789 # Integer | Id for specific activity plan
 opts = {
@@ -651,7 +651,7 @@ begin
   # Get historical metrics for the activity plan
   result = api_instance.sites_site_id_seov2_activity_plans_plans_activity_plan_id_history_get(site_id, activity_plan_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_plans_activity_plan_id_history_get: #{e}"
 end
 ```
@@ -669,7 +669,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ActivityPlanHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_plans_activity_plan_id_history_get_with_http_info: #{e}"
 end
 ```
@@ -710,22 +710,22 @@ Get overall statistics for all activity plans on your website
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get overall statistics for all activity plans
   result = api_instance.sites_site_id_seov2_activity_plans_summary_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_summary_get: #{e}"
 end
 ```
@@ -743,7 +743,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ActivityPlanHighlights>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_activity_plans_summary_get_with_http_info: #{e}"
 end
 ```
@@ -780,15 +780,15 @@ Get content optimization keywords on your website
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   activity_plan_id: 789, # Integer | Id for specific activity plan
@@ -802,7 +802,7 @@ begin
   # Get content optimization keywords
   result = api_instance.sites_site_id_seov2_content_optimization_keywords_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_content_optimization_keywords_get: #{e}"
 end
 ```
@@ -820,7 +820,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentOptimizationKeywordList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_content_optimization_keywords_get_with_http_info: #{e}"
 end
 ```
@@ -862,15 +862,15 @@ Get overall statistics for content optimization keywords on your website
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   activity_plan_id: 789 # Integer | Id for specific activity plan
@@ -880,7 +880,7 @@ begin
   # Get overall statistics for content optimization keywords
   result = api_instance.sites_site_id_seov2_content_optimization_keywords_summary_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_content_optimization_keywords_summary_get: #{e}"
 end
 ```
@@ -898,7 +898,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentOptimizationKeywordHighlights>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_content_optimization_keywords_summary_get_with_http_info: #{e}"
 end
 ```
@@ -936,15 +936,15 @@ Get the overall broken links stats for your website
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -954,7 +954,7 @@ begin
   # Get overall broken links stats
   result = api_instance.sites_site_id_seov2_issues_broken_links_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_details_get: #{e}"
 end
 ```
@@ -972,7 +972,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <InternalBrokenSeoLinksInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_details_get_with_http_info: #{e}"
 end
 ```
@@ -1010,15 +1010,15 @@ Get overall broken links stats for entry pages
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -1028,7 +1028,7 @@ begin
   # Get overall broken links stats for entry pages
   result = api_instance.sites_site_id_seov2_issues_broken_links_entry_pages_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_entry_pages_details_get: #{e}"
 end
 ```
@@ -1046,7 +1046,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <InternalBrokenEntryPagesSeoLinksInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_entry_pages_details_get_with_http_info: #{e}"
 end
 ```
@@ -1084,15 +1084,15 @@ Get broken links on entry pages for your website
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1105,7 +1105,7 @@ begin
   # Get broken links on entry pages
   result = api_instance.sites_site_id_seov2_issues_broken_links_entry_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_entry_pages_get: #{e}"
 end
 ```
@@ -1123,7 +1123,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <InternalBrokenSeoLinkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_entry_pages_get_with_http_info: #{e}"
 end
 ```
@@ -1164,15 +1164,15 @@ Get the occurrences of broken links on entry pages historically
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1184,7 +1184,7 @@ begin
   # Get the occurrences of broken links on entry pages historically
   result = api_instance.sites_site_id_seov2_issues_broken_links_entry_pages_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_entry_pages_history_get: #{e}"
 end
 ```
@@ -1202,7 +1202,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_entry_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -1242,15 +1242,15 @@ Get the broken links from issues
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1263,7 +1263,7 @@ begin
   # Get broken links
   result = api_instance.sites_site_id_seov2_issues_broken_links_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_get: #{e}"
 end
 ```
@@ -1281,7 +1281,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <InternalBrokenSeoLinkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_get_with_http_info: #{e}"
 end
 ```
@@ -1322,15 +1322,15 @@ Get the occurrences of broken links historically
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1342,7 +1342,7 @@ begin
   # Get the occurrences of broken links historically
   result = api_instance.sites_site_id_seov2_issues_broken_links_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_history_get: #{e}"
 end
 ```
@@ -1360,7 +1360,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_broken_links_history_get_with_http_info: #{e}"
 end
 ```
@@ -1400,15 +1400,15 @@ Get overall stats for canonical issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -1418,7 +1418,7 @@ begin
   # Get overall stats for canonical issue
   result = api_instance.sites_site_id_seov2_issues_canonical_urls_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_canonical_urls_details_get: #{e}"
 end
 ```
@@ -1436,7 +1436,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CanonicalUrlsInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_canonical_urls_details_get_with_http_info: #{e}"
 end
 ```
@@ -1474,15 +1474,15 @@ Get pages not linking to the canonical page
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1497,7 +1497,7 @@ begin
   # Get pages not linking to the canonical page
   result = api_instance.sites_site_id_seov2_issues_canonical_urls_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_canonical_urls_get: #{e}"
 end
 ```
@@ -1515,7 +1515,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithCanonicalList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_canonical_urls_get_with_http_info: #{e}"
 end
 ```
@@ -1558,15 +1558,15 @@ Get historical occurrences of canonical issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1578,7 +1578,7 @@ begin
   # Get historical occurrences of canonical issue
   result = api_instance.sites_site_id_seov2_issues_canonical_urls_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_canonical_urls_history_get: #{e}"
 end
 ```
@@ -1596,7 +1596,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_canonical_urls_history_get_with_http_info: #{e}"
 end
 ```
@@ -1636,15 +1636,15 @@ Get overall stats of code to text ratio issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -1654,7 +1654,7 @@ begin
   # Get overall stats of code to text ratio issue
   result = api_instance.sites_site_id_seov2_issues_code_text_ratio_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_code_text_ratio_details_get: #{e}"
 end
 ```
@@ -1672,7 +1672,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesCodeTextRatioInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_code_text_ratio_details_get_with_http_info: #{e}"
 end
 ```
@@ -1710,15 +1710,15 @@ Pages with text-to-code ratio below 30%
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1732,7 +1732,7 @@ begin
   # Get pages for code to text ratio issue
   result = api_instance.sites_site_id_seov2_issues_code_text_ratio_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_code_text_ratio_get: #{e}"
 end
 ```
@@ -1750,7 +1750,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithLowCodeTextRatioList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_code_text_ratio_get_with_http_info: #{e}"
 end
 ```
@@ -1792,15 +1792,15 @@ Get historical occurrences of code to text ratio issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -1812,7 +1812,7 @@ begin
   # Get historical occurrences of code to text ratio issue
   result = api_instance.sites_site_id_seov2_issues_code_text_ratio_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_code_text_ratio_history_get: #{e}"
 end
 ```
@@ -1830,7 +1830,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_code_text_ratio_history_get_with_http_info: #{e}"
 end
 ```
@@ -1870,22 +1870,22 @@ Get compression used issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get compression used issue
   result = api_instance.sites_site_id_seov2_issues_compression_used_details_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_compression_used_details_get: #{e}"
 end
 ```
@@ -1903,7 +1903,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CompressionUsed>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_compression_used_details_get_with_http_info: #{e}"
 end
 ```
@@ -1940,15 +1940,15 @@ Get overall stats for the correct 404 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -1958,7 +1958,7 @@ begin
   # Get overall stats for the correct 404 issue
   result = api_instance.sites_site_id_seov2_issues_correct404s_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_correct404s_details_get: #{e}"
 end
 ```
@@ -1976,7 +1976,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinksStatusCodeCorrect404Info>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_correct404s_details_get_with_http_info: #{e}"
 end
 ```
@@ -2014,15 +2014,15 @@ Links should return correctly 404 when it's a 404 and not be a \"soft\" 404.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2035,7 +2035,7 @@ begin
   # Get links for the correct 404 issue
   result = api_instance.sites_site_id_seov2_issues_correct404s_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_correct404s_get: #{e}"
 end
 ```
@@ -2053,7 +2053,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Link404WithIncorrectStatusCodeList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_correct404s_get_with_http_info: #{e}"
 end
 ```
@@ -2094,15 +2094,15 @@ Get historical occurrences of correct 404 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2114,7 +2114,7 @@ begin
   # Get historical occurrences of correct 404 issue
   result = api_instance.sites_site_id_seov2_issues_correct404s_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_correct404s_history_get: #{e}"
 end
 ```
@@ -2132,7 +2132,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_correct404s_history_get_with_http_info: #{e}"
 end
 ```
@@ -2172,15 +2172,15 @@ Get overall stats for the css validation issue. This check is deprecated from No
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -2190,7 +2190,7 @@ begin
   # Get overall stats for the css validation issue
   result = api_instance.sites_site_id_seov2_issues_css_validation_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_css_validation_details_get: #{e}"
 end
 ```
@@ -2208,7 +2208,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CssValidationErrorInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_css_validation_details_get_with_http_info: #{e}"
 end
 ```
@@ -2246,15 +2246,15 @@ Get all stylesheets not passing css validation. This check is deprecated from No
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2267,7 +2267,7 @@ begin
   # Get stylesheets for the css validation issue
   result = api_instance.sites_site_id_seov2_issues_css_validation_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_css_validation_get: #{e}"
 end
 ```
@@ -2285,7 +2285,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CssValidationErrorList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_css_validation_get_with_http_info: #{e}"
 end
 ```
@@ -2326,15 +2326,15 @@ Get historical occurrences of css validation issue. This check is deprecated fro
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2346,7 +2346,7 @@ begin
   # Get historical occurrences of css validation issue
   result = api_instance.sites_site_id_seov2_issues_css_validation_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_css_validation_history_get: #{e}"
 end
 ```
@@ -2364,7 +2364,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_css_validation_history_get_with_http_info: #{e}"
 end
 ```
@@ -2404,15 +2404,15 @@ Get overall stats for the dead end pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -2422,7 +2422,7 @@ begin
   # Get overall stats for the dead end pages issue
   result = api_instance.sites_site_id_seov2_issues_dead_end_pages_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_dead_end_pages_details_get: #{e}"
 end
 ```
@@ -2440,7 +2440,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DeadEndPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_dead_end_pages_details_get_with_http_info: #{e}"
 end
 ```
@@ -2478,15 +2478,15 @@ Get all the pages with no internal links
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2500,7 +2500,7 @@ begin
   # Get dead end pages issue
   result = api_instance.sites_site_id_seov2_issues_dead_end_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_dead_end_pages_get: #{e}"
 end
 ```
@@ -2518,7 +2518,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DeadEndPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_dead_end_pages_get_with_http_info: #{e}"
 end
 ```
@@ -2560,15 +2560,15 @@ Get historical occurrences of dead end pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2580,7 +2580,7 @@ begin
   # Get historical occurrences of dead end pages issue
   result = api_instance.sites_site_id_seov2_issues_dead_end_pages_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_dead_end_pages_history_get: #{e}"
 end
 ```
@@ -2598,7 +2598,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_dead_end_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -2638,22 +2638,22 @@ Get desktop speed issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get desktop speed issue
   result = api_instance.sites_site_id_seov2_issues_desktop_speed_details_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_desktop_speed_details_get: #{e}"
 end
 ```
@@ -2671,7 +2671,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DesktopSpeed>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_desktop_speed_details_get_with_http_info: #{e}"
 end
 ```
@@ -2708,15 +2708,15 @@ Get the desktop speed score historically
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2728,7 +2728,7 @@ begin
   # Get the desktop speed score historically
   result = api_instance.sites_site_id_seov2_issues_desktop_speed_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_desktop_speed_history_get: #{e}"
 end
 ```
@@ -2746,7 +2746,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DesktopSpeedHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_desktop_speed_history_get_with_http_info: #{e}"
 end
 ```
@@ -2786,15 +2786,15 @@ Get overall stats for duplicate meta description issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -2804,7 +2804,7 @@ begin
   # Get overall stats for duplicate meta description issue
   result = api_instance.sites_site_id_seov2_issues_duplicate_description_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_description_details_get: #{e}"
 end
 ```
@@ -2822,7 +2822,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DuplicateMetaDescriptionInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_description_details_get_with_http_info: #{e}"
 end
 ```
@@ -2860,15 +2860,15 @@ Get all duplicate meta descriptions
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2881,7 +2881,7 @@ begin
   # Get duplicate description issue
   result = api_instance.sites_site_id_seov2_issues_duplicate_description_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_description_get: #{e}"
 end
 ```
@@ -2899,7 +2899,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaDescriptionValueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_description_get_with_http_info: #{e}"
 end
 ```
@@ -2940,15 +2940,15 @@ Get historical occurrences of duplicate meta description issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -2960,7 +2960,7 @@ begin
   # Get historical occurrences of duplicate description issue
   result = api_instance.sites_site_id_seov2_issues_duplicate_description_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_description_history_get: #{e}"
 end
 ```
@@ -2978,7 +2978,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_description_history_get_with_http_info: #{e}"
 end
 ```
@@ -3018,15 +3018,15 @@ Get overall stats for duplicate page title issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -3036,7 +3036,7 @@ begin
   # Get overall stats for duplicate page title issue
   result = api_instance.sites_site_id_seov2_issues_duplicate_page_title_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_page_title_details_get: #{e}"
 end
 ```
@@ -3054,7 +3054,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DuplicateMetaTitleInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_page_title_details_get_with_http_info: #{e}"
 end
 ```
@@ -3092,15 +3092,15 @@ Get all the duplicate page titles
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3113,7 +3113,7 @@ begin
   # Get duplicate page title issue
   result = api_instance.sites_site_id_seov2_issues_duplicate_page_title_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_page_title_get: #{e}"
 end
 ```
@@ -3131,7 +3131,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DuplicateMetaTitleValueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_page_title_get_with_http_info: #{e}"
 end
 ```
@@ -3172,15 +3172,15 @@ Get historical occurrences of duplicate page title issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3192,7 +3192,7 @@ begin
   # Get historical occurrences of duplicate page title issue
   result = api_instance.sites_site_id_seov2_issues_duplicate_page_title_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_page_title_history_get: #{e}"
 end
 ```
@@ -3210,7 +3210,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_duplicate_page_title_history_get_with_http_info: #{e}"
 end
 ```
@@ -3250,15 +3250,15 @@ Get overall stats for empty H1 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -3268,7 +3268,7 @@ begin
   # Get overall stats for empty H1 issue
   result = api_instance.sites_site_id_seov2_issues_empty_h1_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_empty_h1_details_get: #{e}"
 end
 ```
@@ -3286,7 +3286,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <H1EmptyInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_empty_h1_details_get_with_http_info: #{e}"
 end
 ```
@@ -3324,15 +3324,15 @@ Get all pages with an empty H1
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3346,7 +3346,7 @@ begin
   # Get empty H1 issue
   result = api_instance.sites_site_id_seov2_issues_empty_h1_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_empty_h1_get: #{e}"
 end
 ```
@@ -3364,7 +3364,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <H1IssuePageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_empty_h1_get_with_http_info: #{e}"
 end
 ```
@@ -3406,15 +3406,15 @@ Get historical occurrences of empty H1 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3426,7 +3426,7 @@ begin
   # Get historical occurrences of empty H1 issue
   result = api_instance.sites_site_id_seov2_issues_empty_h1_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_empty_h1_history_get: #{e}"
 end
 ```
@@ -3444,7 +3444,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_empty_h1_history_get_with_http_info: #{e}"
 end
 ```
@@ -3484,22 +3484,22 @@ Get font size legibility issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get font size legibility issue
   result = api_instance.sites_site_id_seov2_issues_fontsize_legibility_details_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_fontsize_legibility_details_get: #{e}"
 end
 ```
@@ -3517,7 +3517,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <FontsizeLegibility>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_fontsize_legibility_details_get_with_http_info: #{e}"
 end
 ```
@@ -3554,15 +3554,15 @@ Get all SEO issues on your website
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   category: 'none', # String | The category filter
@@ -3578,7 +3578,7 @@ begin
   # Get issues
   result = api_instance.sites_site_id_seov2_issues_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_get: #{e}"
 end
 ```
@@ -3596,7 +3596,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueWithRecommendationList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_get_with_http_info: #{e}"
 end
 ```
@@ -3640,15 +3640,15 @@ Get overall stats for html validation issue. This check is deprecated from Novem
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -3658,7 +3658,7 @@ begin
   # Get overall stats for html validation issue
   result = api_instance.sites_site_id_seov2_issues_html_validation_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_html_validation_details_get: #{e}"
 end
 ```
@@ -3676,7 +3676,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <HtmlValidationSeoPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_html_validation_details_get_with_http_info: #{e}"
 end
 ```
@@ -3714,15 +3714,15 @@ Get all the pages which do not pass html validation. This check is deprecated fr
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3736,7 +3736,7 @@ begin
   # Get html validation issue
   result = api_instance.sites_site_id_seov2_issues_html_validation_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_html_validation_get: #{e}"
 end
 ```
@@ -3754,7 +3754,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <HtmlValidationSeoPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_html_validation_get_with_http_info: #{e}"
 end
 ```
@@ -3796,15 +3796,15 @@ Get historical occurrences of html validation issue. This check is deprecated fr
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3816,7 +3816,7 @@ begin
   # Get historical occurrences of html validation issue
   result = api_instance.sites_site_id_seov2_issues_html_validation_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_html_validation_history_get: #{e}"
 end
 ```
@@ -3834,7 +3834,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_html_validation_history_get_with_http_info: #{e}"
 end
 ```
@@ -3874,15 +3874,15 @@ Get overall stats for image alt attribute issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -3892,7 +3892,7 @@ begin
   # Get overall stats for image alt attribute issue
   result = api_instance.sites_site_id_seov2_issues_image_alt_attribute_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_alt_attribute_details_get: #{e}"
 end
 ```
@@ -3910,7 +3910,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImagesWithMissingImageAltAttributeInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_alt_attribute_details_get_with_http_info: #{e}"
 end
 ```
@@ -3948,15 +3948,15 @@ Get all pages where an image is missing an alt attribute
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -3970,7 +3970,7 @@ begin
   # Get image alt attribute issue
   result = api_instance.sites_site_id_seov2_issues_image_alt_attribute_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_alt_attribute_get: #{e}"
 end
 ```
@@ -3988,7 +3988,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithMissingImageAltAttributeList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_alt_attribute_get_with_http_info: #{e}"
 end
 ```
@@ -4030,15 +4030,15 @@ Get historical occurrences of image alt attribute issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4050,7 +4050,7 @@ begin
   # Get historical occurrences of image alt attribute issue
   result = api_instance.sites_site_id_seov2_issues_image_alt_attribute_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_alt_attribute_history_get: #{e}"
 end
 ```
@@ -4068,7 +4068,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_alt_attribute_history_get_with_http_info: #{e}"
 end
 ```
@@ -4108,15 +4108,15 @@ Get overall stats for image empty alt attribute issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -4126,7 +4126,7 @@ begin
   # Get overall stats for image empty alt attribute issue
   result = api_instance.sites_site_id_seov2_issues_image_empty_alt_attribute_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_empty_alt_attribute_details_get: #{e}"
 end
 ```
@@ -4144,7 +4144,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImagesWithEmptyImageAltAttributeInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_empty_alt_attribute_details_get_with_http_info: #{e}"
 end
 ```
@@ -4182,15 +4182,15 @@ Get all pages with images that has an empty attribute
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4204,7 +4204,7 @@ begin
   # Get image empty alt attribute issue
   result = api_instance.sites_site_id_seov2_issues_image_empty_alt_attribute_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_empty_alt_attribute_get: #{e}"
 end
 ```
@@ -4222,7 +4222,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithEmptyImageAltAttributeList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_empty_alt_attribute_get_with_http_info: #{e}"
 end
 ```
@@ -4264,15 +4264,15 @@ Get historical occurrences of image empty alt attribute issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4284,7 +4284,7 @@ begin
   # Get historical occurrences of image empty alt attribute issue
   result = api_instance.sites_site_id_seov2_issues_image_empty_alt_attribute_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_empty_alt_attribute_history_get: #{e}"
 end
 ```
@@ -4302,7 +4302,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_empty_alt_attribute_history_get_with_http_info: #{e}"
 end
 ```
@@ -4342,15 +4342,15 @@ Get overall stats for image width height attribute issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -4360,7 +4360,7 @@ begin
   # Get overall stats for image width height attribute issue
   result = api_instance.sites_site_id_seov2_issues_image_width_height_attribute_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_width_height_attribute_details_get: #{e}"
 end
 ```
@@ -4378,7 +4378,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImagesWithMissingWidthHeightAttributeInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_width_height_attribute_details_get_with_http_info: #{e}"
 end
 ```
@@ -4416,15 +4416,15 @@ Get all pages with an image missing width and/or height attributes
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4438,7 +4438,7 @@ begin
   # Get image with height attribute issue
   result = api_instance.sites_site_id_seov2_issues_image_width_height_attribute_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_width_height_attribute_get: #{e}"
 end
 ```
@@ -4456,7 +4456,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithMissingImageWidthHeightAttributeList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_width_height_attribute_get_with_http_info: #{e}"
 end
 ```
@@ -4498,15 +4498,15 @@ Get historical occurrences of image width height attribute issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4518,7 +4518,7 @@ begin
   # Get historical occurrences of image width height attribute issue
   result = api_instance.sites_site_id_seov2_issues_image_width_height_attribute_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_width_height_attribute_history_get: #{e}"
 end
 ```
@@ -4536,7 +4536,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_image_width_height_attribute_history_get_with_http_info: #{e}"
 end
 ```
@@ -4576,15 +4576,15 @@ Get overall stats for images over 1mb issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -4594,7 +4594,7 @@ begin
   # Get overall stats for images over 1mb issue
   result = api_instance.sites_site_id_seov2_issues_images1mb_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_images1mb_details_get: #{e}"
 end
 ```
@@ -4612,7 +4612,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImagesLargerThan1MbInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_images1mb_details_get_with_http_info: #{e}"
 end
 ```
@@ -4650,15 +4650,15 @@ Get all images that are larger than 1 mb
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4672,7 +4672,7 @@ begin
   # Get images over 1mb issue
   result = api_instance.sites_site_id_seov2_issues_images1mb_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_images1mb_get: #{e}"
 end
 ```
@@ -4690,7 +4690,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImagesLargerThan1MbList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_images1mb_get_with_http_info: #{e}"
 end
 ```
@@ -4732,15 +4732,15 @@ Get historical occurrences of images over 1mb issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4752,7 +4752,7 @@ begin
   # Get historical occurrences of images over 1mb issue
   result = api_instance.sites_site_id_seov2_issues_images1mb_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_images1mb_history_get: #{e}"
 end
 ```
@@ -4770,7 +4770,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_images1mb_history_get_with_http_info: #{e}"
 end
 ```
@@ -4810,15 +4810,15 @@ Get overall stats for links to unsafe domains issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -4828,7 +4828,7 @@ begin
   # Get overall stats for links to unsafe domains issue
   result = api_instance.sites_site_id_seov2_issues_links_to_unsafe_domains_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_links_to_unsafe_domains_details_get: #{e}"
 end
 ```
@@ -4846,7 +4846,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UnsafeDomainsSeoInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_links_to_unsafe_domains_details_get_with_http_info: #{e}"
 end
 ```
@@ -4884,15 +4884,15 @@ Get all links which link to a domain considered unsafe
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4905,7 +4905,7 @@ begin
   # Get links to unsafe domains issue
   result = api_instance.sites_site_id_seov2_issues_links_to_unsafe_domains_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_links_to_unsafe_domains_get: #{e}"
 end
 ```
@@ -4923,7 +4923,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UnsafeDomainSeoLinkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_links_to_unsafe_domains_get_with_http_info: #{e}"
 end
 ```
@@ -4964,15 +4964,15 @@ Get historical occurrences of unsafe domains issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -4984,7 +4984,7 @@ begin
   # Get historical occurrences of unsafe domains issue
   result = api_instance.sites_site_id_seov2_issues_links_to_unsafe_domains_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_links_to_unsafe_domains_history_get: #{e}"
 end
 ```
@@ -5002,7 +5002,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_links_to_unsafe_domains_history_get_with_http_info: #{e}"
 end
 ```
@@ -5042,15 +5042,15 @@ Get overall stats for load time issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -5060,7 +5060,7 @@ begin
   # Get overall stats for load time issue
   result = api_instance.sites_site_id_seov2_issues_load_time_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_load_time_details_get: #{e}"
 end
 ```
@@ -5078,7 +5078,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SlowSeoPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_load_time_details_get_with_http_info: #{e}"
 end
 ```
@@ -5116,15 +5116,15 @@ Get all pages with loading time exceeding 2 seconds
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5138,7 +5138,7 @@ begin
   # Get load time issue
   result = api_instance.sites_site_id_seov2_issues_load_time_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_load_time_get: #{e}"
 end
 ```
@@ -5156,7 +5156,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SlowSeoPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_load_time_get_with_http_info: #{e}"
 end
 ```
@@ -5198,15 +5198,15 @@ Get historical occurrences of load time issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5218,7 +5218,7 @@ begin
   # Get historical occurrences of load time issue
   result = api_instance.sites_site_id_seov2_issues_load_time_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_load_time_history_get: #{e}"
 end
 ```
@@ -5236,7 +5236,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_load_time_history_get_with_http_info: #{e}"
 end
 ```
@@ -5276,15 +5276,15 @@ Get overall stats for the long sentences issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -5294,7 +5294,7 @@ begin
   # Get overall stats for the long sentences issue
   result = api_instance.sites_site_id_seov2_issues_long_sentences_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_sentences_details_get: #{e}"
 end
 ```
@@ -5312,7 +5312,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LongSentencePagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_sentences_details_get_with_http_info: #{e}"
 end
 ```
@@ -5350,15 +5350,15 @@ Get all pages with sentences longer than 20 words.
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5372,7 +5372,7 @@ begin
   # Get long sentences issue
   result = api_instance.sites_site_id_seov2_issues_long_sentences_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_sentences_get: #{e}"
 end
 ```
@@ -5390,7 +5390,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LongSentencePageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_sentences_get_with_http_info: #{e}"
 end
 ```
@@ -5432,15 +5432,15 @@ Get historical occurrences of long sentences issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5452,7 +5452,7 @@ begin
   # Get historical occurrences of long sentences issue
   result = api_instance.sites_site_id_seov2_issues_long_sentences_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_sentences_history_get: #{e}"
 end
 ```
@@ -5470,7 +5470,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_sentences_history_get_with_http_info: #{e}"
 end
 ```
@@ -5510,15 +5510,15 @@ Get overall stats for long urls issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -5528,7 +5528,7 @@ begin
   # Get overall stats for long urls issue
   result = api_instance.sites_site_id_seov2_issues_long_urls_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_urls_details_get: #{e}"
 end
 ```
@@ -5546,7 +5546,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithLongUrlsInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_urls_details_get_with_http_info: #{e}"
 end
 ```
@@ -5584,15 +5584,15 @@ Get all pages with long urls
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5607,7 +5607,7 @@ begin
   # Get long urls issue
   result = api_instance.sites_site_id_seov2_issues_long_urls_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_urls_get: #{e}"
 end
 ```
@@ -5625,7 +5625,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithLongUrlList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_urls_get_with_http_info: #{e}"
 end
 ```
@@ -5668,15 +5668,15 @@ Get historical occurrences of long urls issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5688,7 +5688,7 @@ begin
   # Get historical occurrences of long urls issue
   result = api_instance.sites_site_id_seov2_issues_long_urls_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_urls_history_get: #{e}"
 end
 ```
@@ -5706,7 +5706,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_long_urls_history_get_with_http_info: #{e}"
 end
 ```
@@ -5746,15 +5746,15 @@ Get overall stats for the many internal links issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -5764,7 +5764,7 @@ begin
   # Get overall stats for the many internal links issue
   result = api_instance.sites_site_id_seov2_issues_many_internal_links_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_many_internal_links_details_get: #{e}"
 end
 ```
@@ -5782,7 +5782,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ManyInternalLinksInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_many_internal_links_details_get_with_http_info: #{e}"
 end
 ```
@@ -5820,15 +5820,15 @@ Get all pages with 60 or more internal links
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5842,7 +5842,7 @@ begin
   # Get many internal links issue
   result = api_instance.sites_site_id_seov2_issues_many_internal_links_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_many_internal_links_get: #{e}"
 end
 ```
@@ -5860,7 +5860,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ManyInternalLinksPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_many_internal_links_get_with_http_info: #{e}"
 end
 ```
@@ -5902,15 +5902,15 @@ Get historical occurrences of many internal links issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -5922,7 +5922,7 @@ begin
   # Get historical occurrences of many internal links issue
   result = api_instance.sites_site_id_seov2_issues_many_internal_links_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_many_internal_links_history_get: #{e}"
 end
 ```
@@ -5940,7 +5940,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_many_internal_links_history_get_with_http_info: #{e}"
 end
 ```
@@ -5980,15 +5980,15 @@ Get overall stats for meta description empty issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -5998,7 +5998,7 @@ begin
   # Get overall stats for meta description empty issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_empty_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_empty_details_get: #{e}"
 end
 ```
@@ -6016,7 +6016,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaDescriptionEmptyInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_empty_details_get_with_http_info: #{e}"
 end
 ```
@@ -6054,15 +6054,15 @@ Get all pages with an empty meta description
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6076,7 +6076,7 @@ begin
   # Get meta description empty issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_empty_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_empty_get: #{e}"
 end
 ```
@@ -6094,7 +6094,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaDescriptionPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_empty_get_with_http_info: #{e}"
 end
 ```
@@ -6136,15 +6136,15 @@ Get historical occurrences of meta description empty issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6156,7 +6156,7 @@ begin
   # Get historical occurrences of meta description empty issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_empty_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_empty_history_get: #{e}"
 end
 ```
@@ -6174,7 +6174,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_empty_history_get_with_http_info: #{e}"
 end
 ```
@@ -6214,15 +6214,15 @@ Get overall stats for meta description too long issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -6232,7 +6232,7 @@ begin
   # Get overall stats for meta description too long issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_long_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_long_details_get: #{e}"
 end
 ```
@@ -6250,7 +6250,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaDescriptionTooLongInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_long_details_get_with_http_info: #{e}"
 end
 ```
@@ -6288,15 +6288,15 @@ Get all pages with meta descriptions that are too long
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6309,7 +6309,7 @@ begin
   # Get meta description too long issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_long_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_long_get: #{e}"
 end
 ```
@@ -6327,7 +6327,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaDescriptionValueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_long_get_with_http_info: #{e}"
 end
 ```
@@ -6368,15 +6368,15 @@ Get historical occurrences of meta description too long issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6388,7 +6388,7 @@ begin
   # Get historical occurrences of meta description too long issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_long_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_long_history_get: #{e}"
 end
 ```
@@ -6406,7 +6406,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_long_history_get_with_http_info: #{e}"
 end
 ```
@@ -6446,15 +6446,15 @@ Get overall stats for meta description missing issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -6464,7 +6464,7 @@ begin
   # Get overall stats for meta description missing issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_missing_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_missing_details_get: #{e}"
 end
 ```
@@ -6482,7 +6482,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaDescriptionMissingInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_missing_details_get_with_http_info: #{e}"
 end
 ```
@@ -6520,15 +6520,15 @@ Get all pages with a missing meta description
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6542,7 +6542,7 @@ begin
   # Get meta description empty issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_missing_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_missing_get: #{e}"
 end
 ```
@@ -6560,7 +6560,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaDescriptionPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_missing_get_with_http_info: #{e}"
 end
 ```
@@ -6602,15 +6602,15 @@ Get historical occurrences of meta description missing issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6622,7 +6622,7 @@ begin
   # Get historical occurrences of meta description missing issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_missing_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_missing_history_get: #{e}"
 end
 ```
@@ -6640,7 +6640,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_missing_history_get_with_http_info: #{e}"
 end
 ```
@@ -6680,15 +6680,15 @@ Get overall stats for multiple meta description issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -6698,7 +6698,7 @@ begin
   # Get overall stats for multiple meta description issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_multiple_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_multiple_details_get: #{e}"
 end
 ```
@@ -6716,7 +6716,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaDescriptionMultipleInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_multiple_details_get_with_http_info: #{e}"
 end
 ```
@@ -6754,15 +6754,15 @@ Get all pages with multiple meta descriptions
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6776,7 +6776,7 @@ begin
   # Get multiple meta description issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_multiple_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_multiple_get: #{e}"
 end
 ```
@@ -6794,7 +6794,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MultipleMetaDescriptionPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_multiple_get_with_http_info: #{e}"
 end
 ```
@@ -6836,15 +6836,15 @@ Get historical occurrences of multiple meta description issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -6856,7 +6856,7 @@ begin
   # Get historical occurrences of multiple meta description issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_multiple_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_multiple_history_get: #{e}"
 end
 ```
@@ -6874,7 +6874,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_multiple_history_get_with_http_info: #{e}"
 end
 ```
@@ -6914,15 +6914,15 @@ Get overall stats for meta description too short issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -6932,7 +6932,7 @@ begin
   # Get overall stats for meta description too short issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_short_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_short_details_get: #{e}"
 end
 ```
@@ -6950,7 +6950,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaDescriptionTooShortInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_short_details_get_with_http_info: #{e}"
 end
 ```
@@ -6988,15 +6988,15 @@ Get all pages with meta description that are too short
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7009,7 +7009,7 @@ begin
   # Get meta description too short issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_short_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_short_get: #{e}"
 end
 ```
@@ -7027,7 +7027,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaDescriptionValueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_short_get_with_http_info: #{e}"
 end
 ```
@@ -7068,15 +7068,15 @@ Get historical occurrences of meta description too short issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7088,7 +7088,7 @@ begin
   # Get historical occurrences of meta description too short issue
   result = api_instance.sites_site_id_seov2_issues_meta_desc_short_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_short_history_get: #{e}"
 end
 ```
@@ -7106,7 +7106,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_desc_short_history_get_with_http_info: #{e}"
 end
 ```
@@ -7146,15 +7146,15 @@ Get overall stats for meta title empty issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -7164,7 +7164,7 @@ begin
   # Get overall stats for meta title empty issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_empty_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_empty_details_get: #{e}"
 end
 ```
@@ -7182,7 +7182,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTitleEmptyInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_empty_details_get_with_http_info: #{e}"
 end
 ```
@@ -7220,15 +7220,15 @@ Get all pages with an empty meta title
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7241,7 +7241,7 @@ begin
   # Get meta title empty issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_empty_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_empty_get: #{e}"
 end
 ```
@@ -7259,7 +7259,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTitlePageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_empty_get_with_http_info: #{e}"
 end
 ```
@@ -7300,15 +7300,15 @@ Get historical occurrences of meta title empty issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7320,7 +7320,7 @@ begin
   # Get historical occurrences of meta title empty issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_empty_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_empty_history_get: #{e}"
 end
 ```
@@ -7338,7 +7338,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_empty_history_get_with_http_info: #{e}"
 end
 ```
@@ -7378,15 +7378,15 @@ Get overall stats for meta title too long issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -7396,7 +7396,7 @@ begin
   # Get overall stats for meta title too long issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_long_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_long_details_get: #{e}"
 end
 ```
@@ -7414,7 +7414,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTitleTooLongInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_long_details_get_with_http_info: #{e}"
 end
 ```
@@ -7452,15 +7452,15 @@ Get all pages with a meta title that is too long
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7473,7 +7473,7 @@ begin
   # Get meta title too long issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_long_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_long_get: #{e}"
 end
 ```
@@ -7491,7 +7491,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTitleValueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_long_get_with_http_info: #{e}"
 end
 ```
@@ -7532,15 +7532,15 @@ Get historical occurrences of meta title too long issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7552,7 +7552,7 @@ begin
   # Get historical occurrences of meta title too long issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_long_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_long_history_get: #{e}"
 end
 ```
@@ -7570,7 +7570,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_long_history_get_with_http_info: #{e}"
 end
 ```
@@ -7610,15 +7610,15 @@ Get overall stats for meta title missing issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -7628,7 +7628,7 @@ begin
   # Get overall stats for meta title missing issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_missing_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_missing_details_get: #{e}"
 end
 ```
@@ -7646,7 +7646,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTitleMissingInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_missing_details_get_with_http_info: #{e}"
 end
 ```
@@ -7684,15 +7684,15 @@ Get all pages with a missing meta title
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7705,7 +7705,7 @@ begin
   # Get meta title missing issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_missing_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_missing_get: #{e}"
 end
 ```
@@ -7723,7 +7723,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTitlePageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_missing_get_with_http_info: #{e}"
 end
 ```
@@ -7764,15 +7764,15 @@ Get historical occurrences of meta title missing issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7784,7 +7784,7 @@ begin
   # Get historical occurrences of meta title missing issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_missing_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_missing_history_get: #{e}"
 end
 ```
@@ -7802,7 +7802,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_missing_history_get_with_http_info: #{e}"
 end
 ```
@@ -7842,15 +7842,15 @@ Get overall stats for multiple meta title issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -7860,7 +7860,7 @@ begin
   # Get overall stats for multiple meta title issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_multiple_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_multiple_details_get: #{e}"
 end
 ```
@@ -7878,7 +7878,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTitleMultipleInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_multiple_details_get_with_http_info: #{e}"
 end
 ```
@@ -7916,15 +7916,15 @@ Get all pages with multiple meta titles
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -7938,7 +7938,7 @@ begin
   # Get multiple meta title issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_multiple_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_multiple_get: #{e}"
 end
 ```
@@ -7956,7 +7956,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MultipleMetaTitlePageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_multiple_get_with_http_info: #{e}"
 end
 ```
@@ -7998,15 +7998,15 @@ Get historical occurrences for multiple meta title issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -8018,7 +8018,7 @@ begin
   # Get historical occurrences for multiple meta title issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_multiple_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_multiple_history_get: #{e}"
 end
 ```
@@ -8036,7 +8036,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_multiple_history_get_with_http_info: #{e}"
 end
 ```
@@ -8076,15 +8076,15 @@ Get overall stats for meta title too short issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -8094,7 +8094,7 @@ begin
   # Get overall stats for meta title too short issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_short_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_short_details_get: #{e}"
 end
 ```
@@ -8112,7 +8112,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTitleTooShortInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_short_details_get_with_http_info: #{e}"
 end
 ```
@@ -8150,15 +8150,15 @@ Get all pages with meta titles that are too short
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -8171,7 +8171,7 @@ begin
   # Get meta title too short issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_short_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_short_get: #{e}"
 end
 ```
@@ -8189,7 +8189,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MetaTitleValueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_short_get_with_http_info: #{e}"
 end
 ```
@@ -8230,15 +8230,15 @@ Get historical occurrences of meta title too short issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -8250,7 +8250,7 @@ begin
   # Get historical occurrences of meta title too short issue
   result = api_instance.sites_site_id_seov2_issues_meta_title_short_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_short_history_get: #{e}"
 end
 ```
@@ -8268,7 +8268,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_meta_title_short_history_get_with_http_info: #{e}"
 end
 ```
@@ -8308,15 +8308,15 @@ Get overall stats for missing h1 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -8326,7 +8326,7 @@ begin
   # Get overall stats for missing h1 issue
   result = api_instance.sites_site_id_seov2_issues_missing_h1_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_missing_h1_details_get: #{e}"
 end
 ```
@@ -8344,7 +8344,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <H1MissingInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_missing_h1_details_get_with_http_info: #{e}"
 end
 ```
@@ -8382,15 +8382,15 @@ Get all pages without a h1
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -8404,7 +8404,7 @@ begin
   # Get missing h1 issue
   result = api_instance.sites_site_id_seov2_issues_missing_h1_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_missing_h1_get: #{e}"
 end
 ```
@@ -8422,7 +8422,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <H1IssuePageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_missing_h1_get_with_http_info: #{e}"
 end
 ```
@@ -8464,15 +8464,15 @@ Get historical occurrences of missing h1 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -8484,7 +8484,7 @@ begin
   # Get historical occurrences of missing h1 issue
   result = api_instance.sites_site_id_seov2_issues_missing_h1_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_missing_h1_history_get: #{e}"
 end
 ```
@@ -8502,7 +8502,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_missing_h1_history_get_with_http_info: #{e}"
 end
 ```
@@ -8542,22 +8542,22 @@ Get missing robots issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get missing robots issue
   result = api_instance.sites_site_id_seov2_issues_missing_robots_details_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_missing_robots_details_get: #{e}"
 end
 ```
@@ -8575,7 +8575,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RobotsTxtExist>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_missing_robots_details_get_with_http_info: #{e}"
 end
 ```
@@ -8612,22 +8612,22 @@ Get missing sitemap issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get missing sitemap issue
   result = api_instance.sites_site_id_seov2_issues_missing_sitemap_details_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_missing_sitemap_details_get: #{e}"
 end
 ```
@@ -8645,7 +8645,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SitemapExist>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_missing_sitemap_details_get_with_http_info: #{e}"
 end
 ```
@@ -8682,15 +8682,15 @@ Get overall stats for misspellings on entry pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -8700,7 +8700,7 @@ begin
   # Get overall stats for misspellings on entry pages issue
   result = api_instance.sites_site_id_seov2_issues_misspelling_entry_pages_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspelling_entry_pages_details_get: #{e}"
 end
 ```
@@ -8718,7 +8718,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MisspellingsInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspelling_entry_pages_details_get_with_http_info: #{e}"
 end
 ```
@@ -8756,15 +8756,15 @@ Get all entry pages with a misspelling
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -8776,7 +8776,7 @@ begin
   # Get misspellings on entry pages issue
   result = api_instance.sites_site_id_seov2_issues_misspelling_entry_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspelling_entry_pages_get: #{e}"
 end
 ```
@@ -8794,7 +8794,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MisspellingList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspelling_entry_pages_get_with_http_info: #{e}"
 end
 ```
@@ -8834,15 +8834,15 @@ Get historical occurrences of misspelling on entry pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -8854,7 +8854,7 @@ begin
   # Get historical occurrences of misspelling on entry pages issue
   result = api_instance.sites_site_id_seov2_issues_misspelling_entry_pages_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspelling_entry_pages_history_get: #{e}"
 end
 ```
@@ -8872,7 +8872,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspelling_entry_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -8912,15 +8912,15 @@ Get overall stats for misspellings issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -8930,7 +8930,7 @@ begin
   # Get overall stats for misspellings issue
   result = api_instance.sites_site_id_seov2_issues_misspellings_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspellings_details_get: #{e}"
 end
 ```
@@ -8948,7 +8948,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MisspellingsInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspellings_details_get_with_http_info: #{e}"
 end
 ```
@@ -8986,15 +8986,15 @@ Get all misspellings found on the website
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -9006,7 +9006,7 @@ begin
   # Get misspellings issue
   result = api_instance.sites_site_id_seov2_issues_misspellings_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspellings_get: #{e}"
 end
 ```
@@ -9024,7 +9024,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MisspellingList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspellings_get_with_http_info: #{e}"
 end
 ```
@@ -9064,15 +9064,15 @@ Get historical occurrences of misspelling issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -9084,7 +9084,7 @@ begin
   # Get historical occurrences of misspelling issue
   result = api_instance.sites_site_id_seov2_issues_misspellings_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspellings_history_get: #{e}"
 end
 ```
@@ -9102,7 +9102,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_misspellings_history_get_with_http_info: #{e}"
 end
 ```
@@ -9142,22 +9142,22 @@ Get mobile friendly issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get mobile friendly issue
   result = api_instance.sites_site_id_seov2_issues_mobile_friendly_details_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_mobile_friendly_details_get: #{e}"
 end
 ```
@@ -9175,7 +9175,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MobileFriendly>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_mobile_friendly_details_get_with_http_info: #{e}"
 end
 ```
@@ -9212,22 +9212,22 @@ Get mobile speed issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get mobile speed issue
   result = api_instance.sites_site_id_seov2_issues_mobile_speed_details_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_mobile_speed_details_get: #{e}"
 end
 ```
@@ -9245,7 +9245,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MobileSpeed>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_mobile_speed_details_get_with_http_info: #{e}"
 end
 ```
@@ -9282,15 +9282,15 @@ Get the mobile speed score historically
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -9302,7 +9302,7 @@ begin
   # Get the mobile speed score historically
   result = api_instance.sites_site_id_seov2_issues_mobile_speed_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_mobile_speed_history_get: #{e}"
 end
 ```
@@ -9320,7 +9320,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MobileSpeedHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_mobile_speed_history_get_with_http_info: #{e}"
 end
 ```
@@ -9360,22 +9360,22 @@ Get mobile viewport issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get mobile viewport issue
   result = api_instance.sites_site_id_seov2_issues_mobile_viewport_details_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_mobile_viewport_details_get: #{e}"
 end
 ```
@@ -9393,7 +9393,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <MobileViewport>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_mobile_viewport_details_get_with_http_info: #{e}"
 end
 ```
@@ -9430,15 +9430,15 @@ Get overall stats for multiple h1 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -9448,7 +9448,7 @@ begin
   # Get overall stats for multiple h1 issue
   result = api_instance.sites_site_id_seov2_issues_multiple_h1_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_multiple_h1_details_get: #{e}"
 end
 ```
@@ -9466,7 +9466,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <H1MultipleInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_multiple_h1_details_get_with_http_info: #{e}"
 end
 ```
@@ -9504,15 +9504,15 @@ Get all pages with multiple h1s
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -9526,7 +9526,7 @@ begin
   # Get multiple h1 issue
   result = api_instance.sites_site_id_seov2_issues_multiple_h1_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_multiple_h1_get: #{e}"
 end
 ```
@@ -9544,7 +9544,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <H1IssuePageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_multiple_h1_get_with_http_info: #{e}"
 end
 ```
@@ -9586,15 +9586,15 @@ Get historical occurrences for multiple h1 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -9606,7 +9606,7 @@ begin
   # Get historical occurrences for multiple h1 issue
   result = api_instance.sites_site_id_seov2_issues_multiple_h1_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_multiple_h1_history_get: #{e}"
 end
 ```
@@ -9624,7 +9624,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_multiple_h1_history_get_with_http_info: #{e}"
 end
 ```
@@ -9664,15 +9664,15 @@ Get overall stats for navigation depth issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -9682,7 +9682,7 @@ begin
   # Get overall stats for navigation depth issue
   result = api_instance.sites_site_id_seov2_issues_navigation_depth_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_navigation_depth_details_get: #{e}"
 end
 ```
@@ -9700,7 +9700,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithHighNavigationDepthInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_navigation_depth_details_get_with_http_info: #{e}"
 end
 ```
@@ -9738,15 +9738,15 @@ Get all pages with high navigation depth
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -9760,7 +9760,7 @@ begin
   # Get navigation depth issue
   result = api_instance.sites_site_id_seov2_issues_navigation_depth_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_navigation_depth_get: #{e}"
 end
 ```
@@ -9778,7 +9778,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithHighNavigationDepthList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_navigation_depth_get_with_http_info: #{e}"
 end
 ```
@@ -9820,15 +9820,15 @@ Get historical occurrences of navigation depth issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -9840,7 +9840,7 @@ begin
   # Get historical occurrences of navigation depth issue
   result = api_instance.sites_site_id_seov2_issues_navigation_depth_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_navigation_depth_history_get: #{e}"
 end
 ```
@@ -9858,7 +9858,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_navigation_depth_history_get_with_http_info: #{e}"
 end
 ```
@@ -9898,15 +9898,15 @@ Get new pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -9916,7 +9916,7 @@ begin
   # Get new pages issue
   result = api_instance.sites_site_id_seov2_issues_new_pages_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_new_pages_details_get: #{e}"
 end
 ```
@@ -9934,7 +9934,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <NewPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_new_pages_details_get_with_http_info: #{e}"
 end
 ```
@@ -9972,15 +9972,15 @@ Get historical occurrences of new pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -9992,7 +9992,7 @@ begin
   # Get historical occurrences of new pages issue
   result = api_instance.sites_site_id_seov2_issues_new_pages_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_new_pages_history_get: #{e}"
 end
 ```
@@ -10010,7 +10010,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_new_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -10050,15 +10050,15 @@ Get overall stats for nofollow pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -10068,7 +10068,7 @@ begin
   # Get overall stats for nofollow pages issue
   result = api_instance.sites_site_id_seov2_issues_nofollow_pages_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_nofollow_pages_details_get: #{e}"
 end
 ```
@@ -10086,7 +10086,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <NoFollowPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_nofollow_pages_details_get_with_http_info: #{e}"
 end
 ```
@@ -10124,15 +10124,15 @@ Get all pages with a nofollow tag
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -10146,7 +10146,7 @@ begin
   # Get nofollow pages issue
   result = api_instance.sites_site_id_seov2_issues_nofollow_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_nofollow_pages_get: #{e}"
 end
 ```
@@ -10164,7 +10164,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <NoFollowPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_nofollow_pages_get_with_http_info: #{e}"
 end
 ```
@@ -10206,15 +10206,15 @@ Get historical occurrences of nofollow pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -10226,7 +10226,7 @@ begin
   # Get historical occurrences of nofollow pages issue
   result = api_instance.sites_site_id_seov2_issues_nofollow_pages_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_nofollow_pages_history_get: #{e}"
 end
 ```
@@ -10244,7 +10244,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_nofollow_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -10284,15 +10284,15 @@ Get overall stats for noindex pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -10302,7 +10302,7 @@ begin
   # Get overall stats for noindex pages issue
   result = api_instance.sites_site_id_seov2_issues_noindex_pages_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_noindex_pages_details_get: #{e}"
 end
 ```
@@ -10320,7 +10320,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <NoIndexPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_noindex_pages_details_get_with_http_info: #{e}"
 end
 ```
@@ -10358,15 +10358,15 @@ Get all pages with a noindex tag
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -10380,7 +10380,7 @@ begin
   # Get noindex pages
   result = api_instance.sites_site_id_seov2_issues_noindex_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_noindex_pages_get: #{e}"
 end
 ```
@@ -10398,7 +10398,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <NoIndexPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_noindex_pages_get_with_http_info: #{e}"
 end
 ```
@@ -10440,15 +10440,15 @@ Get historical occurrences of noindex pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -10460,7 +10460,7 @@ begin
   # Get historical occurrences of noindex pages issue
   result = api_instance.sites_site_id_seov2_issues_noindex_pages_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_noindex_pages_history_get: #{e}"
 end
 ```
@@ -10478,7 +10478,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_noindex_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -10518,15 +10518,15 @@ Get overall stats for open graph tag pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -10536,7 +10536,7 @@ begin
   # Get overall stats for open graph tag pages issue
   result = api_instance.sites_site_id_seov2_issues_open_graph_tag_pages_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_open_graph_tag_pages_details_get: #{e}"
 end
 ```
@@ -10554,7 +10554,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OpenGraphTagsPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_open_graph_tag_pages_details_get_with_http_info: #{e}"
 end
 ```
@@ -10592,15 +10592,15 @@ Get all pages without open graph tags
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -10614,7 +10614,7 @@ begin
   # Get open graph tag pages issue
   result = api_instance.sites_site_id_seov2_issues_open_graph_tag_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_open_graph_tag_pages_get: #{e}"
 end
 ```
@@ -10632,7 +10632,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <OpenGraphTagsPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_open_graph_tag_pages_get_with_http_info: #{e}"
 end
 ```
@@ -10674,15 +10674,15 @@ Get historical occurrences of open graph tag pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -10694,7 +10694,7 @@ begin
   # Get historical occurrences of open graph tag pages issue
   result = api_instance.sites_site_id_seov2_issues_open_graph_tag_pages_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_open_graph_tag_pages_history_get: #{e}"
 end
 ```
@@ -10712,7 +10712,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_open_graph_tag_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -10752,15 +10752,15 @@ Get overall stats for page size issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -10770,7 +10770,7 @@ begin
   # Get overall stats for page size issue
   result = api_instance.sites_site_id_seov2_issues_page_size_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_page_size_details_get: #{e}"
 end
 ```
@@ -10788,7 +10788,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageSizeInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_page_size_details_get_with_http_info: #{e}"
 end
 ```
@@ -10826,15 +10826,15 @@ Get all pages with a size over 1 mb
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -10848,7 +10848,7 @@ begin
   # Get page size issue
   result = api_instance.sites_site_id_seov2_issues_page_size_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_page_size_get: #{e}"
 end
 ```
@@ -10866,7 +10866,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageTooLargeList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_page_size_get_with_http_info: #{e}"
 end
 ```
@@ -10908,15 +10908,15 @@ Get historical occurrences of page size issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -10928,7 +10928,7 @@ begin
   # Get historical occurrences of page size issue
   result = api_instance.sites_site_id_seov2_issues_page_size_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_page_size_history_get: #{e}"
 end
 ```
@@ -10946,7 +10946,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_page_size_history_get_with_http_info: #{e}"
 end
 ```
@@ -10986,15 +10986,15 @@ Get overall stats for pages with broken links issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -11004,7 +11004,7 @@ begin
   # Get overall stats for pages with broken links issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_broken_links_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_broken_links_details_get: #{e}"
 end
 ```
@@ -11022,7 +11022,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithBrokenSeoLinksInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_broken_links_details_get_with_http_info: #{e}"
 end
 ```
@@ -11060,15 +11060,15 @@ Get all pages with a broken link
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -11082,7 +11082,7 @@ begin
   # Get pages with broken links issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_broken_links_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_broken_links_get: #{e}"
 end
 ```
@@ -11100,7 +11100,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithBrokenSeoLinkList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_broken_links_get_with_http_info: #{e}"
 end
 ```
@@ -11142,15 +11142,15 @@ Get historical occurrences of page with broken links issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -11162,7 +11162,7 @@ begin
   # Get historical occurrences of page with broken links issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_broken_links_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_broken_links_history_get: #{e}"
 end
 ```
@@ -11180,7 +11180,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_broken_links_history_get_with_http_info: #{e}"
 end
 ```
@@ -11220,15 +11220,15 @@ Get overall stats for pages with frames issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -11238,7 +11238,7 @@ begin
   # Get overall stats for pages with frames issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_frames_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_frames_details_get: #{e}"
 end
 ```
@@ -11256,7 +11256,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithFramesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_frames_details_get_with_http_info: #{e}"
 end
 ```
@@ -11294,15 +11294,15 @@ Get all pages with a frame or iframe
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -11316,7 +11316,7 @@ begin
   # Get pages with frames issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_frames_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_frames_get: #{e}"
 end
 ```
@@ -11334,7 +11334,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithFramesList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_frames_get_with_http_info: #{e}"
 end
 ```
@@ -11376,15 +11376,15 @@ Get historical occurrences of page with frames issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -11396,7 +11396,7 @@ begin
   # Get historical occurrences of page with frames issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_frames_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_frames_history_get: #{e}"
 end
 ```
@@ -11414,7 +11414,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_frames_history_get_with_http_info: #{e}"
 end
 ```
@@ -11454,15 +11454,15 @@ Get overall stats for pages with images over 1mb issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -11472,7 +11472,7 @@ begin
   # Get overall stats for pages with images over 1mb issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_images1mb_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_images1mb_details_get: #{e}"
 end
 ```
@@ -11490,7 +11490,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithImagesLargerThan1MbInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_images1mb_details_get_with_http_info: #{e}"
 end
 ```
@@ -11528,15 +11528,15 @@ Get all pages with an image over 1 mb
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -11550,7 +11550,7 @@ begin
   # Get pages with images over 1mb issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_images1mb_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_images1mb_get: #{e}"
 end
 ```
@@ -11568,7 +11568,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithImagesLargerThan1MbList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_images1mb_get_with_http_info: #{e}"
 end
 ```
@@ -11610,15 +11610,15 @@ Get historical occurrences of page with images over 1mb issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -11630,7 +11630,7 @@ begin
   # Get historical occurrences of page with images over 1mb issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_images1mb_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_images1mb_history_get: #{e}"
 end
 ```
@@ -11648,7 +11648,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_images1mb_history_get_with_http_info: #{e}"
 end
 ```
@@ -11688,15 +11688,15 @@ Get overall stats for pages with misspellings issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -11706,7 +11706,7 @@ begin
   # Get overall stats for pages with misspellings issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_misspellings_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_misspellings_details_get: #{e}"
 end
 ```
@@ -11724,7 +11724,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithMisspellingInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_misspellings_details_get_with_http_info: #{e}"
 end
 ```
@@ -11762,15 +11762,15 @@ Get all pages with a misspelling
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -11784,7 +11784,7 @@ begin
   # Get pages with misspellings issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_misspellings_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_misspellings_get: #{e}"
 end
 ```
@@ -11802,7 +11802,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithMisspellingList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_misspellings_get_with_http_info: #{e}"
 end
 ```
@@ -11844,15 +11844,15 @@ Get historical occurrences of page with misspellings issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -11864,7 +11864,7 @@ begin
   # Get historical occurrences of page with misspellings issue
   result = api_instance.sites_site_id_seov2_issues_pages_with_misspellings_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_misspellings_history_get: #{e}"
 end
 ```
@@ -11882,7 +11882,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_pages_with_misspellings_history_get_with_http_info: #{e}"
 end
 ```
@@ -11922,15 +11922,15 @@ Get overall stats for parameterized urls issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -11940,7 +11940,7 @@ begin
   # Get overall stats for parameterized urls issue
   result = api_instance.sites_site_id_seov2_issues_parameterized_urls_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_parameterized_urls_details_get: #{e}"
 end
 ```
@@ -11958,7 +11958,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesWithParametersInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_parameterized_urls_details_get_with_http_info: #{e}"
 end
 ```
@@ -11996,15 +11996,15 @@ Get all pages with a parameterized url
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -12018,7 +12018,7 @@ begin
   # Get parameterized urls issue
   result = api_instance.sites_site_id_seov2_issues_parameterized_urls_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_parameterized_urls_get: #{e}"
 end
 ```
@@ -12036,7 +12036,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithParameterList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_parameterized_urls_get_with_http_info: #{e}"
 end
 ```
@@ -12078,15 +12078,15 @@ Get historical occurrences of parameterized urls issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -12098,7 +12098,7 @@ begin
   # Get historical occurrences of parameterized urls issue
   result = api_instance.sites_site_id_seov2_issues_parameterized_urls_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_parameterized_urls_history_get: #{e}"
 end
 ```
@@ -12116,7 +12116,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_parameterized_urls_history_get_with_http_info: #{e}"
 end
 ```
@@ -12156,15 +12156,15 @@ Get overall stats for readability page score issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -12174,7 +12174,7 @@ begin
   # Get overall stats for readability page score issue
   result = api_instance.sites_site_id_seov2_issues_readability_pages_score_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_readability_pages_score_details_get: #{e}"
 end
 ```
@@ -12192,7 +12192,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReadabilityScorePagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_readability_pages_score_details_get_with_http_info: #{e}"
 end
 ```
@@ -12230,15 +12230,15 @@ Get all pages with a readability score less than 70
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -12252,7 +12252,7 @@ begin
   # Get readability pages score issue
   result = api_instance.sites_site_id_seov2_issues_readability_pages_score_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_readability_pages_score_get: #{e}"
 end
 ```
@@ -12270,7 +12270,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReadabilityScorePageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_readability_pages_score_get_with_http_info: #{e}"
 end
 ```
@@ -12312,15 +12312,15 @@ Get historical occurrences of readability pages score issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -12332,7 +12332,7 @@ begin
   # Get historical occurrences of readability pages score issue
   result = api_instance.sites_site_id_seov2_issues_readability_pages_score_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_readability_pages_score_history_get: #{e}"
 end
 ```
@@ -12350,7 +12350,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_readability_pages_score_history_get_with_http_info: #{e}"
 end
 ```
@@ -12390,15 +12390,15 @@ Get overall stats for redirect 301 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -12408,7 +12408,7 @@ begin
   # Get overall stats for redirect 301 issue
   result = api_instance.sites_site_id_seov2_issues_redirect301_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect301_details_get: #{e}"
 end
 ```
@@ -12426,7 +12426,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Redirect301PagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect301_details_get_with_http_info: #{e}"
 end
 ```
@@ -12464,15 +12464,15 @@ Get all pages with a 301 redirect
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -12485,7 +12485,7 @@ begin
   # Get redirect 301 issue
   result = api_instance.sites_site_id_seov2_issues_redirect301_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect301_get: #{e}"
 end
 ```
@@ -12503,7 +12503,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Redirect301PageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect301_get_with_http_info: #{e}"
 end
 ```
@@ -12544,15 +12544,15 @@ Get historical occurrences of redirect 301 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -12564,7 +12564,7 @@ begin
   # Get historical occurrences of redirect 301 issue
   result = api_instance.sites_site_id_seov2_issues_redirect301_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect301_history_get: #{e}"
 end
 ```
@@ -12582,7 +12582,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect301_history_get_with_http_info: #{e}"
 end
 ```
@@ -12622,15 +12622,15 @@ Get overall stats for redirect chain issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -12640,7 +12640,7 @@ begin
   # Get overall stats for redirect chain issue
   result = api_instance.sites_site_id_seov2_issues_redirect_chain_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_chain_details_get: #{e}"
 end
 ```
@@ -12658,7 +12658,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RedirectChainPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_chain_details_get_with_http_info: #{e}"
 end
 ```
@@ -12696,15 +12696,15 @@ Get all pages with a redirect chain
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -12717,7 +12717,7 @@ begin
   # Get redirect chain issue
   result = api_instance.sites_site_id_seov2_issues_redirect_chain_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_chain_get: #{e}"
 end
 ```
@@ -12735,7 +12735,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RedirectChainPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_chain_get_with_http_info: #{e}"
 end
 ```
@@ -12776,15 +12776,15 @@ Get historical occurrences of redirect chain issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -12796,7 +12796,7 @@ begin
   # Get historical occurrences of redirect chain issue
   result = api_instance.sites_site_id_seov2_issues_redirect_chain_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_chain_history_get: #{e}"
 end
 ```
@@ -12814,7 +12814,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_chain_history_get_with_http_info: #{e}"
 end
 ```
@@ -12854,15 +12854,15 @@ Get overall stats for redirect mixed issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -12872,7 +12872,7 @@ begin
   # Get overall stats for redirect mixed issue
   result = api_instance.sites_site_id_seov2_issues_redirect_mixed_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_mixed_details_get: #{e}"
 end
 ```
@@ -12890,7 +12890,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RedirectMixedPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_mixed_details_get_with_http_info: #{e}"
 end
 ```
@@ -12928,15 +12928,15 @@ Get all redirect mixed pages
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -12949,7 +12949,7 @@ begin
   # Get redirect mixed issue
   result = api_instance.sites_site_id_seov2_issues_redirect_mixed_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_mixed_get: #{e}"
 end
 ```
@@ -12967,7 +12967,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RedirectMixedPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_mixed_get_with_http_info: #{e}"
 end
 ```
@@ -13008,15 +13008,15 @@ Get historical occurrences of redirect mixed issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -13028,7 +13028,7 @@ begin
   # Get historical occurrences of redirect mixed issue
   result = api_instance.sites_site_id_seov2_issues_redirect_mixed_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_mixed_history_get: #{e}"
 end
 ```
@@ -13046,7 +13046,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_mixed_history_get_with_http_info: #{e}"
 end
 ```
@@ -13086,15 +13086,15 @@ Get overall stats for redirect not 301 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -13104,7 +13104,7 @@ begin
   # Get overall stats for redirect not 301 issue
   result = api_instance.sites_site_id_seov2_issues_redirect_not301_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_not301_details_get: #{e}"
 end
 ```
@@ -13122,7 +13122,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RedirectNot301PagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_not301_details_get_with_http_info: #{e}"
 end
 ```
@@ -13160,15 +13160,15 @@ Get all pages with a redirect that is not 301
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -13181,7 +13181,7 @@ begin
   # Get redirect not 301 issue
   result = api_instance.sites_site_id_seov2_issues_redirect_not301_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_not301_get: #{e}"
 end
 ```
@@ -13199,7 +13199,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RedirectNot301PageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_not301_get_with_http_info: #{e}"
 end
 ```
@@ -13240,15 +13240,15 @@ Get historical occurrences of redirect not 301 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -13260,7 +13260,7 @@ begin
   # Get historical occurrences of redirect not 301 issue
   result = api_instance.sites_site_id_seov2_issues_redirect_not301_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_not301_history_get: #{e}"
 end
 ```
@@ -13278,7 +13278,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_redirect_not301_history_get_with_http_info: #{e}"
 end
 ```
@@ -13318,15 +13318,15 @@ Get overall stats for sitemap excluded pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -13336,7 +13336,7 @@ begin
   # Get overall stats for sitemap excluded pages issue
   result = api_instance.sites_site_id_seov2_issues_sitemap_excluded_pages_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_sitemap_excluded_pages_details_get: #{e}"
 end
 ```
@@ -13354,7 +13354,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PagesInSitemapInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_sitemap_excluded_pages_details_get_with_http_info: #{e}"
 end
 ```
@@ -13392,15 +13392,15 @@ Get all pages not included in the sitemap
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -13414,7 +13414,7 @@ begin
   # Get sitemap excluded pages issue 
   result = api_instance.sites_site_id_seov2_issues_sitemap_excluded_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_sitemap_excluded_pages_get: #{e}"
 end
 ```
@@ -13432,7 +13432,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageNotInSitemapList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_sitemap_excluded_pages_get_with_http_info: #{e}"
 end
 ```
@@ -13474,15 +13474,15 @@ Get historical occurrences of sitemap excluded pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -13494,7 +13494,7 @@ begin
   # Get historical occurrences of sitemap excluded pages issue
   result = api_instance.sites_site_id_seov2_issues_sitemap_excluded_pages_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_sitemap_excluded_pages_history_get: #{e}"
 end
 ```
@@ -13512,7 +13512,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_sitemap_excluded_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -13552,15 +13552,15 @@ Get overall stats for ssl enabled issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -13570,7 +13570,7 @@ begin
   # Get overall stats for ssl enabled issue
   result = api_instance.sites_site_id_seov2_issues_ssl_enabled_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_enabled_details_get: #{e}"
 end
 ```
@@ -13588,7 +13588,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SslEnabledPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_enabled_details_get_with_http_info: #{e}"
 end
 ```
@@ -13626,15 +13626,15 @@ Get all pages without ssl
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -13648,7 +13648,7 @@ begin
   # Get ssl enabled issue
   result = api_instance.sites_site_id_seov2_issues_ssl_enabled_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_enabled_get: #{e}"
 end
 ```
@@ -13666,7 +13666,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SslEnabledPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_enabled_get_with_http_info: #{e}"
 end
 ```
@@ -13708,15 +13708,15 @@ Get historical occurrences of ssl enabled issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -13728,7 +13728,7 @@ begin
   # Get historical occurrences of ssl enabled issue
   result = api_instance.sites_site_id_seov2_issues_ssl_enabled_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_enabled_history_get: #{e}"
 end
 ```
@@ -13746,7 +13746,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_enabled_history_get_with_http_info: #{e}"
 end
 ```
@@ -13786,15 +13786,15 @@ Get overall stats for ssl mixed issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -13804,7 +13804,7 @@ begin
   # Get overall stats for ssl mixed issue
   result = api_instance.sites_site_id_seov2_issues_ssl_mixed_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_mixed_details_get: #{e}"
 end
 ```
@@ -13822,7 +13822,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SslMixedContentPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_mixed_details_get_with_http_info: #{e}"
 end
 ```
@@ -13860,15 +13860,15 @@ Get all pages linking to a http link or pulling in a http resource
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -13882,7 +13882,7 @@ begin
   # Get ssl mixed issue
   result = api_instance.sites_site_id_seov2_issues_ssl_mixed_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_mixed_get: #{e}"
 end
 ```
@@ -13900,7 +13900,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SslMixedContentPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_mixed_get_with_http_info: #{e}"
 end
 ```
@@ -13942,15 +13942,15 @@ Get historical occurrences of ssl mixed issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -13962,7 +13962,7 @@ begin
   # Get historical occurrences of ssl mixed issue
   result = api_instance.sites_site_id_seov2_issues_ssl_mixed_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_mixed_history_get: #{e}"
 end
 ```
@@ -13980,7 +13980,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_ssl_mixed_history_get_with_http_info: #{e}"
 end
 ```
@@ -14020,15 +14020,15 @@ Get overall stats for status code 404 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -14038,7 +14038,7 @@ begin
   # Get overall stats for status code 404 issue
   result = api_instance.sites_site_id_seov2_issues_status_code404_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code404_details_get: #{e}"
 end
 ```
@@ -14056,7 +14056,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinksStatusCode404Info>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code404_details_get_with_http_info: #{e}"
 end
 ```
@@ -14094,15 +14094,15 @@ Get all links with status code 404
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -14115,7 +14115,7 @@ begin
   # Get status code 404 issue
   result = api_instance.sites_site_id_seov2_issues_status_code404_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code404_get: #{e}"
 end
 ```
@@ -14133,7 +14133,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinkStatusCode404List>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code404_get_with_http_info: #{e}"
 end
 ```
@@ -14174,15 +14174,15 @@ Get historical occurrences of status code 404 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -14194,7 +14194,7 @@ begin
   # Get historical occurrences of status code 404 issue
   result = api_instance.sites_site_id_seov2_issues_status_code404_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code404_history_get: #{e}"
 end
 ```
@@ -14212,7 +14212,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code404_history_get_with_http_info: #{e}"
 end
 ```
@@ -14252,15 +14252,15 @@ Get overall stats for status code 4xx issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -14270,7 +14270,7 @@ begin
   # Get overall stats for status code 4xx issue
   result = api_instance.sites_site_id_seov2_issues_status_code4xxs_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code4xxs_details_get: #{e}"
 end
 ```
@@ -14288,7 +14288,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinksStatusCode4xxInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code4xxs_details_get_with_http_info: #{e}"
 end
 ```
@@ -14326,15 +14326,15 @@ Get all links with status code 4xx
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -14347,7 +14347,7 @@ begin
   # Get status code 4xx issue
   result = api_instance.sites_site_id_seov2_issues_status_code4xxs_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code4xxs_get: #{e}"
 end
 ```
@@ -14365,7 +14365,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinkStatusCode4xxList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code4xxs_get_with_http_info: #{e}"
 end
 ```
@@ -14406,15 +14406,15 @@ Get historical occurrences of status code 4xx issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -14426,7 +14426,7 @@ begin
   # Get historical occurrences of status code 4xx issue
   result = api_instance.sites_site_id_seov2_issues_status_code4xxs_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code4xxs_history_get: #{e}"
 end
 ```
@@ -14444,7 +14444,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code4xxs_history_get_with_http_info: #{e}"
 end
 ```
@@ -14484,15 +14484,15 @@ Get overall stats for status code 500 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -14502,7 +14502,7 @@ begin
   # Get overall stats for status code 500 issue
   result = api_instance.sites_site_id_seov2_issues_status_code500s_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code500s_details_get: #{e}"
 end
 ```
@@ -14520,7 +14520,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinksStatusCode500Info>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code500s_details_get_with_http_info: #{e}"
 end
 ```
@@ -14558,15 +14558,15 @@ Get all links with status code 500
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -14579,7 +14579,7 @@ begin
   # Get status code 500 issue
   result = api_instance.sites_site_id_seov2_issues_status_code500s_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code500s_get: #{e}"
 end
 ```
@@ -14597,7 +14597,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LinkStatusCode500List>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code500s_get_with_http_info: #{e}"
 end
 ```
@@ -14638,15 +14638,15 @@ Get historical occurrences of status code 500 issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -14658,7 +14658,7 @@ begin
   # Get historical occurrences of status code 500 issue
   result = api_instance.sites_site_id_seov2_issues_status_code500s_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code500s_history_get: #{e}"
 end
 ```
@@ -14676,7 +14676,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_status_code500s_history_get_with_http_info: #{e}"
 end
 ```
@@ -14716,15 +14716,15 @@ Get overall stats for structured markup pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -14734,7 +14734,7 @@ begin
   # Get overall stats for structured markup pages issue
   result = api_instance.sites_site_id_seov2_issues_structured_markup_pages_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_structured_markup_pages_details_get: #{e}"
 end
 ```
@@ -14752,7 +14752,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <StructuredDataMarkupPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_structured_markup_pages_details_get_with_http_info: #{e}"
 end
 ```
@@ -14790,15 +14790,15 @@ Get structured markup pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -14812,7 +14812,7 @@ begin
   # Get structured markup pages issue
   result = api_instance.sites_site_id_seov2_issues_structured_markup_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_structured_markup_pages_get: #{e}"
 end
 ```
@@ -14830,7 +14830,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <StructuredDataMarkupPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_structured_markup_pages_get_with_http_info: #{e}"
 end
 ```
@@ -14872,15 +14872,15 @@ Get historical occurrences of structured markup pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -14892,7 +14892,7 @@ begin
   # Get historical occurrences of structured markup pages issue
   result = api_instance.sites_site_id_seov2_issues_structured_markup_pages_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_structured_markup_pages_history_get: #{e}"
 end
 ```
@@ -14910,7 +14910,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_structured_markup_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -14950,22 +14950,22 @@ Get touchscreen ready issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get touchscreen ready issue
   result = api_instance.sites_site_id_seov2_issues_touchscreen_ready_details_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_touchscreen_ready_details_get: #{e}"
 end
 ```
@@ -14983,7 +14983,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <TouchscreenReady>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_touchscreen_ready_details_get_with_http_info: #{e}"
 end
 ```
@@ -15020,22 +15020,22 @@ Get unsafe domain issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 
 begin
   # Get unsafe domain issue
   result = api_instance.sites_site_id_seov2_issues_unsafe_domain_details_get(site_id)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_unsafe_domain_details_get: #{e}"
 end
 ```
@@ -15053,7 +15053,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UnsafeDomainSeo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_unsafe_domain_details_get_with_http_info: #{e}"
 end
 ```
@@ -15090,15 +15090,15 @@ Get overall stats for updated media issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -15108,7 +15108,7 @@ begin
   # Get overall stats for updated media issue
   result = api_instance.sites_site_id_seov2_issues_updated_media_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_media_details_get: #{e}"
 end
 ```
@@ -15126,7 +15126,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UpdatedMediaInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_media_details_get_with_http_info: #{e}"
 end
 ```
@@ -15164,15 +15164,15 @@ Get all media files not updated within the last year
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -15186,7 +15186,7 @@ begin
   # Get updated media issue
   result = api_instance.sites_site_id_seov2_issues_updated_media_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_media_get: #{e}"
 end
 ```
@@ -15204,7 +15204,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <NonUpdatedMediaList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_media_get_with_http_info: #{e}"
 end
 ```
@@ -15246,15 +15246,15 @@ Get historical occurrences of updated media issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -15266,7 +15266,7 @@ begin
   # Get historical occurrences of updated media issue
   result = api_instance.sites_site_id_seov2_issues_updated_media_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_media_history_get: #{e}"
 end
 ```
@@ -15284,7 +15284,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_media_history_get_with_http_info: #{e}"
 end
 ```
@@ -15324,15 +15324,15 @@ Get overall stats for updated pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -15342,7 +15342,7 @@ begin
   # Get overall stats for updated pages issue
   result = api_instance.sites_site_id_seov2_issues_updated_pages_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_pages_details_get: #{e}"
 end
 ```
@@ -15360,7 +15360,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <NonUpdatedPagesInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_pages_details_get_with_http_info: #{e}"
 end
 ```
@@ -15398,15 +15398,15 @@ Get all pages not updated within the last year
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -15420,7 +15420,7 @@ begin
   # Get updated pages issue
   result = api_instance.sites_site_id_seov2_issues_updated_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_pages_get: #{e}"
 end
 ```
@@ -15438,7 +15438,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <NonUpdatedPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_pages_get_with_http_info: #{e}"
 end
 ```
@@ -15480,15 +15480,15 @@ Get historical occurrences of updated pages issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -15500,7 +15500,7 @@ begin
   # Get historical occurrences of updated pages issue
   result = api_instance.sites_site_id_seov2_issues_updated_pages_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_pages_history_get: #{e}"
 end
 ```
@@ -15518,7 +15518,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_updated_pages_history_get_with_http_info: #{e}"
 end
 ```
@@ -15558,15 +15558,15 @@ Get overall stats for urls with underscore issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -15576,7 +15576,7 @@ begin
   # Get overall stats for urls with underscore issue
   result = api_instance.sites_site_id_seov2_issues_urls_with_underscore_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_urls_with_underscore_details_get: #{e}"
 end
 ```
@@ -15594,7 +15594,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UrlsWithUnderscoreInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_urls_with_underscore_details_get_with_http_info: #{e}"
 end
 ```
@@ -15632,15 +15632,15 @@ Get all pages with an url that has an underscore
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -15654,7 +15654,7 @@ begin
   # Get urls with underscore issue
   result = api_instance.sites_site_id_seov2_issues_urls_with_underscore_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_urls_with_underscore_get: #{e}"
 end
 ```
@@ -15672,7 +15672,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UrlWithUnderscoreList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_urls_with_underscore_get_with_http_info: #{e}"
 end
 ```
@@ -15714,15 +15714,15 @@ Get historical occurrences of urls with underscore issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -15734,7 +15734,7 @@ begin
   # Get historical occurrences of urls with underscore issue
   result = api_instance.sites_site_id_seov2_issues_urls_with_underscore_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_urls_with_underscore_history_get: #{e}"
 end
 ```
@@ -15752,7 +15752,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_urls_with_underscore_history_get_with_http_info: #{e}"
 end
 ```
@@ -15792,15 +15792,15 @@ Get overall stats for words per page issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789 # Integer | Id for specific group.
@@ -15810,7 +15810,7 @@ begin
   # Get overall stats for words per page issue
   result = api_instance.sites_site_id_seov2_issues_words_per_page_details_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_words_per_page_details_get: #{e}"
 end
 ```
@@ -15828,7 +15828,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WordsPerPageInfo>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_words_per_page_details_get_with_http_info: #{e}"
 end
 ```
@@ -15866,15 +15866,15 @@ Get all pages with word count below 500
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -15888,7 +15888,7 @@ begin
   # Get words per page issue
   result = api_instance.sites_site_id_seov2_issues_words_per_page_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_words_per_page_get: #{e}"
 end
 ```
@@ -15906,7 +15906,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithLessThan500WordsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_words_per_page_get_with_http_info: #{e}"
 end
 ```
@@ -15948,15 +15948,15 @@ Get historical occurrences of words per page issue
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -15968,7 +15968,7 @@ begin
   # Get historical occurrences of words per page issue
   result = api_instance.sites_site_id_seov2_issues_words_per_page_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_words_per_page_history_get: #{e}"
 end
 ```
@@ -15986,7 +15986,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueOccurenceHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_issues_words_per_page_history_get_with_http_info: #{e}"
 end
 ```
@@ -16026,15 +16026,15 @@ Get all monitored keywords
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   activity_plan_id: 789, # Integer | Id for specific activity plan
@@ -16048,7 +16048,7 @@ begin
   # Get monitored keywords
   result = api_instance.sites_site_id_seov2_keywords_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_keywords_get: #{e}"
 end
 ```
@@ -16066,7 +16066,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordMonitoringKeywordList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_keywords_get_with_http_info: #{e}"
 end
 ```
@@ -16108,15 +16108,15 @@ Get your website's ranking pages for the keyword
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 keyword_id = 789 # Integer | Id for specific keyword
 opts = {
@@ -16129,7 +16129,7 @@ begin
   # Get ranking pages for the keyword
   result = api_instance.sites_site_id_seov2_keywords_keyword_id_ranking_pages_get(site_id, keyword_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_keywords_keyword_id_ranking_pages_get: #{e}"
 end
 ```
@@ -16147,7 +16147,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <KeywordRankingList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_keywords_keyword_id_ranking_pages_get_with_http_info: #{e}"
 end
 ```
@@ -16188,15 +16188,15 @@ Groups are used to display information for specific sections of the website. Onl
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   page: 56, # Integer | Page number to show when more than one page in paged output.
@@ -16208,7 +16208,7 @@ begin
   # Get SEO groups
   result = api_instance.sites_site_id_seov2_overview_groups_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_overview_groups_get: #{e}"
 end
 ```
@@ -16226,7 +16226,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoGroupDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_overview_groups_get_with_http_info: #{e}"
 end
 ```
@@ -16266,15 +16266,15 @@ Get the top category SEO scores for your website
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -16285,7 +16285,7 @@ begin
   # Get the SEO scores
   result = api_instance.sites_site_id_seov2_overview_score_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_overview_score_get: #{e}"
 end
 ```
@@ -16303,7 +16303,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoScoreDetails>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_overview_score_get_with_http_info: #{e}"
 end
 ```
@@ -16342,15 +16342,15 @@ Get the top category SEO scores historically for your website
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -16363,7 +16363,7 @@ begin
   # Get the SEO scores historically
   result = api_instance.sites_site_id_seov2_overview_score_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_overview_score_history_get: #{e}"
 end
 ```
@@ -16381,7 +16381,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoScoreHistoryItemList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_overview_score_history_get_with_http_info: #{e}"
 end
 ```
@@ -16422,15 +16422,15 @@ Get all pages found on your website with issues
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -16445,7 +16445,7 @@ begin
   # Get pages with issues
   result = api_instance.sites_site_id_seov2_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_pages_get: #{e}"
 end
 ```
@@ -16463,7 +16463,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoRecommendationPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_pages_get_with_http_info: #{e}"
 end
 ```
@@ -16506,15 +16506,15 @@ Get the SEO issues found for the specific page
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -16530,7 +16530,7 @@ begin
   # Get issues for specific page
   result = api_instance.sites_site_id_seov2_pages_page_id_issues_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_pages_page_id_issues_get: #{e}"
 end
 ```
@@ -16548,7 +16548,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoIssueWithRecommendationList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_pages_page_id_issues_get_with_http_info: #{e}"
 end
 ```
@@ -16592,15 +16592,15 @@ Get target pages for keywords on your website
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -16615,7 +16615,7 @@ begin
   # Get target pages for keywords
   result = api_instance.sites_site_id_seov2_target_pages_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_get: #{e}"
 end
 ```
@@ -16633,7 +16633,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <SeoRecommendationTargetPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_get_with_http_info: #{e}"
 end
 ```
@@ -16676,15 +16676,15 @@ Get competing content issues for the target page
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -16696,7 +16696,7 @@ begin
   # Get competing content issues for the target page
   result = api_instance.sites_site_id_seov2_target_pages_pages_page_id_competing_content_issues_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_pages_page_id_competing_content_issues_get: #{e}"
 end
 ```
@@ -16714,7 +16714,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentOptimizationTargetUrlCompetingContentList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_pages_page_id_competing_content_issues_get_with_http_info: #{e}"
 end
 ```
@@ -16754,15 +16754,15 @@ Get the competing content issue type for the page
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 type = 'h1' # String | The competing content type
@@ -16776,7 +16776,7 @@ begin
   # Get the competing content issue type for the page
   result = api_instance.sites_site_id_seov2_target_pages_pages_page_id_competing_content_issues_type_pages_get(site_id, page_id, type, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_pages_page_id_competing_content_issues_type_pages_get: #{e}"
 end
 ```
@@ -16794,7 +16794,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentOptimizationTargetUrlCompetingContentPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_pages_page_id_competing_content_issues_type_pages_get_with_http_info: #{e}"
 end
 ```
@@ -16836,15 +16836,15 @@ Get keyword issues for the page
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -16856,7 +16856,7 @@ begin
   # Get keyword issues for the page
   result = api_instance.sites_site_id_seov2_target_pages_pages_page_id_keyword_issues_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_pages_page_id_keyword_issues_get: #{e}"
 end
 ```
@@ -16874,7 +16874,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentOptimizationTargetUrlKeywordIssueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_pages_page_id_keyword_issues_get_with_http_info: #{e}"
 end
 ```
@@ -16914,15 +16914,15 @@ Get keyword occurrences for the page
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -16934,7 +16934,7 @@ begin
   # Get keyword occurrences for the page
   result = api_instance.sites_site_id_seov2_target_pages_pages_page_id_keyword_occurrences_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_pages_page_id_keyword_occurrences_get: #{e}"
 end
 ```
@@ -16952,7 +16952,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentOptimizationTargetUrlOptimizationList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_pages_page_id_keyword_occurrences_get_with_http_info: #{e}"
 end
 ```
@@ -16992,15 +16992,15 @@ Get the keywords targeting the page
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 page_id = 789 # Integer | Id for specific page.
 opts = {
@@ -17012,7 +17012,7 @@ begin
   # Get the keywords targeting the page
   result = api_instance.sites_site_id_seov2_target_pages_pages_page_id_keywords_get(site_id, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_pages_page_id_keywords_get: #{e}"
 end
 ```
@@ -17030,7 +17030,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ContentOptimizationTargetUrlKeywordList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_pages_page_id_keywords_get_with_http_info: #{e}"
 end
 ```
@@ -17070,15 +17070,15 @@ Get overall statistics for target pages
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::SeoV2Api.new
+api_instance = SiteimproveAPIClient::SeoV2Api.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   activity_plan_id: 789 # Integer | Id for specific activity plan
@@ -17088,7 +17088,7 @@ begin
   # Get overall statistics for target pages
   result = api_instance.sites_site_id_seov2_target_pages_summary_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_summary_get: #{e}"
 end
 ```
@@ -17106,7 +17106,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <TargetPagesIssuesHighlights>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling SeoV2Api->sites_site_id_seov2_target_pages_summary_get_with_http_info: #{e}"
 end
 ```

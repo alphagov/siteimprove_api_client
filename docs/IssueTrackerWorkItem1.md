@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::IssueTrackerWorkItem1
+# SiteimproveAPIClient::IssueTrackerWorkItem1
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::IssueTrackerWorkItem1.new(
+instance = SiteimproveAPIClient::IssueTrackerWorkItem1.new(
   id: null,
   created_by: null,
   created_time: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::BrowserVersion
+# SiteimproveAPIClient::BrowserVersion
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::BrowserVersion.new(
+instance = SiteimproveAPIClient::BrowserVersion.new(
   bounce_rate: null,
   browser_version: null,
   visits: null

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::Progress
+# SiteimproveAPIClient::Progress
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::Progress.new(
+instance = SiteimproveAPIClient::Progress.new(
   ideal: null,
   projection: null,
   target: null,

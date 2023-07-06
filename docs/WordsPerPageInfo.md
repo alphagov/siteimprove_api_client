@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::WordsPerPageInfo
+# SiteimproveAPIClient::WordsPerPageInfo
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::WordsPerPageInfo.new(
+instance = SiteimproveAPIClient::WordsPerPageInfo.new(
   complexity: null,
   issue_name: null,
   issue_type: null,

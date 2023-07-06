@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ActivityPlan
+# SiteimproveAPIClient::ActivityPlan
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ActivityPlan.new(
+instance = SiteimproveAPIClient::ActivityPlan.new(
   id: null,
   activity_plan_name: null,
   default_database: null,

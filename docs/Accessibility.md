@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::Accessibility
+# SiteimproveAPIClient::Accessibility
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::Accessibility.new(
+instance = SiteimproveAPIClient::Accessibility.new(
   errorpages: null,
   errors: null,
   total: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::BrowserGraphSliceList
+# SiteimproveAPIClient::BrowserGraphSliceList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::BrowserGraphSliceList.new(
+instance = SiteimproveAPIClient::BrowserGraphSliceList.new(
   items: null,
   total_items: null,
   total_pages: null,

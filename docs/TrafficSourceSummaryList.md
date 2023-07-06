@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::TrafficSourceSummaryList
+# SiteimproveAPIClient::TrafficSourceSummaryList
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::TrafficSourceSummaryList.new(
+instance = SiteimproveAPIClient::TrafficSourceSummaryList.new(
   items: null,
   total_items: null,
   total_pages: null,

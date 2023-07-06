@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::ContentCheckResult
+# SiteimproveAPIClient::ContentCheckResult
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::ContentCheckResult.new(
+instance = SiteimproveAPIClient::ContentCheckResult.new(
   content_id: null,
   message: null,
   status_code: null,

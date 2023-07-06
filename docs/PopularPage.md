@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PopularPage
+# SiteimproveAPIClient::PopularPage
 
 ## Properties
 
@@ -22,9 +22,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PopularPage.new(
+instance = SiteimproveAPIClient::PopularPage.new(
   id: null,
   title: null,
   url: null,

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::LinksStatusCode500Info
+# SiteimproveAPIClient::LinksStatusCode500Info
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::LinksStatusCode500Info.new(
+instance = SiteimproveAPIClient::LinksStatusCode500Info.new(
   _500_links: null,
   complexity: null,
   issue_name: null,

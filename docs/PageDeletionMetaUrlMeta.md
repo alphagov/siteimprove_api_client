@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PageDeletionMetaUrlMeta
+# SiteimproveAPIClient::PageDeletionMetaUrlMeta
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PageDeletionMetaUrlMeta.new(
+instance = SiteimproveAPIClient::PageDeletionMetaUrlMeta.new(
   id: null,
   url: null
 )

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::MobileViewport
+# SiteimproveAPIClient::MobileViewport
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::MobileViewport.new(
+instance = SiteimproveAPIClient::MobileViewport.new(
   complexity: null,
   fixed: null,
   issue_name: null,

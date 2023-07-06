@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PagesWithoutH1Heading
+# SiteimproveAPIClient::PagesWithoutH1Heading
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PagesWithoutH1Heading.new(
+instance = SiteimproveAPIClient::PagesWithoutH1Heading.new(
   id: null,
   title: null,
   url: null,

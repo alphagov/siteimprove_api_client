@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::VisitWeekDay
+# SiteimproveAPIClient::VisitWeekDay
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::VisitWeekDay.new(
+instance = SiteimproveAPIClient::VisitWeekDay.new(
   average_page_views_per_visit: null,
   day_of_week: null,
   page_views: null,

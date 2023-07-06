@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::VisitsReferralsGraphItem
+# SiteimproveAPIClient::VisitsReferralsGraphItem
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::VisitsReferralsGraphItem.new(
+instance = SiteimproveAPIClient::VisitsReferralsGraphItem.new(
   referrals: null,
   timestamp: null,
   visits: null

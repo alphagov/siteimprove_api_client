@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::FleschKincaidGradeLevel
+# SiteimproveAPIClient::FleschKincaidGradeLevel
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::FleschKincaidGradeLevel.new(
+instance = SiteimproveAPIClient::FleschKincaidGradeLevel.new(
   long_sentences_unique: null,
   poly_syllabic_words_unique: null,
   sentences: null,

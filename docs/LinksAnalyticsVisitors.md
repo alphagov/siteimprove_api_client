@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::LinksAnalyticsVisitors
+# SiteimproveAPIClient::LinksAnalyticsVisitors
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::LinksAnalyticsVisitors.new(
+instance = SiteimproveAPIClient::LinksAnalyticsVisitors.new(
   browsers: null,
   countries: null,
   devices: null,

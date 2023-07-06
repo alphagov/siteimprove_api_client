@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::A11YNextGenApi
+# SiteimproveAPIClient::A11YNextGenApi
 
 All URIs are relative to *https://api.eu.siteimprove.com/v2*
 
@@ -29,15 +29,15 @@ Retrieves the issues from accessibility, per the issue kind; how many pages that
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 issue_kind = 'confirmed' # String | Kind of issue state requested (potential, passed or confirmed issues)
 opts = {
@@ -51,7 +51,7 @@ begin
   # Get issues from accessibility
   result = api_instance.sites_site_id_a11y_issue_kinds_issue_kind_issues_get(site_id, issue_kind, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_issue_kinds_issue_kind_issues_get: #{e}"
 end
 ```
@@ -69,7 +69,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IssueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_issue_kinds_issue_kind_issues_get_with_http_info: #{e}"
 end
 ```
@@ -111,15 +111,15 @@ Retrieves pages with this issue from accessibility, per issue kind; how many occ
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 issue_kind = 'confirmed' # String | Kind of issue state requested (potential, passed or confirmed issues)
 issue_id = 56 # Integer | Id of the issue to display
@@ -137,7 +137,7 @@ begin
   # Get pages with this issue from accessibility
   result = api_instance.sites_site_id_a11y_issue_kinds_issue_kind_issues_issue_id_pages_get(site_id, issue_kind, issue_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_issue_kinds_issue_kind_issues_issue_id_pages_get: #{e}"
 end
 ```
@@ -155,7 +155,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithIssueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_issue_kinds_issue_kind_issues_issue_id_pages_get_with_http_info: #{e}"
 end
 ```
@@ -201,15 +201,15 @@ Retrieves issue progress for accessibility. Returns a list of how many many occu
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 issue_kind = 'confirmed' # String | Kind of issue state requested (potential, passed or confirmed issues)
 issue_id = 56 # Integer | Id of the issue to display
@@ -224,7 +224,7 @@ begin
   # Get progress for this issue from accessibility
   result = api_instance.sites_site_id_a11y_issue_kinds_issue_kind_issues_issue_id_progress_history_get(site_id, issue_kind, issue_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_issue_kinds_issue_kind_issues_issue_id_progress_history_get: #{e}"
 end
 ```
@@ -242,7 +242,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <A11YSingleIssueHistoryValueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_issue_kinds_issue_kind_issues_issue_id_progress_history_get_with_http_info: #{e}"
 end
 ```
@@ -285,15 +285,15 @@ Retrieves pages from accessibility with issues per issue kind; how many issues t
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 issue_kind = 'confirmed' # String | Kind of issue state requested (potential, passed or confirmed issues)
 opts = {
@@ -310,7 +310,7 @@ begin
   # Get pages with issues from accessibility
   result = api_instance.sites_site_id_a11y_issue_kinds_issue_kind_pages_get(site_id, issue_kind, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_issue_kinds_issue_kind_pages_get: #{e}"
 end
 ```
@@ -328,7 +328,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PageWithIssuesList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_issue_kinds_issue_kind_pages_get_with_http_info: #{e}"
 end
 ```
@@ -373,15 +373,15 @@ Retrieves issues for a give page from accessibility, per issue kind; occurrences
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 issue_kind = 'confirmed' # String | Kind of issue state requested (potential, passed or confirmed issues)
 page_id = 789 # Integer | Id for specific page.
@@ -396,7 +396,7 @@ begin
   # Get issues on this page from accessibility
   result = api_instance.sites_site_id_a11y_issue_kinds_issue_kind_pages_page_id_issues_get(site_id, issue_kind, page_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_issue_kinds_issue_kind_pages_page_id_issues_get: #{e}"
 end
 ```
@@ -414,7 +414,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IssueOnPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_issue_kinds_issue_kind_pages_page_id_issues_get_with_http_info: #{e}"
 end
 ```
@@ -457,15 +457,15 @@ Retrieves overview of Groups for Accessibility. Returns the name of the Group; i
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   conformance: ['inner_example'], # Array<String> | Conformance filter
@@ -478,7 +478,7 @@ begin
   # Get overview of Groups for Accessibility
   result = api_instance.sites_site_id_a11y_overview_groups_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_overview_groups_get: #{e}"
 end
 ```
@@ -496,7 +496,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <A11YGroupsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_overview_groups_get_with_http_info: #{e}"
 end
 ```
@@ -537,15 +537,15 @@ Retrieves overall issue and occurrence progress for accessibility. Returns a lis
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -559,7 +559,7 @@ begin
   # Get progress for all issues and occurrences from Accessibility
   result = api_instance.sites_site_id_a11y_overview_progress_history_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_overview_progress_history_get: #{e}"
 end
 ```
@@ -577,7 +577,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <A11YHistoryValueList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_overview_progress_history_get_with_http_info: #{e}"
 end
 ```
@@ -619,15 +619,15 @@ Retrieves issue overview for accessibility, according to conformance level (A, A
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -639,7 +639,7 @@ begin
   # Get summary for Accessibility
   result = api_instance.sites_site_id_a11y_overview_summary_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_overview_summary_get: #{e}"
 end
 ```
@@ -657,7 +657,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <IssuesByConformanceList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_overview_summary_get_with_http_info: #{e}"
 end
 ```
@@ -697,15 +697,15 @@ Retrieves PDF documents from accessibility. Contains the PDF documents referred 
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 opts = {
   group_id: 789, # Integer | Id for specific group.
@@ -720,7 +720,7 @@ begin
   # Get report on PDF errors from accessibility
   result = api_instance.sites_site_id_a11y_validation_pdfs_get(site_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_validation_pdfs_get: #{e}"
 end
 ```
@@ -738,7 +738,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DocumentWithErrorList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_validation_pdfs_get_with_http_info: #{e}"
 end
 ```
@@ -781,15 +781,15 @@ List of errors for the PDF document
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 link_id = 789 # Integer | Id of a specific link/URL.
 opts = {
@@ -801,7 +801,7 @@ begin
   # Get errors for specific PDF document  
   result = api_instance.sites_site_id_a11y_validation_pdfs_link_id_issues_get(site_id, link_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_validation_pdfs_link_id_issues_get: #{e}"
 end
 ```
@@ -819,7 +819,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DocumentErrorDetailsList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_validation_pdfs_link_id_issues_get_with_http_info: #{e}"
 end
 ```
@@ -859,15 +859,15 @@ List of HTML pages on the site that refers to the PDF document
 
 ```ruby
 require 'time'
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 # setup authorization
-SiteImproveAPIClient.configure do |config|
+SiteimproveAPIClient.configure do |config|
   # Configure HTTP basic authorization: basic_auth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SiteImproveAPIClient::A11YNextGenApi.new
+api_instance = SiteimproveAPIClient::A11YNextGenApi.new
 site_id = 789 # Integer | Id for specific site.
 pdf_id = 789 # Integer | id of the PDF document
 opts = {
@@ -881,7 +881,7 @@ begin
   # Get HTML pages referring to specific PDF document  
   result = api_instance.sites_site_id_a11y_validation_pdfs_pdf_id_pages_using_pdf_get(site_id, pdf_id, opts)
   p result
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_validation_pdfs_pdf_id_pages_using_pdf_get: #{e}"
 end
 ```
@@ -899,7 +899,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ReferringPageList>
-rescue SiteImproveAPIClient::ApiError => e
+rescue SiteimproveAPIClient::ApiError => e
   puts "Error when calling A11YNextGenApi->sites_site_id_a11y_validation_pdfs_pdf_id_pages_using_pdf_get_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::Trademark
+# SiteimproveAPIClient::Trademark
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::Trademark.new(
+instance = SiteimproveAPIClient::Trademark.new(
   id: null,
   name: null,
   duplicates: null,

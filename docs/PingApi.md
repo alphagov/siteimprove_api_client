@@ -1,4 +1,4 @@
-# SiteImproveAPIClient::PingApi
+# SiteimproveAPIClient::PingApi
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'site-improve-api-client'
+require 'siteimprove_api_client'
 
-instance = SiteImproveAPIClient::PingApi.new(
+instance = SiteimproveAPIClient::PingApi.new(
   status: null,
   _links: null
 )
