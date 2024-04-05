@@ -289,7 +289,7 @@ module SiteimproveAPIClient
     # @param [String] filename the filename to be sanitized
     # @return [String] the sanitized filename
     def sanitize_filename(filename)
-      filename.gsub(/.*[\/\\]/, '')
+      File.basename(filename)
     end
 
     def build_request_url(path, opts = {})
