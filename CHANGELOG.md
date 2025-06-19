@@ -1,3 +1,7 @@
+# 1.0.3
+
+* Update dependencies
+
 # CHANGELOG
 
 ## 1.0.2
