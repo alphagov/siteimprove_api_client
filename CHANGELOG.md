@@ -1,3 +1,6 @@
+# 1.0.4
+* Set dependency cooldowns for Dependabot
+
 # 1.0.3
 
 * Update dependencies
