@@ -11,5 +11,5 @@ OpenAPI Generator version: 6.6.0
 =end
 
 module SiteimproveAPIClient
-  VERSION = '1.0.5'
+  VERSION = '1.0.6'
 end
